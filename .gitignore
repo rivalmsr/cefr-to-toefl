@@ -1,0 +1,6 @@
+# Obsidian workspace-local state
+.obsidian/workspace*.json
+.obsidian/cache
+
+# OS
+.DS_Store
