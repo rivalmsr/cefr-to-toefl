@@ -28,6 +28,14 @@ progress/            diagnostic result + weakness trackers + session history
 ## Status legend
 ✅ written · 🚧 partial · ⬜ not started · ⭐ sample unit
 
+## Written units
+| File | Title | CEFR | Covers (roadmap link) | Status |
+|------|-------|------|-----------------------|--------|
+| `lessons/unit-01.md` | Daily Life: Present Simple & Present Perfect | A2 | consolidation from A1-03 (present simple) + A2-05 (present perfect for/since) — diagnostic-driven | ✅ |
+
+_Active starting level (from `/diagnostic`, 2026-08-23): **A2**. Vocab/reading are strong (B1–B2);
+grammar is the focus._
+
 ## Curriculum roadmap (CEFR A1 → C1)
 
 Each **unit** is one themed note bundling grammar + vocabulary (Oxford/AWL tier) + a short

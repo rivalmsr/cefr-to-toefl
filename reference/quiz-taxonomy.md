@@ -14,7 +14,8 @@ Tag format: `<level>-<slug>`, e.g. `A2-past-simple`. Added when the related unit
 
 | Tag | Unit | Pattern/Point |
 |-----|------|---------------|
-| _(filled in as A1/A2/... units are written)_ | | |
+| `A2-present-simple` | Unit 1 | Present simple: subject–verb agreement (base verb vs. -s), don't/doesn't, do/does, adverbs of frequency |
+| `A2-present-perfect` | Unit 1 | Present perfect with for/since (situation continuing to now); contrast with present continuous |
 
 ## Skill tags (cross-level)
 | Tag | Skill |
