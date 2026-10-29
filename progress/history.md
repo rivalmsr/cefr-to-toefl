@@ -6,4 +6,5 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-10-29 | QUIZ adaptive (Unit 1) | 12 | 10/12 (83%) | Agreement with plural subject still weak (*my cousins goes*, missed *they brings*); present perfect 3/3, vocab & reading all correct. |
 | 2026-08-23 | DIAG placement | 16 | A2 (MCQ 12/15) | Vocab & reading B2 (strong); grammar A2 (agreement, present perfect, 1st conditional); writing A2. Recommend A2 grammar-consolidation start. |

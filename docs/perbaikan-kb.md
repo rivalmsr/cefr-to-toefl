@@ -33,6 +33,16 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-10-29 — Teks reading wajib ikut di panel `/quiz`
+- **Kategori:** skill
+- **Problem:** Di `/quiz` pertama, teks reading (Maya) hanya tampil di chat; panel
+  AskUserQuestion soal 11–12 berisi pertanyaan saja → panel menutupi chat, user tidak bisa
+  membaca teksnya dan harus membatalkan panel.
+- **Fix:** Aturan baru di langkah 4: `question` soal reading memuat teks utuh
+  (`Reading: "<teks>"` + pertanyaan); semua soal satu teks di panel yang sama. (`/toefl` sudah
+  punya aturan setara: ringkasan `【Text】` di panel.)
+- **File:** `.claude/skills/quiz/SKILL.md`
+
 ### 2026-10-29 — Skill `/lesson` untuk baca materi di chat
 - **Kategori:** skill
 - **Problem:** Materi unit hanya bisa dibaca di Obsidian. Saat diminta "lesson" di chat, Claude

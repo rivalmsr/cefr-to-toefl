@@ -107,7 +107,10 @@ Tiap soal di chat:
 - **3.** has lived
 - **4.** lived
 ```
-Soal reading: tampilkan teks sekali (blockquote) sebelum soal reading pertama.
+Soal reading: tampilkan teks sekali (blockquote) sebelum soal reading pertama. **Di panel,
+`question` soal reading WAJIB memuat teks utuh** (`Reading: "<teks>"` + baris kosong + pertanyaan)
+— panel menutupi chat, jadi user tak bisa scroll ke teks. Taruh semua soal reading satu teks
+di panel yang sama.
 Lalu panel **AskUserQuestion ≤4 soal/panel**: `header` = tipe + tag pendek (≤12 karakter),
 `question` = kalimat soal, `options` = **4 opsi persis urutan di chat**, `label` = teks opsi,
 `description` = hint sesuai aturan di bawah.
