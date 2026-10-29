@@ -40,19 +40,35 @@ Tag format: `<level>-<slug>`, e.g. `A2-past-simple`. Added when the related unit
 
 ## TOEFL subtype tags (used by `/toefl`, NOT `/quiz`)
 
-Tracked separately in `progress/toefl-evaluation.md`.
+Tracked separately in `progress/toefl-evaluation.md`. **Format TOEFL iBT 2026** (task resmi ETS,
+lihat `reference/toefl-2026-spec.md`). Tiap soal `/toefl` = **1 subtype** (task) + (opsional,
+Reading/Listening MCQ) **1 focus tag**.
 
-| Tag | Section | Subtype |
-|-----|---------|---------|
-| `RD-mainidea` | Reading | Main idea / author's purpose |
-| `RD-detail` | Reading | Detail & facts |
-| `RD-inference` | Reading | Inference |
-| `RD-vocab` | Reading | Word meaning in context |
-| `RD-paraphrase` | Reading | Sentence simplification / paraphrase |
-| `LS-gist` | Listening | Gist / main topic (transcript) |
-| `LS-detail` | Listening | Detail (transcript) |
-| `LS-function` | Listening | Speaker function/attitude (transcript) |
-| `SP-independent` | Speaking | Independent task (free-text) |
-| `SP-integrated` | Speaking | Integrated task (free-text) |
-| `WR-integrated` | Writing | Integrated essay (free-text) |
-| `WR-independent` | Writing | Independent essay (free-text) |
+### Subtype = task resmi (dilacak per baris di tracker)
+| Tag | Section | Task (nama resmi ETS) | Format di `/toefl` |
+|-----|---------|-----------------------|--------------------|
+| `RD-words` | Reading | Complete the Words | free-text (lengkapi huruf) |
+| `RD-daily` | Reading | Read in Daily Life | MCQ |
+| `RD-academic` | Reading | Read an Academic Passage | MCQ |
+| `LS-response` | Listening | Listen and Choose a Response | MCQ (transkrip) |
+| `LS-conversation` | Listening | Listen to a Conversation | MCQ (transkrip) |
+| `LS-announcement` | Listening | Listen to an Announcement | MCQ (transkrip) |
+| `LS-talk` | Listening | Listen to an Academic Talk | MCQ (transkrip) |
+| `WR-build` | Writing | Build a Sentence | free-text (susun kalimat) |
+| `WR-email` | Writing | Write an Email | free-text, rubrik 0–5 |
+| `WR-discussion` | Writing | Write for an Academic Discussion | free-text, rubrik 0–5 |
+| `SP-interview` | Speaking | Take an Interview | free-text (skrip), rubrik 0–5 |
+
+_`Listen and Repeat` (Speaking) di luar cakupan — butuh audio._
+
+### Focus tag (opsional, untuk analisis MCQ Reading/Listening)
+| Tag | Fokus soal |
+|-----|------------|
+| `RD-mainidea` | Main idea / author's purpose |
+| `RD-detail` | Detail & facts |
+| `RD-inference` | Inference |
+| `RD-vocab` | Word meaning in context |
+| `RD-paraphrase` | Sentence simplification / paraphrase |
+| `LS-gist` | Gist / main topic (transcript) |
+| `LS-detail` | Detail (transcript) |
+| `LS-function` | Speaker function/attitude (transcript) |

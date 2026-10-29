@@ -40,7 +40,8 @@ reference/
   collocations.md          common collocations & chunks
   grammar-reference.md     cross-level grammar summary
   synonyms.md              synonym/paraphrase pairs (vocab & TOEFL)
-  toefl-templates.md       templates + model answers + Writing/Speaking rubrics
+  toefl-templates.md       TOEFL 2026 templates + model answers + rubrics (free-text tasks)
+  toefl-2026-spec.md       official TOEFL iBT 2026 structure + band ↔ CEFR tables (ETS)
   official-sources.md      official A1–C1 references (CEFR, Core Inventory, Oxford, AWL, ETS) + links
   sources/                 downloaded official PDFs (gitignored)
 progress/
@@ -54,7 +55,7 @@ scripts/
 .claude/skills/
   diagnostic/SKILL.md      placement test → set CEFR level (RUN FIRST)
   quiz/SKILL.md            daily adaptive drills (same as the Japanese /quiz)
-  toefl/SKILL.md           text-based TOEFL iBT mock, 4 sections (analogous to /jlpt)
+  toefl/SKILL.md           text-based TOEFL iBT 2026 mock, 4 sections (same as the Japanese /jlpt)
   sync-anki/SKILL.md       refresh Anki weak items (same as the Japanese /sync-anki)
 ```
 
@@ -67,8 +68,9 @@ The full syllabus roadmap (A1→C1) plus unit status is in the table in `README.
 - **`/quiz`** — daily adaptive drills. Grammar source of truth = `lessons/`; vocabulary =
   `oxford-vocabulary.md` + `academic-vocabulary.md`. Default **12 questions**, weighted toward
   weak areas in `evaluation.md`. Writes `evaluation.md` + `history.md`.
-- **`/toefl`** — text-based TOEFL iBT mock, 4 sections (Listening uses a transcript; real audio
-  is out of scope). Writes **only** `toefl-evaluation.md` + a `TOEFL`-labeled row in
+- **`/toefl`** — text-based **TOEFL iBT 2026** mock (official task types, spec in
+  `toefl-2026-spec.md`), 4 sections (Listening uses a transcript; Listen and Repeat and real audio
+  are out of scope). Writes **only** `toefl-evaluation.md` + a `TOEFL`-labeled row in
   `history.md`; it **may read** `evaluation.md` but **must not touch it**.
 - **`/sync-anki`** — runs `bash scripts/sync-anki.sh` to regenerate
   `progress/anki-weak-items.md` from Anki desktop (deck `Oxford 3000 <level>`). Ask the user to

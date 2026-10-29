@@ -25,7 +25,8 @@ scripts/             sync-anki.sh (Anki → progress/anki-weak-items.md)
 1. **Run `/diagnostic` first** → sets your CEFR level (writes `progress/diagnostic.md`).
 2. Read the units for your level in `lessons/` (in Obsidian).
 3. **`/quiz`** — daily adaptive drills from the units (12 questions, exam mode).
-4. **`/toefl`** — text-based TOEFL iBT mock (Listening via transcript; audio out of scope).
+4. **`/toefl`** — text-based TOEFL iBT **2026-format** mock (Listening via transcript; audio out of
+   scope). Modes: daily mock, `full`, `reading`, `listening`, `writing`, `speaking`, `review`.
 5. **`/sync-anki`** — after Anki review (open Anki desktop & Sync first), refresh the weak
    Oxford 3000 words so `/quiz` uses them more often.
 

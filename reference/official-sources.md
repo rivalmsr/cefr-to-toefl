@@ -34,6 +34,7 @@ Kalau folder itu kosong (misalnya di komputer lain), unduh ulang dari link di ba
 | Dokumen | Penerbit | Dipakai untuk | Status / file |
 |---------|----------|---------------|---------------|
 | Mapping TOEFL iBT ke CEFR (RM-15-06, 2015) | ETS | skor minimum per section untuk tiap level (B1–C1) | ✅ `ets-toefl-cefr-mapping-RM-15-06.pdf` |
+| A banded score scale for the TOEFL iBT test (April 2026) | ETS | tabel resmi band 1–6 ↔ CEFR & ↔ skor lama 0–120 (Table 6–7) → disalin di `toefl-2026-spec.md` | ✅ `ets-toefl-score-scale-update-2026.pdf` |
 | Compare scores (tabel resmi terbaru) | ETS | tabel skor TOEFL ↔ CEFR yang berlaku sekarang | 🔗 [ets.org compare scores](https://www.ets.org/toefl/score-users/ibt/compare-scores.html) |
 | TOEFL iBT updates (Januari 2026) | ETS | format baru: skala 1–6 yang selaras CEFR, Reading/Listening adaptif, tes lebih pendek | 🔗 [ets.org upcoming updates](https://www.in.ets.org/toefl/test-takers/ibt/upcoming-updates-jan-2026.html) |
 
