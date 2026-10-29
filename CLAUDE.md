@@ -48,15 +48,19 @@ progress/
   evaluation.md            /quiz weakness tracker (per grammar/skill/area)
   toefl-evaluation.md      /toefl tracker (per section/subtype)
   history.md               session log (one prefix per skill)
+  anki-weak-items.md       weak Oxford 3000 words from Anki (lapses/leech) — AUTO-GENERATED
+scripts/
+  sync-anki.sh             regenerates progress/anki-weak-items.md from Anki desktop
 .claude/skills/
   diagnostic/SKILL.md      placement test → set CEFR level (RUN FIRST)
   quiz/SKILL.md            daily adaptive drills (same as the Japanese /quiz)
   toefl/SKILL.md           text-based TOEFL iBT mock, 4 sections (analogous to /jlpt)
+  sync-anki/SKILL.md       refresh Anki weak items (same as the Japanese /sync-anki)
 ```
 
 The full syllabus roadmap (A1→C1) plus unit status is in the table in `README.md`.
 
-## Three skills (summary — details in each SKILL.md)
+## Skills (summary — details in each SKILL.md)
 
 - **`/diagnostic`** — CEFR placement. **Run first**, before units are written. Writes
   `progress/diagnostic.md` and seeds `progress/evaluation.md`.
@@ -66,6 +70,11 @@ The full syllabus roadmap (A1→C1) plus unit status is in the table in `README.
 - **`/toefl`** — text-based TOEFL iBT mock, 4 sections (Listening uses a transcript; real audio
   is out of scope). Writes **only** `toefl-evaluation.md` + a `TOEFL`-labeled row in
   `history.md`; it **may read** `evaluation.md` but **must not touch it**.
+- **`/sync-anki`** — runs `bash scripts/sync-anki.sh` to regenerate
+  `progress/anki-weak-items.md` from Anki desktop (deck `Oxford 3000 <level>`). Ask the user to
+  **open Anki desktop & Sync first**. `/quiz` & `/toefl` read only its anchor and apply a **soft
+  bias**: prefer those words as sentence fillers when natural (never replacing weak tags from the
+  trackers).
 
 ## Core rules (MANDATORY — all skills)
 
