@@ -41,6 +41,8 @@ reference/
   grammar-reference.md     cross-level grammar summary
   synonyms.md              synonym/paraphrase pairs (vocab & TOEFL)
   toefl-templates.md       templates + model answers + Writing/Speaking rubrics
+  official-sources.md      official A1–C1 references (CEFR, Core Inventory, Oxford, AWL, ETS) + links
+  sources/                 downloaded official PDFs (gitignored)
 progress/
   diagnostic.md            placement result + current CEFR estimate
   evaluation.md            /practice weakness tracker (per grammar/skill/area)

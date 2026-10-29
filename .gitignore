@@ -4,3 +4,6 @@
 
 # OS
 .DS_Store
+
+# Official source PDFs (copyrighted, re-download via reference/official-sources.md)
+reference/sources/
