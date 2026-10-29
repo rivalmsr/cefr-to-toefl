@@ -32,6 +32,7 @@ official **TOEFL iBT** score for S2 admission at the **Institute of Science Toky
 | `/diagnostic` | CEFR placement (no hints) | `diagnostic.md`, seeds `evaluation.md` |
 | `/quiz` · `/quiz-t` | daily adaptive drills (12 MCQ) · translation production ID→EN (4) | `evaluation.md`, `history.md` |
 | `/toefl` | text-based TOEFL iBT **2026** mock (`toefl-2026-spec.md`) | **only** `toefl-evaluation.md` + `TOEFL` row in `history.md` (may read, never touch `evaluation.md`) |
+| `/lesson` | read a unit section verbatim in chat (read-only, no questions) | nothing |
 | `/sync-anki` | `bash scripts/sync-anki.sh` (ask: Anki desktop synced?) | `anki-weak-items.md` (AUTO-GENERATED) |
 
 ## Core rules (MANDATORY)

@@ -33,6 +33,16 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-10-29 — Skill `/lesson` untuk baca materi di chat
+- **Kategori:** skill
+- **Problem:** Materi unit hanya bisa dibaca di Obsidian. Saat diminta "lesson" di chat, Claude
+  meringkas sendiri lalu langsung memberi soal cek pemahaman — user ingin **membaca materinya**,
+  bukan dites.
+- **Fix:** Skill baru `/lesson` (read-only): daftar unit/bagian, lalu tampilkan satu bagian
+  **verbatim** via rentang baris heading (hemat token). Tanpa soal, tanpa menulis `progress/`.
+  Didaftarkan di CLAUDE.md, README, dan cara-kerja.
+- **File:** `.claude/skills/lesson/SKILL.md`, `CLAUDE.md`, `README.md`, `docs/cara-kerja.md`
+
 ### 2026-10-29 — Tiap poin unit wajib punya Kegunaan/Tujuan
 - **Kategori:** pembelajaran · docs
 - **Problem:** Di `unit-01`, Point 2 punya baris **Kegunaan** tapi Point 1 tidak; sub-aturan

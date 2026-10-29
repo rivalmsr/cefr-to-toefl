@@ -43,12 +43,14 @@ scripts/
   quiz-t/                  alias for /quiz translate
   toefl/                   TOEFL iBT 2026 mock
   sync-anki/               refresh Anki weak items
+  lesson/                  read unit sections in chat (read-only)
 ```
 
 ## How to use
 
 1. **Run `/diagnostic` first** → sets your CEFR level (writes `progress/diagnostic.md`).
-2. Read the units for your level in `lessons/` (in Obsidian).
+2. Read the units for your level in `lessons/` (in Obsidian, or in chat with **`/lesson`** —
+   e.g. `/lesson 1 p2`, `/lesson 1 reading`).
 3. **`/quiz`** — daily adaptive drills from the units (12 questions, exam mode). **`/quiz-t`** =
    translation practice (Indonesian → English, you type the sentence; 4 questions).
 4. **`/toefl`** — text-based TOEFL iBT **2026-format** mock (Listening via transcript; audio out of
