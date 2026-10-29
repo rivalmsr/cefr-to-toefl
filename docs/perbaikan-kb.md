@@ -33,6 +33,17 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-10-29 — Kosakata bantu `/quiz-t` tidak boleh ada yang terlewat
+- **Kategori:** skill · pembelajaran
+- **Problem:** Di `/quiz-t` pertama, beberapa kata kunci tidak ada di kosakata bantu: soal 1
+  (*every* untuk "setiap"), soal 3 (*on* untuk "pada hari"), dan soal 4 (level `sebagian`) tanpa
+  baris kosakata sama sekali (*coat, three, year*). Aturan "semua kata isi" ambigu soal kata
+  fungsi non-uji, dan level `sebagian` (hanya kata di atas level aktif) praktis = kosong di A2.
+- **Fix:** `penuh` = semua kata di kunci kecuali kata titik uji (termasuk *every, this, my, on*,
+  angka) + cek wajib sebelum panel; `sebagian` = semua kata isi (kata fungsi kecil jadi tugas
+  user); baris Kosakata bantu selalu ditulis (`—` bila sengaja kosong di `minimal`).
+- **File:** `.claude/skills/quiz/ref/translate.md`
+
 ### 2026-10-29 — Teks reading wajib ikut di panel `/quiz`
 - **Kategori:** skill
 - **Problem:** Di `/quiz` pertama, teks reading (Maya) hanya tampil di chat; panel

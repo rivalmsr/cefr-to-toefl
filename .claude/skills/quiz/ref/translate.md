@@ -56,15 +56,23 @@ Tujuannya membiasakan **menyusun kalimat sendiri**; bantuan dikurangi seiring ma
   year*). Konjugasi (*lives, lived, has lived*), jamak (*years*), dan articles tetap tugas user.
 - **Kata grammar titik uji TIDAK diberikan** (*have/has, for/since, do/does, don't/doesn't,
   will, a/an/the*…) — itulah yang dilatih.
+- **Selain kata titik uji, JANGAN ada kata kunci yang terlewat** (level `penuh`): termasuk kata
+  fungsi yang **bukan** titik uji — penentu & kata waktu (*every, this, my/your*), preposisi di
+  luar titik uji (*on Saturday(s), at, in*), angka (*three*). Cek sebelum panel: setiap kata di
+  kunci = ada di kosakata bantu **atau** memang kata titik uji. Contoh cacat: kunci *My parents
+  drink coffee every morning* tapi bantu tanpa *every (setiap)*; kunci *Does your father work on
+  Saturdays?* tanpa *on (pada)*.
 - **Level bantuan per tag sasaran** (dari status tag di `evaluation.md`):
 
   | Level | Status tag | Kosakata bantu | Label fungsi («durasi», «kebiasaan», «larangan»…) |
   |---|---|---|---|
-  | `penuh` | ⚪ / 🔴 / 🟡 | semua kata isi di kunci | ditampilkan |
-  | `sebagian` | 🟢 | hanya kata di atas level aktif (mis. B1+ saat level A2) + nama | tidak |
+  | `penuh` | ⚪ / 🔴 / 🟡 | semua kata di kunci **kecuali** kata titik uji (kata isi + kata fungsi non-uji) | ditampilkan |
+  | `sebagian` | 🟢 | semua **kata isi** (benda, kerja, sifat, angka) di kunci; kata fungsi kecil (*my, this, every, on*) tugas user | tidak |
   | `minimal` | 🟢 ≥ 90% & Total ≥ 10 | hanya nama & kata di atas level aktif | tidak |
 
-  Konteks, waktu, & tujuan **selalu** ada di semua level.
+  Konteks, waktu, & tujuan **selalu** ada di semua level. Baris **Kosakata bantu** juga selalu
+  ditulis (bila kosong di level `minimal`: `Kosakata bantu: — (level minimal)`), supaya user tahu
+  memang sengaja tidak diberi, bukan terlewat.
 - Mode ujian tetap: kumpulkan **semua** jawaban dulu, koreksi & analisis **di akhir**.
 - **Jangan** tampilkan kandidat terjemahan sebagai opsi (jadi pilih ganda). Kontras kandidat hanya
   dipakai **saat koreksi**.
