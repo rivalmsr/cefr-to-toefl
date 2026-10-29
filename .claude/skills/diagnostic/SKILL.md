@@ -49,7 +49,10 @@ Read `progress/diagnostic.md`. If a result already exists, offer to re-test or u
 The user answers **all items first**; analysis & level appear **at the end**.
 - Write each MCQ in a LARGE version in chat using an `#` (H1) heading + a small number & tag
   line, then collect answers via **AskUserQuestion** (max 4/panel). **No hints** in the options.
-- For a reading text, show the text once (blockquote), then its questions.
+- For a reading text, show the text once (blockquote), then its questions. **In the panel, each
+  reading item's `question` MUST include the full text** (`Reading: "<text>"` + blank line +
+  question) — the panel covers the chat, so the user cannot scroll back to it. Keep all items
+  of one text in the same panel.
 - Writing sample: show the prompt and ask the user to type their answer directly in chat.
 - Store each answer + the item's target level for scoring.
 

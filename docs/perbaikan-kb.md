@@ -42,6 +42,10 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
   (`Reading: "<teks>"` + pertanyaan); semua soal satu teks di panel yang sama. (`/toefl` sudah
   punya aturan setara: ringkasan `【Text】` di panel.)
 - **File:** `.claude/skills/quiz/SKILL.md`
+- **Lanjutan (hari yang sama):** aturan diterapkan juga ke `/diagnostic` (sebelumnya teks hanya di
+  chat) dan `/toefl` (sebelumnya hanya **ringkasan** `【Text】` → kini teks verbatim; teks panjang
+  = kutipan paragraf relevan, soal main idea = teks utuh). File: `.claude/skills/diagnostic/SKILL.md`,
+  `.claude/skills/toefl/SKILL.md`.
 
 ### 2026-10-29 — Skill `/lesson` untuk baca materi di chat
 - **Kategori:** skill

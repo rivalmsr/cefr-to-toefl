@@ -98,8 +98,12 @@ Tiap soal: kunci, penjelasan singkat, `subtype` + (MCQ R/L) focus tag.
   - **4.** …
   ```
   Lalu panel **AskUserQuestion ≤4 soal/panel**, urut nomor, **tidak mencampur dua teks dalam satu
-  panel bila bisa**. `question` = pertanyaan + (soal berteks) ringkasan teks singkat berawalan
-  `【Text】` cukup untuk menjawab tanpa scroll; `options` = 4 opsi persis urutan di chat.
+  panel bila bisa**. `question` = (soal berteks) **teks VERBATIM** berawalan `【Text】` + baris
+  kosong + pertanyaan — panel menutupi chat, jadi user tak bisa scroll ke teks. **Jangan
+  diringkas/diparafrasa** (ringkasan bisa menghilangkan detail atau membocorkan jawaban). Teks
+  pendek (Daily Life, Conversation, Announcement, Choose a Response) → teks/transkrip utuh. Teks
+  panjang (Academic Passage, Academic Talk) → kutip **paragraf/bagian yang dibutuhkan soal itu**
+  persis seperti aslinya (soal main idea → teks utuh). `options` = 4 opsi persis urutan di chat.
 - **Free-text** (`RD-words`, `WR-build`, `WR-email`, `WR-discussion`, `SP-interview`): tampilkan
   prompt sebagai `#` heading + instruksi format; minta user mengetik **semua jawaban task itu
   dalam satu pesan** (bernomor: `1. information 2. ...`). Untuk `SP-interview`: tampilkan
