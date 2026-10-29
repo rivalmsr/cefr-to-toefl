@@ -70,21 +70,22 @@ sesuatu terjadi. Unit ini memperbaiki dua poin grammar dari hasil placement test
 
 ## Vocabulary — Daily life & routines
 
-Kumpulan kata bertema (Oxford tier A1–B1). Daftar lengkapnya juga ada di
-`reference/oxford-vocabulary.md`.
+Kumpulan kata bertema (Oxford tier A1–B2; CEFR `—` = tidak ada di Oxford 3000/5000). Daftar
+lengkapnya juga ada di `reference/oxford-vocabulary.md`. *routine, relax, prepare, meal* juga ada
+di deck Anki A1 kamu.
 
 | Word | POS | CEFR | Meaning | Arti | Example |
 |------|-----|------|---------|------|---------|
-| routine | n | A2 | the normal order of things you do | rutinitas | *My morning **routine** starts at six.* |
+| routine | n | A1 | the normal order of things you do | rutinitas | *My morning **routine** starts at six.* |
 | wake up | phr v | A1 | stop sleeping | bangun tidur | *I **wake up** at five o'clock.* |
-| commute | v/n | B1 | travel to work or school | pergi-pulang kerja/sekolah | *She **commutes** by train every day.* |
-| chore | n | B1 | a small job at home | pekerjaan rumah tangga kecil | *Washing dishes is my least favourite **chore**.* |
+| commute | v/n | — | travel to work or school | pergi-pulang kerja/sekolah | *She **commutes** by train every day.* |
+| chore | n | — | a small job at home | pekerjaan rumah tangga kecil | *Washing dishes is my least favourite **chore**.* |
 | meal | n | A1 | food eaten at one time | waktu makan / hidangan | *Breakfast is my favourite **meal**.* |
-| relax | v | A2 | rest and stop working | bersantai, istirahat | *I **relax** by reading at night.* |
+| relax | v | A1 | rest and stop working | bersantai, istirahat | *I **relax** by reading at night.* |
 | habit | n | A2 | something you do often | kebiasaan | *Drinking coffee is a daily **habit**.* |
-| schedule | n | B1 | a plan of times for things | jadwal | *My **schedule** is busy on weekdays.* |
-| spare time | n phr | A2 | free time | waktu luang | *In my **spare time**, I study coding.* |
-| prepare | v | A2 | make something ready | menyiapkan | *I **prepare** breakfast every morning.* |
+| schedule | n | A2 | a plan of times for things | jadwal | *My **schedule** is busy on weekdays.* |
+| spare time | n phr | B2 | free time | waktu luang | *In my **spare time**, I study coding.* |
+| prepare | v | A1 | make something ready | menyiapkan | *I **prepare** breakfast every morning.* |
 
 ---
 
@@ -119,9 +120,14 @@ dan present perfect dengan *for / since* untuk menyatakan sudah berapa lama.)*
 
 ## TOEFL link
 
-- **Speaking Task 1 (Independent):** menceritakan rutinitas dan kebiasaan adalah topik yang
-  sering keluar — present simple + frequency adverbs yang benar akan menaikkan skor delivery.
-- **Writing (Independent):** kesalahan subject–verb agreement termasuk yang paling banyak
-  mengurangi nilai. Kalau *they go / he goes* sudah benar, skor grammar kamu lebih aman.
-- **Present perfect dengan _for/since_** sering dipakai saat menceritakan pengalaman dan latar
-  belakang ("I have studied … for …"), baik di Speaking maupun Writing.
+_Format TOEFL iBT 2026 (lihat `reference/toefl-2026-spec.md`)._
+
+- **Take an Interview (Speaking):** pertanyaan awal wawancara biasanya tentang kehidupan
+  pribadi — rutinitas, kebiasaan, sudah berapa lama kamu kuliah/bekerja. Present simple +
+  adverbs of frequency dan *I have … for / since …* langsung terpakai di sini.
+- **Write an Email & Write for an Academic Discussion (Writing):** kesalahan subject–verb
+  agreement (*~~they goes~~*) termasuk yang paling cepat menurunkan skor bahasa. Kalau *they go /
+  he goes* sudah otomatis, skor kamu lebih aman.
+- **Build a Sentence (Writing):** soal menyusun kata acak sering menguji **posisi adverb of
+  frequency** (*I **usually** wake up…*, *She **is often**…*) dan bentuk *have/has + V3* — persis
+  dua poin grammar unit ini.
