@@ -1,12 +1,12 @@
-# Practice Evaluation — Weakness Tracker (/practice)
+# Quiz Evaluation — Weakness Tracker (/quiz)
 
-Updated automatically by the `/practice` skill after each session. Tracks accuracy **per
+Updated automatically by the `/quiz` skill after each session. Tracks accuracy **per
 grammar/skill tag**, **per error type**, and **per unit**, then ranks the **weak areas**.
 
 **Status thresholds:** accuracy <60% 🔴 WEAK · 60–79% 🟡 · ≥80% 🟢
 (needs at least **3 attempts** before a status is computed; below that = ⚪ not enough data)
 
-_Seeded 2026-08-23 from `/diagnostic` (16 items). Numbers below are initial attempts; `/practice`
+_Seeded 2026-08-23 from `/diagnostic` (16 items). Numbers below are initial attempts; `/quiz`
 will add to them. Below 3 attempts = ⚪ not enough data._
 
 ---

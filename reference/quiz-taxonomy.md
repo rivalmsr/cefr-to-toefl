@@ -1,6 +1,6 @@
 # Quiz Taxonomy — Grammar, Skill & Error Tags (learn-english)
 
-The set of **stable tags** used by the `/practice` and `/toefl` skills to label each question,
+The set of **stable tags** used by the `/quiz` and `/toefl` skills to label each question,
 so the analysis in `progress/*.md` stays consistent across sessions. Every question gets at
 least one **grammar/skill tag** + (when relevant) an **error type** + the **unit** it came from.
 
@@ -38,7 +38,7 @@ Tag format: `<level>-<slug>`, e.g. `A2-past-simple`. Added when the related unit
 | `ERR-wordchoice` | Word choice / collocation |
 | `ERR-wordorder` | Word order |
 
-## TOEFL subtype tags (used by `/toefl`, NOT `/practice`)
+## TOEFL subtype tags (used by `/toefl`, NOT `/quiz`)
 
 Tracked separately in `progress/toefl-evaluation.md`.
 

@@ -1,7 +1,7 @@
 # Diagnostic / Placement Result
 
 Written by the `/diagnostic` skill. Stores the current CEFR level estimate plus per-skill
-strengths/weaknesses, used as the basis for writing units and for `/practice` scope.
+strengths/weaknesses, used as the basis for writing units and for `/quiz` scope.
 
 **Last test:** 2026-08-23 · 16 items (15 MCQ + 1 writing) · MCQ 12/15 (80%).
 

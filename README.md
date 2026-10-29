@@ -16,14 +16,14 @@ konten yang dipelajari (contoh, vocab, reading, soal) tetap **English**.
 lessons/unit-XX.md   themed integrated units (grammar+vocab+reading+phrases) — source of truth
 reference/           vocab pools (Oxford/AWL), collocations, grammar ref, synonyms, TOEFL templates
 progress/            diagnostic result + weakness trackers + session history
-.claude/skills/      /diagnostic, /practice, /toefl
+.claude/skills/      /diagnostic, /quiz, /toefl
 ```
 
 ## How to use
 
 1. **Run `/diagnostic` first** → sets your CEFR level (writes `progress/diagnostic.md`).
 2. Read the units for your level in `lessons/` (in Obsidian).
-3. **`/practice`** — daily adaptive drills from the units (12 questions, exam mode).
+3. **`/quiz`** — daily adaptive drills from the units (12 questions, exam mode).
 4. **`/toefl`** — text-based TOEFL iBT mock (Listening via transcript; audio out of scope).
 
 ## Status legend
@@ -95,6 +95,6 @@ fixed. The active starting level is set by `/diagnostic`.
 
 ## Progress trackers
 - `progress/diagnostic.md` — current CEFR estimate (from `/diagnostic`).
-- `progress/evaluation.md` — `/practice` weakness tracker.
+- `progress/evaluation.md` — `/quiz` weakness tracker.
 - `progress/toefl-evaluation.md` — `/toefl` subtype tracker.
 - `progress/history.md` — session log.

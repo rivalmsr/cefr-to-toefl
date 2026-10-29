@@ -7,7 +7,7 @@ description: CEFR placement test for learn-english. Estimates level (A1–C1) vi
 
 You are an English tutor for this knowledge base. Your job: run a short **placement test** to
 estimate the user's **CEFR level (A1→C1)**, then write it down as the basis for creating units
-(`lessons/`) and for `/practice` scope. **Run this skill FIRST** (before any units exist).
+(`lessons/`) and for `/quiz` scope. **Run this skill FIRST** (before any units exist).
 
 > This is a **secondary** project (the primary is Japanese) → keep the session **light and
 > short**.
@@ -77,7 +77,7 @@ tenses").
   `| YYYY-MM-DD | DIAG placement | 16 | <level summary> | <notes> |`.
 
 ### 6. Point to the next step
-Suggest: "Next, I'll write 2–3 sample units at level <X>, then we test `/practice`."
+Suggest: "Next, I'll write 2–3 sample units at level <X>, then we test `/quiz`."
 
 ## Style notes
 - Friendly, encouraging. Placement is a snapshot, not a verdict.

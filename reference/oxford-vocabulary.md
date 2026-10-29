@@ -1,7 +1,7 @@
 # Oxford Vocabulary Pool (Oxford 3000/5000, CEFR-tagged)
 
 A graded vocabulary pool based on the **Oxford 3000** (≈A1–B2) and **Oxford 5000** (≈B2–C1),
-the primary source for `/practice` vocabulary questions and `/toefl` vocab items. Aligned with
+the primary source for `/quiz` vocabulary questions and `/toefl` vocab items. Aligned with
 the user's Anki deck (Oxford 3000, tier A1 in progress). **Filled in gradually** per unit — do
 not assume tier A1 is complete.
 

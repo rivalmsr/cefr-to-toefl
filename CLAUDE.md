@@ -45,12 +45,12 @@ reference/
   sources/                 downloaded official PDFs (gitignored)
 progress/
   diagnostic.md            placement result + current CEFR estimate
-  evaluation.md            /practice weakness tracker (per grammar/skill/area)
+  evaluation.md            /quiz weakness tracker (per grammar/skill/area)
   toefl-evaluation.md      /toefl tracker (per section/subtype)
   history.md               session log (one prefix per skill)
 .claude/skills/
   diagnostic/SKILL.md      placement test → set CEFR level (RUN FIRST)
-  practice/SKILL.md        daily adaptive drills (analogous to the Japanese /quiz)
+  quiz/SKILL.md            daily adaptive drills (same as the Japanese /quiz)
   toefl/SKILL.md           text-based TOEFL iBT mock, 4 sections (analogous to /jlpt)
 ```
 
@@ -60,7 +60,7 @@ The full syllabus roadmap (A1→C1) plus unit status is in the table in `README.
 
 - **`/diagnostic`** — CEFR placement. **Run first**, before units are written. Writes
   `progress/diagnostic.md` and seeds `progress/evaluation.md`.
-- **`/practice`** — daily adaptive drills. Grammar source of truth = `lessons/`; vocabulary =
+- **`/quiz`** — daily adaptive drills. Grammar source of truth = `lessons/`; vocabulary =
   `oxford-vocabulary.md` + `academic-vocabulary.md`. Default **12 questions**, weighted toward
   weak areas in `evaluation.md`. Writes `evaluation.md` + `history.md`.
 - **`/toefl`** — text-based TOEFL iBT mock, 4 sections (Listening uses a transcript; real audio
