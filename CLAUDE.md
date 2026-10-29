@@ -1,4 +1,4 @@
-# CLAUDE.md — Project Context (learn-english)
+# CLAUDE.md — Project Context (cefr-to-toefl)
 
 > Always-loaded context hub: only what every session needs. Details live in the linked docs.
 
@@ -7,7 +7,7 @@
 Personal English knowledge base, read in **Obsidian**. Goals: (1) **fluent English**, (2) an
 official **TOEFL iBT** score for S2 admission at the **Institute of Science Tokyo**.
 
-- **Secondary project** (primary = Japanese, `../learn-japan/minna-no-nihongo-i`) → keep it
+- **Secondary project** (primary = Japanese, `../../learn-japan/minna-no-nihongo-i`) → keep it
   **light**: short sessions, no dense targets, no large material dumps.
 - **Claude writes all material** in `lessons/` (the user has no notes; they study Oxford 3000
   **A1 in Anki, not finished** → early units reinforce A1). Active level: `progress/diagnostic.md`.

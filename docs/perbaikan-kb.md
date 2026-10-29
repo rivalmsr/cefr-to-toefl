@@ -33,6 +33,17 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-10-29 — Rename proyek learn-english → cefr-to-toefl
+- **Kategori:** docs
+- **Problem:** Nama `learn-english` hanya menyebut bahasa, tidak menggambarkan jalur belajarnya, dan
+  tidak sejajar dengan pola proyek Jepang (`learn-japan/minna-no-nihongo-i` = folder bahasa →
+  proyek per jalur).
+- **Fix:** Folder dipindah ke `~/rdeveloper/personal/learn-english/cefr-to-toefl` (jalur bertahap
+  CEFR A1→C1 menuju TOEFL). Judul di README/CLAUDE.md/taxonomy/diagnostic diganti; path relatif ke
+  proyek Jepang jadi `../../learn-japan/minna-no-nihongo-i`. Memory Claude Code disalin ke key path
+  baru. Repo GitHub di-rename jadi `cefr-to-toefl`.
+- **File:** `README.md`, `CLAUDE.md`, `reference/quiz-taxonomy.md`, `.claude/skills/diagnostic/SKILL.md`
+
 ### 2026-10-29 — CLAUDE.md dirampingkan; konvensi unit diekstrak
 - **Kategori:** docs
 - **Problem:** `CLAUDE.md` (dimuat tiap sesi) 123 baris dan banyak duplikat: pohon file lengkap

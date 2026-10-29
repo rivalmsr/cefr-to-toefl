@@ -1,4 +1,4 @@
-# Quiz Taxonomy — Grammar, Skill & Error Tags (learn-english)
+# Quiz Taxonomy — Grammar, Skill & Error Tags (cefr-to-toefl)
 
 The set of **stable tags** used by the `/quiz` and `/toefl` skills to label each question,
 so the analysis in `progress/*.md` stays consistent across sessions. Every question gets at

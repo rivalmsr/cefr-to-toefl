@@ -1,4 +1,4 @@
-# learn-english — English Knowledge Base (→ TOEFL iBT)
+# cefr-to-toefl — English Knowledge Base (→ TOEFL iBT)
 
 Personal knowledge base to (1) become fluent in English and (2) reach an official **TOEFL
 iBT** score for graduate (S2) admission at the **Institute of Science Tokyo**. Materials are
@@ -6,7 +6,7 @@ iBT** score for graduate (S2) admission at the **Institute of Science Tokyo**. M
 Claude Code skills. Penjelasan & dokumentasi pakai **Bahasa Indonesia yang mudah dipahami**;
 konten yang dipelajari (contoh, vocab, reading, soal) tetap **English**.
 
-> **Secondary project.** Primary focus is Japanese (`../learn-japan/minna-no-nihongo-i`).
+> **Secondary project.** Primary focus is Japanese (`../../learn-japan/minna-no-nihongo-i`).
 > Kept light and incremental. See `CLAUDE.md` for rules and `.claude/skills/*/SKILL.md` for
 > skill details.
 

@@ -1,9 +1,9 @@
 ---
 name: diagnostic
-description: CEFR placement test for learn-english. Estimates level (A1–C1) via grammar, vocabulary-in-context (mapped to Oxford tiers), short reading comprehension, and one writing sample. Writes progress/diagnostic.md + seeds progress/evaluation.md. Run FIRST, before units are written. Use when the user runs /diagnostic or asks for a placement/level test.
+description: CEFR placement test for cefr-to-toefl. Estimates level (A1–C1) via grammar, vocabulary-in-context (mapped to Oxford tiers), short reading comprehension, and one writing sample. Writes progress/diagnostic.md + seeds progress/evaluation.md. Run FIRST, before units are written. Use when the user runs /diagnostic or asks for a placement/level test.
 ---
 
-# Skill: /diagnostic — CEFR Placement Test (learn-english)
+# Skill: /diagnostic — CEFR Placement Test (cefr-to-toefl)
 
 You are an English tutor for this knowledge base. Your job: run a short **placement test** to
 estimate the user's **CEFR level (A1→C1)**, then write it down as the basis for creating units
