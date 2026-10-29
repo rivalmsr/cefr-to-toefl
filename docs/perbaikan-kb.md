@@ -42,7 +42,8 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
   Konvensi unit + "perbedaan dari proyek Jepang" + aturan cek referensi resmi → `docs/konvensi-unit.md`.
   Pohon file detail → `README.md` (Folder map). Aturan baru eksplisit: **referensi resmi di atas
   ingatan model** (Core rule 2) dan tips batch tool call (dari Minna).
-- **File:** `CLAUDE.md`, `docs/konvensi-unit.md`, `README.md`
+- **File:** `CLAUDE.md`, `docs/konvensi-unit.md`, `README.md`, `docs/cara-kerja.md` (peta
+  komponen, alur baru **1b — Menulis unit**, bagian **Status sekarang**)
 
 ### 2026-10-29 — Log perbaikan + peta cara kerja (mengikuti proyek Minna)
 - **Kategori:** docs

@@ -27,13 +27,15 @@ format resmi TOEFL 2026.
 | Komponen | Isi | Siapa menulis |
 |---|---|---|
 | `lessons/unit-XX.md` | materi per unit (grammar, vocab, reading, frasa, TOEFL link) — **source of truth** | Claude |
-| `reference/` | pool vocab (Oxford/AWL), taxonomy tag, spec & rubrik TOEFL, indeks sumber resmi | Claude |
+| `reference/` | pool vocab (Oxford/AWL), taxonomy tag, rubrik TOEFL | Claude |
+| `reference/official-sources.md` · `toefl-2026-spec.md` | indeks sumber resmi · struktur & tabel band TOEFL 2026 (ETS) | Claude, dari dokumen resmi |
 | `reference/sources/` | PDF resmi (Oxford, Core Inventory, ETS, …) — gitignored | unduhan |
 | `progress/diagnostic.md` | level CEFR aktif | `/diagnostic` |
 | `progress/evaluation.md` | kelemahan per **grammar/skill tag** | `/quiz`, `/quiz-t` |
 | `progress/toefl-evaluation.md` | kelemahan per **task TOEFL** | `/toefl` |
 | `progress/anki-weak-items.md` | kata Oxford yang sering dilupakan (AUTO-GENERATED) | `/sync-anki` |
 | `progress/history.md` | log semua sesi (label `DIAG` / `QUIZ` / `TOEFL`) | semua skill |
+| `docs/konvensi-unit.md` | aturan menulis/mengedit unit (anchor, cek referensi resmi) | Claude |
 | `docs/perbaikan-kb.md` | log perbaikan aturan/skill (Problem → Fix) | Claude |
 
 ## Gambaran besar
@@ -66,6 +68,22 @@ flowchart TD
 ```
 
 Hasil 2026-08-23: **A2** (vocab & reading B1–B2 kuat; grammar = fokus).
+
+## Alur 1b — Menulis unit baru (Claude)
+
+Detail: `docs/konvensi-unit.md`.
+
+```mermaid
+flowchart TD
+    A["Pilih poin: Weak areas evaluation.md<br/>+ roadmap README"] --> B["Cek level grammar<br/>(Core Inventory)"]
+    B --> C["Pilih kata bertema → cek tag CEFR<br/>(PDF Oxford 3000/5000, AWL)"]
+    C --> D["Tulis unit: Focus, Quick summary,<br/>Grammar, Vocab, Reading, Frasa, TOEFL link"]
+    D --> E["Update README, quiz-taxonomy.md (tag baru),<br/>oxford-vocabulary.md"]
+    E --> F["/quiz bisa menguji unit ini"]
+```
+
+Level kata & grammar **wajib dari dokumen resmi**, bukan ingatan model (pelajaran 2026-10-29:
+beberapa tag CEFR Unit 1 ternyata salah saat dicek ke PDF Oxford).
 
 ## Alur 2 — Latihan harian `/quiz` (loop adaptif = jantung sistem)
 
@@ -166,12 +184,25 @@ hint netral → 🟢 tanpa hint (gaya ujian).
 | Semua tag satu unit 🟢 | minta Claude menulis unit berikutnya (roadmap di `README.md`) |
 | Sesekali (mis. tiap 2–3 bulan) | ulang `/diagnostic` untuk cek kenaikan level |
 
+## Status sekarang (per 2026-10-29)
+
+| Bagian | Kondisi |
+|---|---|
+| Level aktif | **A2** (diagnostic 2026-08-23; vocab & reading B1–B2) |
+| Unit | **1 unit** — Unit 1 (A2: present simple, present perfect for/since); tag CEFR & TOEFL link sudah disesuaikan referensi resmi |
+| Skill | `/diagnostic` ✅ dipakai · `/quiz`, `/quiz-t`, `/toefl` ✅ ditulis, **belum pernah dijalankan** · `/sync-anki` ✅ jalan |
+| Anki | deck `Oxford 3000 A1`: 525/929 kartu direview · 🔴1 🟡3 ⚪19 (exciting, describe, coat, fun, …) |
+| TOEFL | format **2026** (band 1–6); tracker masih kosong |
+| Berikutnya | tulis **Unit 2** (kandidat: past simple / first conditional — kelemahan 🔴 dari diagnostic) |
+
+Riwayat perubahan sistem lengkap: `docs/perbaikan-kb.md`.
+
 ## Aturan main (selalu berlaku)
 
 - Grammar hanya dari unit yang sudah ditulis; tag hanya dari `reference/quiz-taxonomy.md`.
 - Level kata & grammar dicek ke referensi resmi (`reference/official-sources.md`).
 - Mode ujian: jawab semua dulu, koreksi di akhir.
-- Mengedit unit: jangan buang materi, laporkan tiap perubahan.
+- Mengedit unit: jangan buang materi, laporkan tiap perubahan (konvensi: `docs/konvensi-unit.md`).
 - Tiap perbaikan aturan/skill → 1 entri di `docs/perbaikan-kb.md`.
 
 ## Glosarium singkat
