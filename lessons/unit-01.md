@@ -1,18 +1,19 @@
 # Unit 1 — Daily Life: Present Simple & Present Perfect (CEFR A2)
 
-**Focus:** Talk about your daily routine correctly, and say how long something has been true.
-This unit fixes the two grammar points from your placement test: **subject–verb agreement** in
-the present simple, and the **present perfect with _for / since_** (instead of the present
-continuous). Vocabulary theme: **daily life and routines**.
+**Focus:** Bisa menceritakan rutinitas harian dengan benar, dan bisa bilang *sudah berapa lama*
+sesuatu terjadi. Unit ini memperbaiki dua poin grammar dari hasil placement test kamu:
+**subject–verb agreement** di present simple, dan **present perfect dengan _for / since_**
+(bukan present continuous). Tema vocabulary: **kehidupan sehari-hari dan rutinitas**.
 
-> **Quick summary:** (1) **Present simple** — form and **subject–verb agreement** (I/you/we/they
-> + base verb; he/she/it + verb**-s**), negatives (*don't / doesn't*), questions (*do / does*),
-> and **adverbs of frequency** (always, usually, often, sometimes, never). (2) **Present perfect**
-> — *have / has* + past participle for a situation that **started in the past and continues now**,
-> with **_for_ + a length of time** and **_since_ + a start point**; contrast with the present
-> continuous. (3) **Vocabulary:** daily-life words (routine, commute, chore, relax, habit,
-> schedule…). (4) **Reading:** a short text about one person's day. (5) **Speaking/Writing
-> phrases** for routines and duration. (6) **TOEFL link.**
+> **Quick summary:** (1) **Present simple** — bentuk dan **subject–verb agreement** (I/you/we/they
+> + kata kerja dasar; he/she/it + kata kerja**-s**), kalimat negatif (*don't / doesn't*), kalimat
+> tanya (*do / does*), dan **adverbs of frequency** (always, usually, often, sometimes, never).
+> (2) **Present perfect** — *have / has* + past participle untuk keadaan yang **mulai di masa lalu
+> dan masih berlangsung sampai sekarang**, dengan **_for_ + lamanya waktu** dan **_since_ + titik
+> awal**; dibandingkan dengan present continuous. (3) **Vocabulary:** kata-kata kehidupan
+> sehari-hari (routine, commute, chore, relax, habit, schedule…). (4) **Reading:** teks pendek
+> tentang hari seseorang. (5) **Frasa Speaking/Writing** untuk rutinitas dan durasi.
+> (6) **TOEFL link.**
 
 ---
 
@@ -20,67 +21,70 @@ continuous). Vocabulary theme: **daily life and routines**.
 
 ### Point 1 — Present simple: subject–verb agreement
 
-**Rules**
-- With **I / you / we / they** → use the **base verb**: *I **go**, they **go**, we **work***.
-- With **he / she / it** (one person or thing) → add **-s / -es**: *he **goes**, she **works**,
-  it **rains***.
-- **Negative:** *I / you / we / they* → **don't** + base verb. *He / she / it* → **doesn't** +
-  base verb (no *-s* on the main verb): *She **doesn't work** on Sunday.*
-- **Question:** **Do** I/you/we/they …? / **Does** he/she/it …?: *Do they **live** here?*
-- **Adverbs of frequency** (always, usually, often, sometimes, never) go **before the main verb**
-  but **after _be_**: *I **usually wake up** early.* / *She **is often** tired.*
+**Aturan**
+- Dengan **I / you / we / they** → pakai **kata kerja dasar** (base verb): *I **go**, they **go**,
+  we **work***.
+- Dengan **he / she / it** (satu orang atau satu benda) → tambahkan **-s / -es**: *he **goes**,
+  she **works**, it **rains***.
+- **Negatif:** *I / you / we / they* → **don't** + kata kerja dasar. *He / she / it* →
+  **doesn't** + kata kerja dasar (kata kerja utamanya **tidak** pakai *-s* lagi):
+  *She **doesn't work** on Sunday.*
+- **Pertanyaan:** **Do** I/you/we/they …? / **Does** he/she/it …?: *Do they **live** here?*
+- **Adverbs of frequency** (always, usually, often, sometimes, never) diletakkan **sebelum kata
+  kerja utama**, tapi **sesudah _be_**: *I **usually wake up** early.* / *She **is often** tired.*
 
-**Examples**
-- ✅ *They **go** to school every day.* (not *~~they goes~~*)
+**Contoh**
+- ✅ *They **go** to school every day.* (bukan *~~they goes~~*)
 - ✅ *My brother **studies** Japanese, and I **study** English.*
 - ✅ *We **don't work** on weekends.*
 - ✅ *He **always eats** breakfast at seven.*
 
-**Notes**
-- ⚠️ The error from your test: with a **plural subject** like *they / we / my friends*, use the
-  **base verb** — *they **go***, never *~~they goes~~*. The *-s* belongs only to **he/she/it**.
+**Catatan**
+- ⚠️ Kesalahan dari test kamu: kalau subjeknya **jamak** seperti *they / we / my friends*, pakai
+  **kata kerja dasar** — *they **go***, jangan *~~they goes~~*. Akhiran *-s* hanya untuk
+  **he/she/it**.
 
 ### Point 2 — Present perfect with _for_ and _since_
 
-**Rules**
-- **Form:** **have / has** + **past participle** (*lived, worked, studied, been*).
-- **Use:** for a situation that **began in the past and is still true now**.
-- **_for_ + a length of time:** *for three years, for two months, for a long time.*
-- **_since_ + a starting point:** *since 2020, since Monday, since I was a child.*
-- Do **not** use the present continuous (*am/is/are + -ing*) to say **how long** something has
-  been true.
+**Aturan**
+- **Bentuk:** **have / has** + **past participle** (*lived, worked, studied, been*).
+- **Kegunaan:** untuk keadaan yang **dimulai di masa lalu dan masih benar sampai sekarang**.
+- **_for_ + lamanya waktu:** *for three years, for two months, for a long time.*
+- **_since_ + titik awal waktu:** *since 2020, since Monday, since I was a child.*
+- **Jangan** pakai present continuous (*am/is/are + -ing*) untuk bilang **sudah berapa lama**
+  sesuatu terjadi.
 
-**Examples**
-- ✅ *I **have lived** in Tokyo **for** three years.* (I started three years ago and I still live
-  there.) — not *~~I am living in Tokyo for three years~~*
+**Contoh**
+- ✅ *I **have lived** in Tokyo **for** three years.* (Saya mulai tinggal tiga tahun lalu dan
+  sampai sekarang masih tinggal di sana.) — bukan *~~I am living in Tokyo for three years~~*
 - ✅ *She **has studied** English **since** 2022.*
 - ✅ *We **have known** each other **for** a long time.*
 
-**Notes**
-- ⚠️ The error from your test: for an action **continuing up to now**, use the **present perfect**
-  (*have lived*), not the present continuous (*am living*). Reserve *am living* for **right now /
-  a temporary situation** (*I am living with a friend this month*).
-- **for** answers *how long?* (a duration). **since** answers *from when?* (a point in time).
+**Catatan**
+- ⚠️ Kesalahan dari test kamu: untuk kegiatan yang **berlangsung sampai sekarang**, pakai
+  **present perfect** (*have lived*), bukan present continuous (*am living*). *Am living* dipakai
+  untuk **saat ini / keadaan sementara** (*I am living with a friend this month*).
+- **for** menjawab *berapa lama?* (durasi). **since** menjawab *sejak kapan?* (titik waktu).
 
 ---
 
 ## Vocabulary — Daily life & routines
 
-Themed batch (Oxford tiers A1–B1). Full list mirrored in
+Kumpulan kata bertema (Oxford tier A1–B1). Daftar lengkapnya juga ada di
 `reference/oxford-vocabulary.md`.
 
-| Word | POS | CEFR | Meaning | Example |
-|------|-----|------|---------|---------|
-| routine | n | A2 | the normal order of things you do | *My morning **routine** starts at six.* |
-| wake up | phr v | A1 | stop sleeping | *I **wake up** at five o'clock.* |
-| commute | v/n | B1 | travel to work or school | *She **commutes** by train every day.* |
-| chore | n | B1 | a small job at home | *Washing dishes is my least favourite **chore**.* |
-| meal | n | A1 | food eaten at one time | *Breakfast is my favourite **meal**.* |
-| relax | v | A2 | rest and stop working | *I **relax** by reading at night.* |
-| habit | n | A2 | something you do often | *Drinking coffee is a daily **habit**.* |
-| schedule | n | B1 | a plan of times for things | *My **schedule** is busy on weekdays.* |
-| spare time | n phr | A2 | free time | *In my **spare time**, I study coding.* |
-| prepare | v | A2 | make something ready | *I **prepare** breakfast every morning.* |
+| Word | POS | CEFR | Meaning | Arti | Example |
+|------|-----|------|---------|------|---------|
+| routine | n | A2 | the normal order of things you do | rutinitas | *My morning **routine** starts at six.* |
+| wake up | phr v | A1 | stop sleeping | bangun tidur | *I **wake up** at five o'clock.* |
+| commute | v/n | B1 | travel to work or school | pergi-pulang kerja/sekolah | *She **commutes** by train every day.* |
+| chore | n | B1 | a small job at home | pekerjaan rumah tangga kecil | *Washing dishes is my least favourite **chore**.* |
+| meal | n | A1 | food eaten at one time | waktu makan / hidangan | *Breakfast is my favourite **meal**.* |
+| relax | v | A2 | rest and stop working | bersantai, istirahat | *I **relax** by reading at night.* |
+| habit | n | A2 | something you do often | kebiasaan | *Drinking coffee is a daily **habit**.* |
+| schedule | n | B1 | a plan of times for things | jadwal | *My **schedule** is busy on weekdays.* |
+| spare time | n phr | A2 | free time | waktu luang | *In my **spare time**, I study coding.* |
+| prepare | v | A2 | make something ready | menyiapkan | *I **prepare** breakfast every morning.* |
 
 ---
 
@@ -94,30 +98,30 @@ Themed batch (Oxford tiers A1–B1). Full list mirrored in
 > school, and he **has used** it **for** more than four years now. In his spare time, he **relaxes**
 > by cooking. "I **have had** the same routine **for** two years," he says, "and it works well."
 
-*(While you read, notice: base verb with *they/his friends*, *-s* with *he*, and present perfect
-with *for / since* for how long something has been true.)*
+*(Sambil membaca, perhatikan: kata kerja dasar untuk *they/his friends*, akhiran *-s* untuk *he*,
+dan present perfect dengan *for / since* untuk menyatakan sudah berapa lama.)*
 
 ---
 
 ## Speaking / Writing phrases
 
-- **Routine:** *Every morning I …* · *I usually … before …* · *After that, I …* · *At the end of
+- **Rutinitas:** *Every morning I …* · *I usually … before …* · *After that, I …* · *At the end of
   the day, I …*
-- **Duration:** *I have …ed here **for** …* · *I have done this **since** …* · *I have known /
+- **Durasi:** *I have …ed here **for** …* · *I have done this **since** …* · *I have known /
   had / studied … for …*
-- **Frequency:** *I always / usually / often / sometimes / never …*
+- **Frekuensi:** *I always / usually / often / sometimes / never …*
 
-> Compare with your test writing: *"for pray"* → **to pray**; *"after that going to sleep"* →
-> *after that **I go** to sleep*; *"until get the target"* → *until **I reach** my target*.
-> Always keep the **subject** (*I*) in each clause.
+> Bandingkan dengan tulisan di test kamu: *"for pray"* → **to pray**; *"after that going to
+> sleep"* → *after that **I go** to sleep*; *"until get the target"* → *until **I reach** my
+> target*. Selalu tulis **subjek** (*I*) di setiap klausa.
 
 ---
 
 ## TOEFL link
 
-- **Speaking Task 1 (Independent):** describing your routine and habits is a common prompt —
-  correct present simple + frequency adverbs raise your delivery score.
-- **Writing (Independent):** subject–verb agreement errors are among the most penalized. Getting
-  *they go / he goes* right protects your grammar score.
-- **Present perfect with _for/since_** appears often when describing experience and background
-  ("I have studied … for …") in both Speaking and Writing.
+- **Speaking Task 1 (Independent):** menceritakan rutinitas dan kebiasaan adalah topik yang
+  sering keluar — present simple + frequency adverbs yang benar akan menaikkan skor delivery.
+- **Writing (Independent):** kesalahan subject–verb agreement termasuk yang paling banyak
+  mengurangi nilai. Kalau *they go / he goes* sudah benar, skor grammar kamu lebih aman.
+- **Present perfect dengan _for/since_** sering dipakai saat menceritakan pengalaman dan latar
+  belakang ("I have studied … for …"), baik di Speaking maupun Writing.

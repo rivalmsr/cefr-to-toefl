@@ -10,10 +10,11 @@ A personal knowledge base for learning **English**. Two goals:
 2. **Reach an official TOEFL iBT score** for graduate (S2) admission at the **Institute of
    Science Tokyo**.
 
-Materials are read/organized in **Obsidian**. **All docs are written in English** — including
-learning material and operational docs (this file, README, SKILL.md, trackers). Learning
-explanations use **immersion English**, graded by level (simpler at low levels, richer as the
-level rises).
+Materials are read/organized in **Obsidian**. **Bahasa:** penjelasan dan dokumentasi ditulis
+dalam **Bahasa Indonesia yang mudah dipahami** (penjelasan grammar, catatan, feedback/koreksi,
+dan dokumen operasional: file ini, README, SKILL.md, tracker). **Konten yang dipelajari tetap
+English** — contoh kalimat, vocabulary, Reading, frasa Speaking/Writing, dan soal kuis/TOEFL
+(level English-nya tetap disesuaikan CEFR).
 
 > **Priority:** this is a **SECONDARY** project. The user's primary focus is Japanese
 > (`../learn-japan/minna-no-nihongo-i`). Keep the design and pacing **light, incremental, and
@@ -89,8 +90,9 @@ The full syllabus roadmap (A1→C1) plus unit status is in the table in `README.
 ## Unit writing conventions (`lessons/unit-XX.md`)
 
 - Structure: title `# Unit X — <Theme> (CEFR <level>)`, a **Focus** block, a blockquote
-  **> Quick summary:** (naming ALL points in the unit), then sections **Grammar** (Rules/
-  Examples/Notes), **Vocabulary** (themed Oxford/AWL batch + examples), **Reading** (short
+  **> Quick summary:** (naming ALL points in the unit), then sections **Grammar** (Aturan/
+  Contoh/Catatan — penjelasan dalam Bahasa Indonesia, contoh kalimat tetap English),
+  **Vocabulary** (themed Oxford/AWL batch; kolom Meaning (EN) + Arti (ID) + Example), **Reading** (short
   text), **Speaking/Writing phrases**, **TOEFL link**. This anchor convention is what makes
   token-thrifty reading valid — always follow it.
 - **When adding a new unit**, also update: `README.md` (roadmap + status) and

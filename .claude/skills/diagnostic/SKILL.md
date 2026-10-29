@@ -14,7 +14,7 @@ estimate the user's **CEFR level (A1→C1)**, then write it down as the basis fo
 
 ## Core principles (MANDATORY)
 
-1. **Immersion English** — all questions and instructions are in English; language is graded.
+1. **Soal dalam English** (graded per level); instruksi singkat, feedback, dan hasil akhir dijelaskan dalam **Bahasa Indonesia yang mudah dipahami**.
 2. **Goal = measure, not teach** → **give NO hints** in the option `description` (leave empty
    or make them uniform). This is the exception to hint-fading; placement must be honest.
 3. **Lightly adaptive:** start at mid-level items; if many are correct, raise difficulty; if

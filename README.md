@@ -3,7 +3,8 @@
 Personal knowledge base to (1) become fluent in English and (2) reach an official **TOEFL
 iBT** score for graduate (S2) admission at the **Institute of Science Tokyo**. Materials are
 **written by Claude**, staged by CEFR level, read in **Obsidian**, and drilled with adaptive
-Claude Code skills. Explanations are in **English (immersion)**.
+Claude Code skills. Penjelasan & dokumentasi pakai **Bahasa Indonesia yang mudah dipahami**;
+konten yang dipelajari (contoh, vocab, reading, soal) tetap **English**.
 
 > **Secondary project.** Primary focus is Japanese (`../learn-japan/minna-no-nihongo-i`).
 > Kept light and incremental. See `CLAUDE.md` for rules and `.claude/skills/*/SKILL.md` for
