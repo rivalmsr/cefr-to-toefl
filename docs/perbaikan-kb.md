@@ -33,6 +33,17 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-10-29 — `/quiz` & `/quiz-t` memberi tahu kapan unit tuntas
+- **Kategori:** skill
+- **Problem:** Aturan pindah unit ("semua tag unit 🟢") hanya ada di `docs/cara-kerja.md`.
+  Pesan akhir quiz cuma menampilkan perubahan status tag, jadi user harus menyimpulkan sendiri
+  apakah sudah waktunya minta unit berikutnya.
+- **Fix:** Pesan akhir `/quiz` (langkah 7) dan `/quiz-t` (langkah 6) kini memuat 1 baris cek
+  kelulusan per unit yang diuji. Tag unit diambil dari kolom `Unit` di `quiz-taxonomy.md`. Semua
+  🟢 → `🎉 Unit N tuntas → minta "tulis Unit N+1"` + kandidat tema; belum → `Unit N: x/y tag 🟢
+  (…)`. Unit baru tetap **tidak** ditulis otomatis.
+- **File:** `.claude/skills/quiz/SKILL.md`, `.claude/skills/quiz-t/SKILL.md`, `docs/cara-kerja.md`
+
 ### 2026-10-29 — Kosakata bantu `/quiz-t` tidak boleh ada yang terlewat
 - **Kategori:** skill · pembelajaran
 - **Problem:** Di `/quiz-t` pertama, beberapa kata kunci tidak ada di kosakata bantu: soal 1

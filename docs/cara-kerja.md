@@ -181,7 +181,7 @@ hint netral → 🟢 tanpa hint (gaya ujian).
 |---|---|
 | Setiap hari | Anki → (`/sync-anki` bila ada review) → `/quiz` atau `/quiz-t` |
 | 1× seminggu | `/toefl` (harian, atau bergantian `writing` / `speaking`) |
-| Semua tag satu unit 🟢 | minta Claude menulis unit berikutnya (roadmap di `README.md`) |
+| Semua tag satu unit 🟢 | `/quiz`·`/quiz-t` memberi tahu di pesan akhir (`🎉 Unit N tuntas`) → minta Claude menulis unit berikutnya (roadmap di `README.md`) |
 | Sesekali (mis. tiap 2–3 bulan) | ulang `/diagnostic` untuk cek kenaikan level |
 
 ## Status sekarang (per 2026-10-29)

@@ -155,6 +155,13 @@ makna tepat (salah kecil di luar target, mis. ejaan, tidak menggugurkan — cata
 - **Tabel soal SALAH saja** (`# · tag · jawabanmu · kunci`); semua benar → tanpa tabel, beri pujian singkat.
 - 1–2 baris pembahasan per soal salah (kenapa kunci benar + contoh kalimat benar).
 - 1 baris: area terlemah sekarang + perubahan status (mis. `A2-present-simple ⚪ → 🟡`).
+- **1 baris cek kelulusan unit** (tiap unit yang diuji sesi ini). Tag grammar unit = tag di
+  `reference/quiz-taxonomy.md` dengan kolom `Unit` = unit itu (bukan `SK-`/`ERR-`); status dari
+  `evaluation.md` yang **baru** direkam:
+  - Semua 🟢 → `🎉 Unit N tuntas (semua tag 🟢) → bila siap, minta "tulis Unit N+1"` + kandidat
+    tema (baris "Berikutnya" di `docs/cara-kerja.md` / weak area tanpa unit / roadmap `README.md`).
+  - Belum → `Unit N: x/y tag 🟢 (<tag> <acc>%, …)` — tag yang belum 🟢 saja.
+  - **Jangan** menulis unit baru otomatis — hanya bila user minta.
 - Penutup: tawarkan pembahasan lebih dalam bila user mau. **Jangan** cetak ulang seluruh tracker.
 
 ## Gaya
