@@ -26,6 +26,11 @@ judul + Focus + Quick summary tanpa memuat file utuh.
    dibaca skill saat memilih cakupan soal).
 4. **Grammar** — tiap poin: **Aturan / Contoh / Catatan**. Penjelasan Bahasa Indonesia, contoh
    kalimat English. Kesalahan nyata user (dari tracker/diagnostic) ditandai ⚠️ di Catatan.
+   **Aturan WAJIB dibuka dengan baris `Kegunaan:`** (dipakai untuk situasi apa), dan tiap
+   sub-aturan (negatif, tanya, adverb, dsb.) diberi *kegunaan* singkat — bentuk tanpa fungsi
+   sulit dipahami konteksnya.
+   Bagian non-grammar (Vocabulary, Reading, Phrases, TOEFL link) dibuka dengan 1 baris
+   **`Tujuan:`** (kenapa bagian ini ada).
 5. **Vocabulary** — batch bertema; kolom `Word · POS · CEFR · Meaning (EN) · Arti (ID) · Example`.
 6. **Reading** — teks pendek yang memakai grammar & vocab unit.
 7. **Speaking / Writing phrases** — frasa siap pakai.

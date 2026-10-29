@@ -5,7 +5,7 @@ sesuatu terjadi. Unit ini memperbaiki dua poin grammar dari hasil placement test
 **subject–verb agreement** di present simple, dan **present perfect dengan _for / since_**
 (bukan present continuous). Tema vocabulary: **kehidupan sehari-hari dan rutinitas**.
 
-> **Quick summary:** (1) **Present simple** — bentuk dan **subject–verb agreement** (I/you/we/they
+> **Quick summary:** (1) **Present simple** — untuk **kebiasaan/rutinitas & fakta umum**; bentuk dan **subject–verb agreement** (I/you/we/they
 > + kata kerja dasar; he/she/it + kata kerja**-s**), kalimat negatif (*don't / doesn't*), kalimat
 > tanya (*do / does*), dan **adverbs of frequency** (always, usually, often, sometimes, never).
 > (2) **Present perfect** — *have / has* + past participle untuk keadaan yang **mulai di masa lalu
@@ -22,16 +22,25 @@ sesuatu terjadi. Unit ini memperbaiki dua poin grammar dari hasil placement test
 ### Point 1 — Present simple: subject–verb agreement
 
 **Aturan**
+- **Kegunaan:** untuk hal yang **berulang / jadi kebiasaan** (rutinitas: *I wake up at six*) dan
+  **fakta umum** yang selalu benar (*It rains a lot in June*). Kalau kamu cerita "biasanya
+  aku…", "tiap hari aku…", pakai present simple.
 - Dengan **I / you / we / they** → pakai **kata kerja dasar** (base verb): *I **go**, they **go**,
   we **work***.
 - Dengan **he / she / it** (satu orang atau satu benda) → tambahkan **-s / -es**: *he **goes**,
   she **works**, it **rains***.
-- **Negatif:** *I / you / we / they* → **don't** + kata kerja dasar. *He / she / it* →
-  **doesn't** + kata kerja dasar (kata kerja utamanya **tidak** pakai *-s* lagi):
+  *Tujuan agreement:* akhiran *-s* memberi tanda bahwa pelakunya **satu orang/benda (orang
+  ketiga)**. Salah pasang (*~~they goes~~*) langsung terdengar salah bagi penutur asli.
+- **Negatif** — *kegunaan:* bilang kebiasaan yang **tidak** kamu lakukan. *I / you / we / they* →
+  **don't** + kata kerja dasar. *He / she / it* → **doesn't** + kata kerja dasar (kata kerja
+  utamanya **tidak** pakai *-s* lagi, karena *-s* sudah "pindah" ke *does*):
   *She **doesn't work** on Sunday.*
-- **Pertanyaan:** **Do** I/you/we/they …? / **Does** he/she/it …?: *Do they **live** here?*
-- **Adverbs of frequency** (always, usually, often, sometimes, never) diletakkan **sebelum kata
-  kerja utama**, tapi **sesudah _be_**: *I **usually wake up** early.* / *She **is often** tired.*
+- **Pertanyaan** — *kegunaan:* menanyakan kebiasaan/fakta orang lain. **Do** I/you/we/they …? /
+  **Does** he/she/it …?: *Do they **live** here?*
+- **Adverbs of frequency** (always, usually, often, sometimes, never) — *kegunaan:* menjelaskan
+  **seberapa sering** sesuatu terjadi (dari 100% *always* sampai 0% *never*). Diletakkan
+  **sebelum kata kerja utama**, tapi **sesudah _be_**: *I **usually wake up** early.* / *She **is
+  often** tired.*
 
 **Contoh**
 - ✅ *They **go** to school every day.* (bukan *~~they goes~~*)
@@ -49,10 +58,13 @@ sesuatu terjadi. Unit ini memperbaiki dua poin grammar dari hasil placement test
 **Aturan**
 - **Bentuk:** **have / has** + **past participle** (*lived, worked, studied, been*).
 - **Kegunaan:** untuk keadaan yang **dimulai di masa lalu dan masih benar sampai sekarang**.
-- **_for_ + lamanya waktu:** *for three years, for two months, for a long time.*
-- **_since_ + titik awal waktu:** *since 2020, since Monday, since I was a child.*
+- **_for_ + lamanya waktu** — *kegunaan:* menyebut **durasi** (berapa lama): *for three years,
+  for two months, for a long time.*
+- **_since_ + titik awal waktu** — *kegunaan:* menyebut **kapan mulainya**: *since 2020, since
+  Monday, since I was a child.*
 - **Jangan** pakai present continuous (*am/is/are + -ing*) untuk bilang **sudah berapa lama**
-  sesuatu terjadi.
+  sesuatu terjadi. *Tujuan perbandingan ini:* bahasa Indonesia tidak membedakan keduanya
+  ("aku tinggal di Tokyo sudah 3 tahun"), jadi orang Indonesia sering salah pilih tense di sini.
 
 **Contoh**
 - ✅ *I **have lived** in Tokyo **for** three years.* (Saya mulai tinggal tiga tahun lalu dan
@@ -69,6 +81,9 @@ sesuatu terjadi. Unit ini memperbaiki dua poin grammar dari hasil placement test
 ---
 
 ## Vocabulary — Daily life & routines
+
+**Tujuan:** kata-kata ini yang paling sering kamu butuhkan saat menceritakan hari-harimu —
+pasangkan dengan grammar Point 1 (rutinitas) dan Point 2 (durasi).
 
 Kumpulan kata bertema (Oxford tier A1–B2; CEFR `—` = tidak ada di Oxford 3000/5000). Daftar
 lengkapnya juga ada di `reference/oxford-vocabulary.md`. *routine, relax, prepare, meal* juga ada
@@ -91,6 +106,9 @@ di deck Anki A1 kamu.
 
 ## Reading
 
+**Tujuan:** melihat grammar & vocab unit ini **dipakai bersama dalam satu teks nyata**, bukan
+kalimat terpisah — supaya polanya mudah dikenali saat membaca soal TOEFL.
+
 > **A weekday for Kenji**
 >
 > Kenji is a student. Every morning he **wakes up** at six and **prepares** a simple breakfast.
@@ -106,6 +124,9 @@ dan present perfect dengan *for / since* untuk menyatakan sudah berapa lama.)*
 
 ## Speaking / Writing phrases
 
+**Tujuan:** kerangka kalimat siap pakai — tinggal isi bagian *…*, jadi kamu bisa langsung
+bicara/menulis tanpa menyusun dari nol.
+
 - **Rutinitas:** *Every morning I …* · *I usually … before …* · *After that, I …* · *At the end of
   the day, I …*
 - **Durasi:** *I have …ed here **for** …* · *I have done this **since** …* · *I have known /
@@ -119,6 +140,9 @@ dan present perfect dengan *for / since* untuk menyatakan sudah berapa lama.)*
 ---
 
 ## TOEFL link
+
+**Tujuan:** menunjukkan di bagian tes mana materi unit ini benar-benar terpakai, supaya kamu tahu
+kenapa ini penting untuk skor.
 
 _Format TOEFL iBT 2026 (lihat `reference/toefl-2026-spec.md`)._
 

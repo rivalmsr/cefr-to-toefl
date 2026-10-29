@@ -33,6 +33,16 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-10-29 — Tiap poin unit wajib punya Kegunaan/Tujuan
+- **Kategori:** pembelajaran · docs
+- **Problem:** Di `unit-01`, Point 2 punya baris **Kegunaan** tapi Point 1 tidak; sub-aturan
+  (negatif, tanya, adverbs of frequency, for/since) dan bagian Vocabulary/Reading/Phrases/TOEFL
+  link juga tidak menjelaskan fungsinya → user hafal bentuk tapi kurang paham konteks pemakaian.
+- **Fix:** Tambah `Kegunaan:` di Point 1 + kegunaan tiap sub-aturan Point 1 & 2 (termasuk alasan
+  perbandingan dengan present continuous), `Tujuan:` di 4 bagian non-grammar, Quick summary
+  menyebut kegunaan present simple. Konvensi unit kini mewajibkan pola ini.
+- **File:** `lessons/unit-01.md`, `docs/konvensi-unit.md`
+
 ### 2026-10-29 — Rename proyek learn-english → cefr-to-toefl
 - **Kategori:** docs
 - **Problem:** Nama `learn-english` hanya menyebut bahasa, tidak menggambarkan jalur belajarnya, dan
