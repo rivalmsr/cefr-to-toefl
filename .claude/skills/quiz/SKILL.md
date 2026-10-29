@@ -43,7 +43,9 @@ reference besar.
 - `vocab` → ~semua soal `SK-vocab`/`SK-collocation` (kata dari pool + anchor Anki).
 - `writing` → **4 soal micro-writing free-text** (`SK-writing`): user menulis 1–2 kalimat per
   prompt yang memaksa poin grammar in-scope.
-- `translate` → **4 soal** Indonesia → English free-text (tag grammar in-scope + `SK-writing`).
+- `translate` → **4 soal** Indonesia → English free-text (tag grammar in-scope + `SK-writing`) →
+  **WAJIB baca penuh `ref/translate.md`** (penyajian 1 soal/panel, penyusunan, penilaian). Alias
+  singkat: `/quiz-t`.
 
 ## Langkah eksekusi
 
@@ -120,7 +122,7 @@ Lalu panel **AskUserQuestion ≤4 soal/panel**: `header` = tipe + tag pendek (�
   sedang diuji (*"present perfect"*, *"plural"*), jangan buat hint kunci lebih detail.
 - Versi besar soal di chat **selalu lengkap**, berapa pun level hint-nya.
 
-**Free-text** (`writing`/`translate`): tampilkan semua prompt sebagai `#` heading, minta user
+**Free-text** (`writing`; `translate` → ikuti `ref/translate.md`): tampilkan semua prompt sebagai `#` heading, minta user
 mengetik semua jawaban dalam satu pesan (bernomor). Nilai: **benar** = grammar target benar &
 makna tepat (salah kecil di luar target, mis. ejaan, tidak menggugurkan — catat saja).
 

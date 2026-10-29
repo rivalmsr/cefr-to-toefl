@@ -54,7 +54,8 @@ scripts/
   sync-anki.sh             regenerates progress/anki-weak-items.md from Anki desktop
 .claude/skills/
   diagnostic/SKILL.md      placement test → set CEFR level (RUN FIRST)
-  quiz/SKILL.md            daily adaptive drills (same as the Japanese /quiz)
+  quiz/SKILL.md            daily adaptive drills (same as the Japanese /quiz); ref/translate.md = translate mode
+  quiz-t/SKILL.md          alias for /quiz translate (Indonesian → English production)
   toefl/SKILL.md           text-based TOEFL iBT 2026 mock, 4 sections (same as the Japanese /jlpt)
   sync-anki/SKILL.md       refresh Anki weak items (same as the Japanese /sync-anki)
 ```
@@ -67,7 +68,8 @@ The full syllabus roadmap (A1→C1) plus unit status is in the table in `README.
   `progress/diagnostic.md` and seeds `progress/evaluation.md`.
 - **`/quiz`** — daily adaptive drills. Grammar source of truth = `lessons/`; vocabulary =
   `oxford-vocabulary.md` + `academic-vocabulary.md`. Default **12 questions**, weighted toward
-  weak areas in `evaluation.md`. Writes `evaluation.md` + `history.md`.
+  weak areas in `evaluation.md`. Writes `evaluation.md` + `history.md`. **`/quiz-t`** = `/quiz
+  translate`: 4 free-text Indonesian → English production items, 1 per panel.
 - **`/toefl`** — text-based **TOEFL iBT 2026** mock (official task types, spec in
   `toefl-2026-spec.md`), 4 sections (Listening uses a transcript; Listen and Repeat and real audio
   are out of scope). Writes **only** `toefl-evaluation.md` + a `TOEFL`-labeled row in

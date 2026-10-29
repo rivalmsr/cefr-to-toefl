@@ -16,7 +16,7 @@ konten yang dipelajari (contoh, vocab, reading, soal) tetap **English**.
 lessons/unit-XX.md   themed integrated units (grammar+vocab+reading+phrases) — source of truth
 reference/           vocab pools (Oxford/AWL), collocations, grammar ref, synonyms, TOEFL templates
 progress/            diagnostic result + weakness trackers + session history
-.claude/skills/      /diagnostic, /quiz, /toefl, /sync-anki
+.claude/skills/      /diagnostic, /quiz, /quiz-t, /toefl, /sync-anki
 scripts/             sync-anki.sh (Anki → progress/anki-weak-items.md)
 ```
 
@@ -24,7 +24,8 @@ scripts/             sync-anki.sh (Anki → progress/anki-weak-items.md)
 
 1. **Run `/diagnostic` first** → sets your CEFR level (writes `progress/diagnostic.md`).
 2. Read the units for your level in `lessons/` (in Obsidian).
-3. **`/quiz`** — daily adaptive drills from the units (12 questions, exam mode).
+3. **`/quiz`** — daily adaptive drills from the units (12 questions, exam mode). **`/quiz-t`** =
+   translation practice (Indonesian → English, you type the sentence; 4 questions).
 4. **`/toefl`** — text-based TOEFL iBT **2026-format** mock (Listening via transcript; audio out of
    scope). Modes: daily mock, `full`, `reading`, `listening`, `writing`, `speaking`, `review`.
 5. **`/sync-anki`** — after Anki review (open Anki desktop & Sync first), refresh the weak
