@@ -6,6 +6,7 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-10-30 | QUIZ [translate] (Unit 1) | 4 | 4/4 (100%) | All correct: plural *my two cousins watch*, *doesn't drink*, *Does your sister work*, *I have had this bike since 2019* (have had fixed). Slips: lowercase sentence start, *exciting film* → films, typo *weenkend*. |
 | 2026-10-30 | QUIZ adaptive (Unit 1) | 12 | 11/12 (92%) | Only miss: reading main idea (picked "how to become a nurse"); agreement 4/4 and present perfect incl. negatives/How long 4/4. Tema: 8 Pekerjaan & kantor. |
 | 2026-10-29 | QUIZ [translate] (Unit 1) | 4 | 2/4 (50%) | Plural subject: *my parent drinks* (→ My parents drink); present perfect in production: *I have this coat for 3 years* (→ have had). doesn't/does correct. |
 | 2026-10-29 | QUIZ adaptive (Unit 1) | 12 | 10/12 (83%) | Agreement with plural subject still weak (*my cousins goes*, missed *they brings*); present perfect 3/3, vocab & reading all correct. |
