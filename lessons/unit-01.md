@@ -10,7 +10,8 @@ sesuatu terjadi. Unit ini memperbaiki dua poin grammar dari hasil placement test
 > tanya (*do / does*), dan **adverbs of frequency** (always, usually, often, sometimes, never).
 > (2) **Present perfect** — *have / has* + past participle untuk keadaan yang **mulai di masa lalu
 > dan masih berlangsung sampai sekarang**, dengan **_for_ + lamanya waktu** dan **_since_ + titik
-> awal**; dibandingkan dengan present continuous. (3) **Vocabulary:** kata-kata kehidupan
+> awal**; negatif (*haven't / hasn't*), tanya (*Have / Has …?*), *How long have/has …?*;
+> dibandingkan dengan present continuous. (3) **Vocabulary:** kata-kata kehidupan
 > sehari-hari (routine, commute, chore, relax, habit, schedule…). (4) **Reading:** teks pendek
 > tentang hari seseorang. (5) **Frasa Speaking/Writing** untuk rutinitas dan durasi.
 > (6) **TOEFL link.**
@@ -62,6 +63,14 @@ sesuatu terjadi. Unit ini memperbaiki dua poin grammar dari hasil placement test
   for two months, for a long time.*
 - **_since_ + titik awal waktu** — *kegunaan:* menyebut **kapan mulainya**: *since 2020, since
   Monday, since I was a child.*
+- **Negatif** — *kegunaan:* bilang sesuatu **belum/tidak terjadi** selama waktu itu sampai
+  sekarang. **haven't / hasn't** + past participle: *I **haven't seen** him **for** two weeks.*
+- **Pertanyaan** — *kegunaan:* menanyakan pengalaman/keadaan seseorang sampai sekarang.
+  **Have / Has** + subjek + past participle …? Jawaban singkat cukup *have/has*: *Have you lived
+  here for a long time?* → *Yes, I **have**. / No, I **haven't**.*
+- **How long + have/has …?** — *kegunaan:* menanyakan **sudah berapa lama**; jawabannya pakai
+  **for** atau **since**: *How long **have** you **lived** in Tokyo?* → *For three years.* /
+  *Since 2023.*
 - **Jangan** pakai present continuous (*am/is/are + -ing*) untuk bilang **sudah berapa lama**
   sesuatu terjadi. *Tujuan perbandingan ini:* bahasa Indonesia tidak membedakan keduanya
   ("aku tinggal di Tokyo sudah 3 tahun"), jadi orang Indonesia sering salah pilih tense di sini.
@@ -71,11 +80,17 @@ sesuatu terjadi. Unit ini memperbaiki dua poin grammar dari hasil placement test
   sampai sekarang masih tinggal di sana.) — bukan *~~I am living in Tokyo for three years~~*
 - ✅ *She **has studied** English **since** 2022.*
 - ✅ *We **have known** each other **for** a long time.*
+- ✅ *She **hasn't called** me **since** Monday.*
+- ✅ ***How long has** he **worked** here?* — *Since last year.* (bukan *~~How long is he
+  working here?~~*)
 
 **Catatan**
 - ⚠️ Kesalahan dari test kamu: untuk kegiatan yang **berlangsung sampai sekarang**, pakai
   **present perfect** (*have lived*), bukan present continuous (*am living*). *Am living* dipakai
   untuk **saat ini / keadaan sementara** (*I am living with a friend this month*).
+- ⚠️ Kesalahan dari quiz kamu: *~~I have this coat for 3 years~~* → ***I have had** this coat
+  for three years.* Kalau ada *for/since* sampai sekarang, kata kerjanya tetap **have/has +
+  past participle**, termasuk *have* sendiri (*have → had*): **have had**.
 - **for** menjawab *berapa lama?* (durasi). **since** menjawab *sejak kapan?* (titik waktu).
 
 ---
