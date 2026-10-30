@@ -64,6 +64,14 @@ reference besar.
   tracker (mis. vocab/reading) → materi boleh 1 level lebih tinggi.
 - **Rotasi:** jangan ulang kalimat/konteks dari sesi sebelumnya bila terlihat di Weak areas atau
   history; ganti subjek, tema, dan nama orang (variasikan; hindari selalu *Tom/Anna*).
+- **Tema teks reading — rotasi berurutan ala *Minna no Nihongo*** (satu situasi hidup nyata per
+  sesi). Cari `Tema: <n>` terakhir di kolom Notes `history.md` (baris QUIZ) → pakai tema
+  **n+1** (setelah 16 kembali ke 1; belum ada → mulai 1). Tema hanya mengatur **konteks cerita**;
+  grammar & kosakata tetap dari unit in-scope / pool vocab.
+  1 Perkenalan & identitas · 2 Keluarga · 3 Rumah & tempat tinggal · 4 Rutinitas harian ·
+  5 Belanja & harga · 6 Makanan & restoran · 7 Transportasi & arah · 8 Pekerjaan & kantor ·
+  9 Sekolah & kampus · 10 Hobi & waktu luang · 11 Cuaca & musim · 12 Liburan & perjalanan ·
+  13 Kesehatan & dokter · 14 Undangan & janji · 15 Teknologi & internet · 16 Kota & lingkungan
 
 ### 3. Buat soal — GERBANG kunci tunggal
 Tiap soal: kunci, penjelasan singkat, tag `{grammar/skill, error-type (bila relevan), unit}`.
@@ -148,7 +156,8 @@ makna tepat (salah kecil di luar target, mis. ejaan, tidak menggugurkan — cata
 - Perbarui baris tanggal/catatan di header ("Updated …").
 
 **`progress/history.md`** — tambah baris **paling atas** tabel:
-`| YYYY-MM-DD | QUIZ <mode> (<cakupan>) | <N> | <benar>/<N> (<%>) | <1 kalimat: pola salah utama> |`
+`| YYYY-MM-DD | QUIZ <mode> (<cakupan>) | <N> | <benar>/<N> (<%>) | <1 kalimat: pola salah utama> Tema: <n> <nama>. |`
+(`Tema:` hanya bila sesi punya teks reading — dipakai rotasi tema di langkah 2.)
 
 ### 7. Hasil — RINGKAS (= pesan akhir)
 - Skor 1 baris.

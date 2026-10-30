@@ -33,6 +33,16 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-10-30 — `/quiz` merotasi tema teks reading ala *Minna no Nihongo*
+- **Kategori:** pembelajaran · skill
+- **Problem:** Tema teks reading dipilih bebas tiap sesi (mis. rutinitas perawat), jadi
+  cenderung berulang di sekitar tema unit dan tidak ada urutan situasi yang jelas.
+- **Fix:** Tambah daftar 16 tema situasi sehari-hari (perkenalan → kota & lingkungan) di langkah
+  2 `/quiz`; tiap sesi pakai tema berikutnya dari `Tema: <n>` terakhir di `history.md`
+  (berputar). Baris history QUIZ sekarang mencatat `Tema: <n> <nama>`; sesi 2026-10-30 ditandai
+  `Tema: 8 Pekerjaan & kantor` sebagai titik awal.
+- **File:** `.claude/skills/quiz/SKILL.md`, `progress/history.md`
+
 ### 2026-10-29 — `/quiz` & `/quiz-t` memberi tahu kapan unit tuntas
 - **Kategori:** skill
 - **Problem:** Aturan pindah unit ("semua tag unit 🟢") hanya ada di `docs/cara-kerja.md`.
