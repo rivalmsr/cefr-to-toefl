@@ -6,6 +6,7 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-11-01 | QUIZ [translate] (Unit 1) | 4 | 2/4 (50%) | ✅ *How long have you known Andi?*, *Does your sister often wear that coat?*; ✗ *~~has always late~~* → is always late, *~~has usually cook~~* → usually cooks (extra *has* before adverb of frequency). Slips: *borther*, *sunday*. A2-present-simple 78%→71% 🟡, Unit 1 82%→79% 🟡, ERR-wordorder → 🟢 80% |
 | 2026-11-01 | QUIZ adaptive (Unit 1) | 12 | 9/12 (75%) | Misses: adverb position with *be* (*Priya always is late*), *How long do you known* (→ How long have), collocation *take attention* (→ pay). Agreement 3/3, reading 2/2. Tema: 9 Sekolah & kampus. |
 | 2026-10-30 | QUIZ [translate] (Unit 1) | 4 | 4/4 (100%) | All correct: plural *my two cousins watch*, *doesn't drink*, *Does your sister work*, *I have had this bike since 2019* (have had fixed). Slips: lowercase sentence start, *exciting film* → films, typo *weenkend*. |
 | 2026-10-30 | QUIZ adaptive (Unit 1) | 12 | 11/12 (92%) | Only miss: reading main idea (picked "how to become a nurse"); agreement 4/4 and present perfect incl. negatives/How long 4/4. Tema: 8 Pekerjaan & kantor. |
