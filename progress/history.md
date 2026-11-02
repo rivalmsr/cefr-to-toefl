@@ -6,6 +6,7 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-11-02 | QUIZ adaptive (Unit 1) | 12 | 11/12 (92%) | Only miss: *~~Is it often rain~~* → Does it often rain (be instead of do). No extra *has* this time (*are always wet*, *never takes* ✅); present perfect 2/2, collocation 2/2 (*heavy rain*, *catch a cold*), reading 2/2. SK-collocation → 🟢, Unit 1 80%→82% 🟢. Tema: 11 Cuaca & musim. |
 | 2026-11-02 | QUIZ [translate] (Unit 1) | 4 | 3/4 (75%) | ✅ *My grandmother is always happy on Sundays*, *My friend often reads books*, *I haven't seen Andi since July*; ✗ *~~my brother hasn't never drink~~* → never drinks (extra *has* again + no -s). Slips: lowercase *my*/*sunday*/*july*, *happies*, *book* → books. A2-present-simple 72%→71% 🟡, Unit 1 80%→79.7% 🟡 |
 | 2026-11-02 | QUIZ adaptive (Unit 1) | 12 | 10/12 (83%) | Misses: *~~Rina has always happy~~* → is always happy (extra *has* again), *~~We don't go … since March~~* → haven't been. Agreement 3/3, *How long has* ✅, *take a break* ✅, reading 2/2. A2-present-perfect 85%→80% 🟢, Unit 1 79%→80%. Tema: 10 Hobi & waktu luang. |
 | 2026-11-01 | QUIZ [translate] (Unit 1) | 4 | 2/4 (50%) | ✅ *How long have you known Andi?*, *Does your sister often wear that coat?*; ✗ *~~has always late~~* → is always late, *~~has usually cook~~* → usually cooks (extra *has* before adverb of frequency). Slips: *borther*, *sunday*. A2-present-simple 78%→71% 🟡, Unit 1 82%→79% 🟡, ERR-wordorder → 🟢 80% |
