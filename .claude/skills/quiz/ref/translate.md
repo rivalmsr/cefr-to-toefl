@@ -68,7 +68,7 @@ Tujuannya membiasakan **menyusun kalimat sendiri**; bantuan dikurangi seiring ma
   |---|---|---|---|
   | `penuh` | ⚪ / 🔴 / 🟡 | semua kata di kunci **kecuali** kata titik uji (kata isi + kata fungsi non-uji) | ditampilkan |
   | `sebagian` | 🟢 | semua **kata isi** (benda, kerja, sifat, angka) di kunci; kata fungsi kecil (*my, this, every, on*) tugas user | tidak |
-  | `minimal` | Prod 🟢 ≥ 90% & Prod T ≥ 10 | hanya nama & kata di atas level aktif | tidak |
+  | `minimal` | Prod 10 terakhir ≥ 9/10 | hanya nama & kata di atas level aktif | tidak |
 
   Konteks, waktu, & tujuan **selalu** ada di semua level. Baris **Kosakata bantu** juga selalu
   ditulis (bila kosong di level `minimal`: `Kosakata bantu: — (level minimal)`), supaya user tahu

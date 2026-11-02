@@ -76,7 +76,8 @@ tenses").
   `reference/quiz-taxonomy.md`; if a grammar tag does not exist yet because the unit is not
   written, record it as a note in the Weak areas section). Do not fabricate numbers — use these
   diagnostic items as the initial attempts. Grammar tags have two lanes (MCQ / Prod): diagnostic
-  MCQ items go in the **MCQ** column; the writing sample is not counted per grammar tag.
+  MCQ items go in the **MCQ** lane (as the first `✓`/`✗` of its last-10 sequence + All-time);
+  the writing sample is not counted per grammar tag.
 - Add one row at the top of `progress/history.md`:
   `| YYYY-MM-DD | DIAG placement | 16 | <level summary> | <notes> |`.
 

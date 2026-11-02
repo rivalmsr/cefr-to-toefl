@@ -40,8 +40,9 @@ batasi unit; `N` → override jumlah soal sesi itu.
    🎯 tujuan, kosakata bantu bentuk dasar, 1 titik uji/soal. Kumpulkan **semua** jawaban dulu.
 5. **Nilai** per titik uji (toleransi variasi sah, slip di luar titik uji = catatan) → **rekam**
    seperti `/quiz` langkah 6:
-   - `progress/evaluation.md`: per tag grammar di **kolom Prod** (atribusi: benar → semua tag
-     sasaran; salah → hanya tag yang gagal; status tag = 🟢 hanya bila MCQ **dan** Prod 🟢), per
+   - `progress/evaluation.md`: per tag grammar di **jalur Prod** — tambah `✓`/`✗` ke urutan 10
+     terakhir + All-time (atribusi: benar → semua tag sasaran; salah → hanya tag yang gagal;
+     status tag = 🟢 hanya bila MCQ **dan** Prod 🟢 — aturan `/quiz` langkah 6), per
      error type, per unit, `SK-writing`, Weak areas, baris "Updated".
    - `progress/history.md`: baris paling atas, Scope **`QUIZ [translate] (<cakupan>)`**.
 6. **Pesan akhir RINGKAS:** skor 1 baris · tabel soal SALAH saja (`# · tag · jawabanmu · kunci`) ·

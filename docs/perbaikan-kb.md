@@ -33,6 +33,20 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-11-02 — Status jalur tag grammar dari 10 percobaan terakhir
+- **Kategori:** data · skill
+- **Problem:** Akurasi per jalur dihitung dari semua riwayat. Kesalahan lama yang sudah diperbaiki
+  terus menahan status, apalagi jalur Prod yang cuma ±4 soal/sesi (1 salah butuh ±4–5 benar untuk
+  ditebus). Contoh: `A2-present-simple` Prod 16/21 (76%) padahal 3 sesi terakhir 8/9 (89%).
+- **Fix:** Tiap jalur (MCQ/Prod) menyimpan urutan `✓/✗` maks 10 percobaan terakhir; status jalur
+  dari urutan itu (< 3 ⚪, batas 80% tetap). C/T sepanjang waktu tetap dicatat sebagai info.
+  Urutan lama direkonstruksi dari `history.md` (urutan dalam sesi tak diketahui → salah ditaruh
+  lebih lama, konservatif). Level `minimal` `/quiz-t` = Prod ≥ 9/10. Efek: `A2-present-simple`
+  🟡 → 🟢 (MCQ 8/10, Prod 8/10); `A2-present-perfect` tetap 🟡 (Prod 5/7).
+- **File:** `progress/evaluation.md`, `.claude/skills/quiz/SKILL.md`,
+  `.claude/skills/quiz/ref/translate.md`, `.claude/skills/quiz-t/SKILL.md`,
+  `.claude/skills/diagnostic/SKILL.md`, `docs/cara-kerja.md`
+
 ### 2026-11-02 — Tag grammar dilacak dua jalur: pilihan ganda vs produksi
 - **Kategori:** data · skill
 - **Problem:** Hasil `/quiz` (pilihan ganda, 12 soal) dan `/quiz-t` (terjemahan, 4 soal) masuk ke

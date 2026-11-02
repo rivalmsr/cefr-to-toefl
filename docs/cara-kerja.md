@@ -168,7 +168,7 @@ hasil sesi (tidak boleh mengarang angka).
 
 | Tracker | Rumus | Status |
 |---|---|---|
-| `evaluation.md` tag grammar | **2 jalur**: MCQ (`/quiz` pilihan ganda, `/diagnostic`) & Prod (`/quiz-t`, `/quiz writing`); tiap jalur C/T sendiri | tiap jalur: T < 3 ⚪ · < 60% 🔴 · 60–79% 🟡 · ≥ 80% 🟢 → **tag 🟢 hanya bila kedua jalur 🟢**, selain itu jalur terburuk (🟢 + ⚪ → 🟡) |
+| `evaluation.md` tag grammar | **2 jalur**: MCQ (`/quiz` pilihan ganda, `/diagnostic`) & Prod (`/quiz-t`, `/quiz writing`); status tiap jalur dari **10 percobaan terakhir** (urutan `✓✗`); C/T sepanjang waktu disimpan sebagai info | tiap jalur: < 3 ⚪ · < 60% 🔴 · 60–79% 🟡 · ≥ 80% 🟢 → **tag 🟢 hanya bila kedua jalur 🟢**, selain itu jalur terburuk (🟢 + ⚪ → 🟡) |
 | `evaluation.md` skill / error / unit | Correct += benar, Total += soal; Accuracy = Correct/Total | Total < 3 ⚪ · < 60% 🔴 · 60–79% 🟡 · ≥ 80% 🟢 |
 | `toefl-evaluation.md` MCQ & build | sama seperti di atas, per task | sama |
 | `toefl-evaluation.md` rubrik | Avg baru = (avg lama × n lama + skor sesi) ÷ n baru | n < 3 ⚪ · < 3 🔴 · 3–3.9 🟡 · ≥ 4 🟢 |
@@ -179,6 +179,9 @@ mendekati 🟢 hint netral → 🟢 tanpa hint (gaya ujian). Kosakata bantu `/qu
 
 **Kenapa 2 jalur:** mengenali bentuk yang benar (klik opsi) lebih mudah daripada menyusunnya
 sendiri. Unit baru dianggap tuntas bila grammar-nya benar **di kedua cara**.
+
+**Kenapa 10 terakhir:** akurasi sepanjang waktu ikut menghitung kesalahan lama yang sudah
+diperbaiki, jadi lambat mencerminkan kemampuan sekarang. Batas tetap 80% (maks 2 salah dari 10).
 
 ## Siklus belajar & ritme yang disarankan
 
