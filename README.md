@@ -45,7 +45,7 @@ scripts/
   diagnostic/              placement test (run first)
   quiz/  (+ ref/translate.md)   daily adaptive drills
   quiz-t/                  alias for /quiz translate
-  quiz-v/                  irregular verb forms drill (V2 · V3, typed)
+  quiz-v/                  irregular verb forms drill (V1 shown → type V2 · V3)
   toefl/                   TOEFL iBT 2026 mock
   sync-anki/               refresh Anki weak items
   lesson/                  read unit sections in chat (read-only)
@@ -58,7 +58,7 @@ scripts/
    e.g. `/lesson 1 p2`, `/lesson 1 reading`).
 3. **`/quiz`** — daily adaptive drills from the units (12 questions, exam mode). **`/quiz-t`** =
    translation practice (Indonesian → English, you type the sentence; 4 questions). **`/quiz-v`** =
-   irregular verb forms (you type V2 · V3; 8 questions; adaptive per verb).
+   irregular verb forms (V1 + meaning shown, daily verbs first; you type V2 · V3; 8 questions; adaptive per verb).
 4. **`/toefl`** — text-based TOEFL iBT **2026-format** mock (Listening via transcript; audio out of
    scope). Modes: daily mock, `full`, `reading`, `listening`, `writing`, `speaking`, `review`.
 5. **`/sync-anki`** — after Anki review (open Anki desktop & Sync first), refresh the weak

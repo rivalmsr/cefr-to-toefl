@@ -33,6 +33,19 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-11-02 — `/quiz-v`: satu jenis soal (V1 + arti → V2, V3), kata harian dirotasi
+- **Kategori:** skill · pembelajaran
+- **Problem:** Sesi pertama mencampur dua jenis soal (recall *V1 → V2, V3* dan kalimat *I haven't
+  ___ (wear)…*); user bingung kenapa dicampur. Kata baru juga diambil satu pola per sesi
+  menurut urutan file (P1 dulu: *cost, cut, let*), bukan kata yang paling sering dipakai.
+- **Fix:** Soal kalimat (S) dihapus: satu jenis saja, **model** menulis V1 + arti, user mengetik
+  **V2, V3**. Kata dipilih model sesuai level aktif user (`diagnostic.md`, A2) dengan daftar
+  **Harian** (40 kata kerja paling umum) dulu, pola dicampur, dirotasi (belum diuji → paling lama
+  tidak diuji). (Sempat dicoba "arti saja → ketik V1, V2, V3", dibatalkan atas permintaan user.)
+  Kolom tracker tidak berubah (`check-kb.py` tetap cocok).
+- **File:** `.claude/skills/quiz-v/SKILL.md`, `CLAUDE.md`, `README.md`, `docs/cara-kerja.md`,
+  `progress/verb-evaluation.md`, `reference/irregular-verbs.md`
+
 ### 2026-11-02 — Skill `/quiz-v`: hafalan bentuk kata kerja tidak beraturan
 - **Kategori:** skill · data
 - **Problem:** Belum ada latihan khusus V1 · V2 · V3. Bentuk V3 hanya teruji sambil lalu lewat

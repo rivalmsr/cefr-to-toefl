@@ -197,7 +197,7 @@ diperbaiki, jadi lambat mencerminkan kemampuan sekarang. Batas tetap 80% (maks 2
 |---|---|
 | Setiap hari | Anki → (`/sync-anki` bila ada review) → `/quiz` atau `/quiz-t` |
 | 1× seminggu | `/toefl` (harian, atau bergantian `writing` / `speaking`) |
-| 1–2× seminggu | `/quiz-v` (hafalan V2 · V3, ±5 menit; bisa menggantikan satu sesi `/quiz`) |
+| 1–2× seminggu | `/quiz-v` (V1 + arti → ketik V2 · V3, ±5 menit; bisa menggantikan satu sesi `/quiz`) |
 | Semua tag satu unit 🟢 (≥ 8 percobaan/jalur) | `/quiz`·`/quiz-t` memberi tahu di pesan akhir (`🎉 Unit N tuntas`) → minta Claude menulis unit berikutnya (roadmap di `README.md`) |
 | Sesekali (mis. tiap 2–3 bulan) | ulang `/diagnostic` untuk cek kenaikan level |
 

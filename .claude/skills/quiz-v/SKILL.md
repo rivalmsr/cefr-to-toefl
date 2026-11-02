@@ -1,24 +1,25 @@
 ---
 name: quiz-v
-description: Latihan HAFALAN bentuk kata kerja tidak beraturan (V1 → V2 · V3), ketik bebas, dari reference/irregular-verbs.md (Oxford 3000 A1–A2, dikelompokkan per pola bunyi). Default 8 soal (2 panel × 4). Adaptif per kata (5 percobaan terakhir) dan per pola. Rekam di progress/verb-evaluation.md + baris VERB di history.md; TIDAK menyentuh evaluation.md. Pakai saat user menjalankan /quiz-v atau minta latihan/hafalan verb 1 2 3, irregular verbs, V2 V3.
+description: Latihan HAFALAN bentuk kata kerja tidak beraturan: soal memberi V1 + arti (dipilih model sesuai level user, kata harian dulu, dirotasi) → user ketik V2, V3 (satu jenis soal saja), dari reference/irregular-verbs.md (Oxford 3000 A1–A2, dikelompokkan per pola bunyi). Default 8 soal (2 panel × 4). Adaptif per kata (5 percobaan terakhir) dan per pola. Rekam di progress/verb-evaluation.md + baris VERB di history.md; TIDAK menyentuh evaluation.md. Pakai saat user menjalankan /quiz-v atau minta latihan/hafalan verb 1 2 3, irregular verbs, V2 V3.
 ---
 
 # Skill: /quiz-v — Hafalan bentuk kata kerja (V1 · V2 · V3)
 
 **Tujuan:** hafal bentuk V2 · V3 kata kerja tidak beraturan lewat **mengingat sendiri**
-(*retrieval practice*): user **mengetik** bentuknya, bukan memilih. Pilihan ganda tidak dipakai,
-karena hanya melatih mengenali.
+(*retrieval practice*). **Model** memilih kata kerjanya (sesuai level user, kata yang sering dipakai
+sehari-hari dulu, dirotasi) dan menulis **V1 + arti** di soal; user **hanya mengetik V2, V3**.
+Pilihan ganda tidak dipakai, karena hanya melatih mengenali. **Satu jenis soal saja**, tidak
+dicampur dengan soal kalimat (permintaan user 2026-11-02).
 
 - **Berdiri sendiri** (seperti `/kanji` di proyek Jepang). Hanya menulis
   `progress/verb-evaluation.md` + baris `VERB` di `progress/history.md`. **Jangan** tulis
   `evaluation.md`.
 - **Sumber kata = `reference/irregular-verbs.md` saja.** Jangan pakai kata kerja di luar file itu.
-- **V2 hanya sebagai hafalan bentuk.** Past simple belum punya unit (aturan 1 `CLAUDE.md`), jadi
-  **jangan** buat soal kalimat V2 (*yesterday I ___*). Soal kalimat hanya untuk **V3 setelah
-  *have/has*** (Unit 1, Point 2).
+- **Hafalan bentuk saja, tanpa soal kalimat.** Past simple belum punya unit (aturan 1
+  `CLAUDE.md`); pemakaian V3 setelah *have/has* sudah dilatih di `/quiz` · `/quiz-t`.
 - **Jangan mengarang skor:** hitung eksplisit dari angka lama + hasil sesi.
-- Instruksi, pembahasan, dan hasil dalam **Bahasa Indonesia yang mudah dipahami**. Kata kerja dan
-  kalimat soal dalam **English**.
+- Instruksi, pembahasan, dan hasil dalam **Bahasa Indonesia yang mudah dipahami**. Kata kerja
+  dalam **English**.
 
 > **Hemat tool call:** gabung bacaan independen dalam satu perintah. Jangan pakai `echo =====`
 > sebagai pemisah (zsh).
@@ -26,37 +27,39 @@ karena hanya melatih mengenali.
 ## Argumen
 
 `/quiz-v [a1 | a2] [pola <P…>] [N]`
-- Tanpa argumen → adaptif, **8 soal**, pool **A1** (A2 ikut masuk otomatis bila ≥ 80% kata A1
-  sudah pernah diuji **dan** 🟢).
+- Tanpa argumen → adaptif, **8 soal**. Pool = kata dengan CEFR ≤ level aktif user
+  (`progress/diagnostic.md`, sekarang **A2**); kata **Harian** (langkah 2) dulu, lalu sisa A1,
+  lalu sisa A2.
 - `a1` / `a2` → batasi level. `pola P4c` (atau `pola P2a,P2b`) → hanya pola itu.
 - `N` → jumlah soal (kelipatan 4 disarankan, maks 12).
 
 ## Langkah
 
 ### 1. Muat state (satu perintah)
-`cat progress/verb-evaluation.md reference/irregular-verbs.md; head -12 progress/history.md`
+`cat progress/verb-evaluation.md reference/irregular-verbs.md; head -12 progress/history.md; grep -m1 -A1 'CEFR level estimate' progress/diagnostic.md`
 
 ### 2. Pilih kata (urut prioritas, tanpa duplikat)
 1. **Redrill** — kata ✗ di sesi `/quiz-v` terakhir (baris `VERB` teratas di `history.md`), maks 3.
 2. **Lemah** — kata 🔴 lalu 🟡 di `verb-evaluation.md` (akurasi terendah dulu).
 3. **Prioritas** — tabel "Prioritas (dari kesalahan nyata)" di `irregular-verbs.md`, bila belum
    pernah diuji.
-4. **Baru** — kata yang belum pernah diuji, **3–4 per sesi dari SATU pola** (pola berikutnya
-   menurut urutan file: P1 → P2a → … → P5). Satu pola per sesi, supaya polanya terasa.
+4. **Baru (rotasi)** — kata yang belum pernah diuji, **paling sering dipakai sehari-hari dulu**:
+   daftar **Harian** di bawah (urut dari kiri), lalu sisa A1, lalu sisa A2 (≤ level aktif). Campur
+   pola (jangan satu pola per sesi). Rotasi: setelah semua kata pernah diuji, ambil yang paling
+   lama tidak diuji.
 5. **Pemeliharaan** — 1–2 kata 🟢 yang paling lama tidak diuji.
 
 Isi sampai N. Kalau pool habis, ambil dari langkah 5.
 
-### 3. Tentukan jenis soal
-| Jenis | Isi | Porsi (dari 8) |
-|---|---|---|
-| **R — Recall** | V1 + arti → ketik **V2, V3** | ±6 |
-| **S — V3 di kalimat** | kalimat *have/has + ___ (V1)* → ketik **V3** saja | ±2 |
+**Harian** (kata kerja tidak beraturan paling umum dalam percakapan sehari-hari; urutan pilihan
+pedagogis untuk rotasi, **bukan** level CEFR — level tetap dari `irregular-verbs.md`):
+*be, have, do, go, get, make, say, see, come, take, know, think, give, eat, drink, buy, tell,
+find, feel, sleep, write, read, meet, put, leave, pay, sit, speak, wake, wear, bring, send,
+begin, lose, understand, hear, keep, run, spend, stand*
 
-- Jenis **S** hanya untuk kata yang V3-nya beda dari V2, atau kata prioritas (lebih bermanfaat).
-  Kalimatnya pakai konteks Unit 1 (*for/since*, *How long have/has…*), kosakata ≤ A2.
-- Kalau ada kesalahan nyata user untuk kata itu, jenis S boleh berupa **perbaikan kalimat**
-  (*I haven't ~~weared~~ this coat…* → ketik bentuk yang benar).
+### 3. Jenis soal (hanya satu)
+**V1 + arti → ketik V2, V3.** Soal menulis V1 dan arti dari kolom `Arti` di `irregular-verbs.md`;
+user mengetik **V2, V3** saja. Tidak ada soal kalimat, tidak dicampur.
 
 ### 4. Sajikan (mode ujian: kumpulkan SEMUA jawaban dulu, koreksi di akhir)
 - **4 soal per panel** AskUserQuestion (aturan 3 `CLAUDE.md`: ≤ 4/panel). Jawaban diketik di
@@ -64,8 +67,7 @@ Isi sampai N. Kalau pool habis, ambil dari langkah 5.
   "ketik jawaban di kotak Other" di teks pertanyaan.
 - Sebelum panel, tulis soalnya juga di chat sebagai `#` heading.
 - **Format teks soal:**
-  - R: `Soal n/N — wear (memakai). Ketik V2, V3 di kotak Other (contoh format: went, gone).`
-  - S: `Soal n/N — I haven't ___ (wear) this coat for two weeks. Ketik bentuk yang benar di kotak Other.`
+  `Soal n/N — wear (memakai baju). Ketik V2, V3 di kotak Other (contoh format: went, gone).`
 - **Header panel** (≤ 12 karakter): `Soal n`.
 - **Jangan bocorkan pola** di soal (jangan urutkan soal per pola; acak urutannya).
 - 💡 dipilih → beri **1 petunjuk pola** tanpa jawaban (mis. *"Polanya mirip drink → drank → drunk."*),
@@ -74,11 +76,11 @@ Isi sampai N. Kalau pool habis, ambil dari langkah 5.
 - ⏭️ dipilih → ✗, kunci diberikan di akhir.
 
 ### 5. Nilai
-- **✓ hanya bila semua bentuk yang diminta benar**, termasuk ejaan (*writen* ✗). Huruf besar
+- **✓ hanya bila V2 dan V3 keduanya benar**, termasuk ejaan (*writen* ✗). Huruf besar
   diabaikan. Pemisah koma atau spasi sama-sama diterima.
 - Dua bentuk sah di referensi (*learned/learnt*, *got/gotten*) → keduanya ✓. *be* → harus
   menyebut *was* **dan** *were* (+ *been*).
-- Satu soal = **satu percobaan** untuk kata itu (jenis R maupun S).
+- Satu soal = **satu percobaan** untuk kata itu.
 
 ### 6. Rekam (WAJIB, sebelum pesan hasil)
 **`progress/verb-evaluation.md`** (hitung eksplisit: lama + sesi = baru):

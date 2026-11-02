@@ -9,8 +9,8 @@ pola membantu mengingat: kalau tahu *drink–drank–drunk*, *sing–sang–sung
   ditulis dan **keduanya diterima** saat dinilai.
 - **V2** = past simple (*kemarin aku…*). **V3** = past participle, dipakai setelah *have/has*
   (Unit 1, Point 2).
-- ⚠️ Past simple (V2 di dalam kalimat) **belum punya unit**. Jadi `/quiz-v` menguji V2 hanya
-  sebagai **hafalan bentuk**, bukan pemakaiannya di kalimat.
+- ⚠️ Past simple (V2 di dalam kalimat) **belum punya unit**. Jadi `/quiz-v` hanya menguji
+  **hafalan bentuk**: diberi V1 + arti → ketik V2, V3 (tanpa soal kalimat).
 
 ## Prioritas (dari kesalahan nyata di quiz)
 | Kata | Kesalahan | Sumber |
