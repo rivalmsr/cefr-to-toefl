@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-check-kb.py — cek konsistensi hitungan di progress/evaluation.md.
+check-kb.py — cek konsistensi hitungan di tracker progress/.
 
 Yang dicek (aturan dari .claude/skills/quiz/SKILL.md langkah 6 & docs/cara-kerja.md):
   1. Tabel "Per grammar tag" (dua jalur MCQ & Prod):
@@ -11,16 +11,21 @@ Yang dicek (aturan dari .claude/skills/quiz/SKILL.md langkah 6 & docs/cara-kerja
      - All-time: MCQ + Prod = total, persen total benar;
      - status tag mengikuti aturan dua jalur.
   2. Tabel skill / error / unit (satu jalur): Accuracy = Correct/Total dan statusnya.
+  progress/verb-evaluation.md (/quiz-v, .claude/skills/quiz-v/SKILL.md langkah 6):
+  3. Tabel "Per verb": urutan ✓✗ maksimal 5, n/m, persen, status; All-time c/t masuk akal.
+  4. Tabel "Per pattern" (satu jalur): sama seperti nomor 2.
 
 Tidak mengubah file apa pun. Exit 0 = semua cocok, exit 1 = ada yang tidak cocok.
-Pakai:  python3 scripts/check-kb.py [path/ke/evaluation.md]
+Pakai:  python3 scripts/check-kb.py            (cek kedua tracker)
+        python3 scripts/check-kb.py <file.md>  (jenis tracker dikenali dari isinya)
 """
 import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT = ROOT / "progress" / "evaluation.md"
+DEFAULTS = (ROOT / "progress" / "evaluation.md", ROOT / "progress" / "verb-evaluation.md")
+VERB_WINDOW = 5  # /quiz-v: 5 percobaan terakhir per kata
 
 STATUS = ("⚪", "🔴", "🟡", "🟢")
 WORST_ORDER = {"🔴": 0, "🟡": 1, "🟢": 2}
@@ -81,7 +86,7 @@ LANE_RE = re.compile(r"`([✓✗]*)`\s*(\d+)/(\d+)\s*\((\d+)%\)\s*(⚪|🔴|🟡
 ALLTIME_RE = re.compile(r"(\d+)/(\d+)\s*·\s*(\d+)/(\d+)\s*·\s*(\d+)/(\d+)\s*\((\d+)%\)")
 
 
-def check_lane(tag, name, cell, errs):
+def check_lane(tag, name, cell, errs, max_len=10):
     m = LANE_RE.search(cell)
     if not m:
         # jalur tanpa data boleh ditulis tanpa urutan, asal statusnya ⚪
@@ -92,8 +97,8 @@ def check_lane(tag, name, cell, errs):
         return "⚪"
     seq, n, m_, p, st = m.group(1), int(m.group(2)), int(m.group(3)), int(m.group(4)), m.group(5)
     ok_n, size = seq.count("✓"), len(seq)
-    if size > 10:
-        errs.append(f"{tag} {name}: urutan {size} item (maks 10)")
+    if size > max_len:
+        errs.append(f"{tag} {name}: urutan {size} item (maks {max_len})")
     if n != ok_n or m_ != size:
         errs.append(f"{tag} {name}: tertulis {n}/{m_}, urutan berisi {ok_n}/{size}")
     if p != pct(ok_n, size):
@@ -170,16 +175,67 @@ def check_text(text):
     return errs, n_rows
 
 
+ALLTIME_SINGLE_RE = re.compile(r"(\d+)/(\d+)")
+
+
+def check_verb_text(text):
+    """Logika murni: isi verb-evaluation.md → (daftar masalah, jumlah baris dicek)."""
+    secs = sections(text)
+    errs, n_rows = [], 0
+
+    if "Per pattern" in secs:
+        check_single("Per pattern", secs["Per pattern"], errs)
+        n_rows += len(secs["Per pattern"])
+    else:
+        errs.append("Bagian '## Per pattern' tidak ditemukan")
+
+    verb = [k for k in secs if k.startswith("Per verb")]
+    if not verb:
+        errs.append("Bagian '## Per verb' tidak ditemukan")
+    for k in verb:
+        for line in secs[k]:
+            c = cells(line)
+            if len(c) < 5 or c[0].startswith("_"):
+                continue  # baris placeholder _(none yet)_
+            n_rows += 1
+            name = c[0].strip("`")
+            lane = check_lane(name, "Last 5", c[2], errs, max_len=VERB_WINDOW)
+            m = LANE_RE.search(c[2])
+            a = ALLTIME_SINGLE_RE.search(c[3])
+            if not a:
+                errs.append(f"{name} All-time: format tidak terbaca: {c[3]!r}")
+            elif m:
+                at_c, at_t = int(a.group(1)), int(a.group(2))
+                seq = m.group(1)
+                if at_c > at_t:
+                    errs.append(f"{name} All-time: benar {at_c} > total {at_t}")
+                if len(seq) > at_t or seq.count("✓") > at_c:
+                    errs.append(f"{name} All-time {at_c}/{at_t} lebih kecil dari isi urutan "
+                                f"{seq.count('✓')}/{len(seq)}")
+            if lane and first_status(c[4]) != lane:
+                errs.append(f"{name} Status: {first_status(c[4])}, seharusnya {lane}")
+    return errs, n_rows
+
+
+def check_any(text):
+    """Pilih pemeriksa dari isi file."""
+    return check_verb_text(text) if "## Per verb" in text else check_text(text)
+
+
 def main():
-    path = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT
-    errs, n_rows = check_text(path.read_text(encoding="utf-8"))
-    rel = path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
-    if errs:
-        print(f"❌ {rel}: {len(errs)} masalah")
-        for e in errs:
-            print(f"  - {e}")
-        sys.exit(1)
-    print(f"✅ {rel}: {n_rows} baris dicek, semua hitungan cocok")
+    paths = [Path(a) for a in sys.argv[1:]] or [p for p in DEFAULTS if p.exists()]
+    failed = False
+    for path in paths:
+        errs, n_rows = check_any(path.read_text(encoding="utf-8"))
+        rel = path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
+        if errs:
+            failed = True
+            print(f"❌ {rel}: {len(errs)} masalah")
+            for e in errs:
+                print(f"  - {e}")
+        else:
+            print(f"✅ {rel}: {n_rows} baris dicek, semua hitungan cocok")
+    sys.exit(1 if failed else 0)
 
 
 if __name__ == "__main__":

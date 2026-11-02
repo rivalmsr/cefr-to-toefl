@@ -163,6 +163,64 @@ def test_real_evaluation_md_is_consistent():
     assert errs == [], "\n".join(errs)
 
 
+# --- verb-evaluation.md (/quiz-v) -----------------------------------------------------
+
+VERB_HEADER = """## Per pattern
+| Pattern | Correct | Total | Accuracy | Status |
+|---------|---------|-------|----------|--------|
+| P4c | 3 | 4 | 75% | 🟡 |
+
+## Per verb (last 5)
+| Verb | V2 · V3 | Last 5 | All-time | Status |
+|------|---------|--------|----------|--------|
+{verb}
+"""
+
+GOOD_VERB = "| `wear` | wore · worn | `✗✓✓✓` 3/4 (75%) 🟡 | 3/4 | 🟡 (*weared* 2026-11-02) |"
+
+
+def _verb_errors(verb=GOOD_VERB):
+    errs, _ = ck.check_verb_text(VERB_HEADER.format(verb=verb))
+    return errs
+
+
+def test_verb_consistent_tracker_has_no_errors():
+    errs, n_rows = ck.check_verb_text(VERB_HEADER.format(verb=GOOD_VERB))
+    assert n_rows == 2           # prakondisi: 1 pola + 1 kata terbaca
+    assert errs == []
+
+
+def test_verb_placeholder_row_is_skipped():
+    assert _verb_errors(verb="| _(none yet)_ | | | | |") == []
+
+
+def test_verb_detects_window_longer_than_five():
+    row = GOOD_VERB.replace("`✗✓✓✓` 3/4 (75%) 🟡 | 3/4", "`✗✓✓✓✓✓` 5/6 (83%) 🟢 | 5/6")
+    assert any("maks 5" in e for e in _verb_errors(verb=row))
+
+
+def test_verb_detects_wrong_status():
+    row = GOOD_VERB.replace("| 🟡 (*weared*", "| 🟢 (*weared*")
+    assert any("Status: 🟢, seharusnya 🟡" in e for e in _verb_errors(verb=row))
+
+
+def test_verb_detects_alltime_smaller_than_window():
+    row = GOOD_VERB.replace("| 3/4 |", "| 2/3 |")
+    assert any("lebih kecil dari isi urutan" in e for e in _verb_errors(verb=row))
+
+
+def test_check_any_routes_verb_tracker_to_verb_checker():
+    errs, n_rows = ck.check_any(VERB_HEADER.format(verb=GOOD_VERB))
+    assert (errs, n_rows) == ([], 2)
+
+
+def test_real_verb_evaluation_md_is_consistent():
+    path = HERE.parent / "progress" / "verb-evaluation.md"
+    errs, n_rows = ck.check_verb_text(path.read_text(encoding="utf-8"))
+    assert n_rows > 0, "tidak ada baris yang terbaca"
+    assert errs == [], "\n".join(errs)
+
+
 # --- Runner ---------------------------------------------------------------------------
 
 def run():

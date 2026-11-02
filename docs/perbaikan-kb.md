@@ -33,6 +33,21 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-11-02 — Skill `/quiz-v`: hafalan bentuk kata kerja tidak beraturan
+- **Kategori:** skill · data
+- **Problem:** Belum ada latihan khusus V1 · V2 · V3. Bentuk V3 hanya teruji sambil lalu lewat
+  `A2-present-perfect`, padahal kesalahan bentuk muncul berulang (*~~weared~~*, *~~have you study~~*).
+- **Fix:** (1) `reference/irregular-verbs.md`: 85 kata kerja tidak beraturan (64 A1 + 21 A2),
+  level dicek otomatis ke PDF Oxford 3000, dikelompokkan per pola bunyi (P1–P5). (2) Skill
+  `/quiz-v` (pola `/kanji` proyek Jepang): jawaban diketik (*retrieval practice*), 8 soal,
+  adaptif per kata, V2 hanya hafalan bentuk karena past simple belum punya unit; soal kalimat
+  hanya V3 setelah *have/has*. (3) Tracker terpisah `progress/verb-evaluation.md` (per kata 5
+  terakhir + per pola); `evaluation.md` tidak disentuh. (4) `check-kb.py` ikut mengecek tracker
+  ini (+7 tes, 5 mutasi tertangkap).
+- **File:** `reference/irregular-verbs.md`, `.claude/skills/quiz-v/SKILL.md`,
+  `progress/verb-evaluation.md`, `progress/history.md` (label `VERB`), `scripts/check-kb.py`,
+  `scripts/test_check_kb.py`, `CLAUDE.md`, `README.md`, `docs/cara-kerja.md`, `docs/perbaikan-kb.md`
+
 ### 2026-11-02 — Tes untuk `check-kb.py` (filosofi tes proyek Jepang)
 - **Kategori:** data · skill
 - **Problem:** `check-kb.py` sendiri belum dites. Kalau logikanya salah (mis. ambang atau aturan

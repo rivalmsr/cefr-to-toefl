@@ -2,7 +2,7 @@
 
 A short log of every skill session (newest on top). Appended automatically by the skills.
 The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
-`TOEFL` (/toefl).
+`TOEFL` (/toefl), `VERB` (/quiz-v).
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|

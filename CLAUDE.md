@@ -31,6 +31,7 @@ official **TOEFL iBT** score for S2 admission at the **Institute of Science Toky
 |---|---|---|
 | `/diagnostic` | CEFR placement (no hints) | `diagnostic.md`, seeds `evaluation.md` |
 | `/quiz` · `/quiz-t` | daily adaptive drills (12 MCQ) · translation production ID→EN (4) | `evaluation.md`, `history.md` |
+| `/quiz-v` | irregular verb forms V2 · V3, typed (8), from `reference/irregular-verbs.md` | **only** `verb-evaluation.md` + `VERB` row in `history.md` |
 | `/toefl` | text-based TOEFL iBT **2026** mock (`toefl-2026-spec.md`) | **only** `toefl-evaluation.md` + `TOEFL` row in `history.md` (may read, never touch `evaluation.md`) |
 | `/lesson` | read a unit section verbatim in chat (read-only, no questions) | nothing |
 | `/sync-anki` | `bash scripts/sync-anki.sh` (ask: Anki desktop synced?) | `anki-weak-items.md` (AUTO-GENERATED) |
@@ -52,6 +53,6 @@ official **TOEFL iBT** score for S2 admission at the **Institute of Science Toky
 7. **Preserve material:** never drop content when editing; **report every change**.
 8. **Fix log:** every rule/skill/reference fix (not new material or scores) → 1 entry at the top
    of `docs/perbaikan-kb.md`.
-9. **Checks:** after writing `progress/evaluation.md` → `python3 scripts/check-kb.py` (must be ✅).
+9. **Checks:** after writing `progress/evaluation.md` or `verb-evaluation.md` → `python3 scripts/check-kb.py` (must be ✅).
    After touching `scripts/check-kb.py` or its tests → `python3 scripts/test_check_kb.py`
    (how to write tests: skill `writing-good-tests`).
