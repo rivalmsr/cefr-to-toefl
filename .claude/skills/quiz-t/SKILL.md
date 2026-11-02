@@ -48,5 +48,8 @@ batasi unit; `N` → override jumlah soal sesi itu.
 6. **Pesan akhir RINGKAS:** skor 1 baris · tabel soal SALAH saja (`# · tag · jawabanmu · kunci`) ·
    1 baris fix per soal salah + slip di luar titik uji sebagai catatan · 1 baris area terlemah /
    perubahan status · **1 baris cek kelulusan unit** (aturan `/quiz` langkah 7: semua tag grammar
-   unit 🟢 → `🎉 Unit N tuntas → minta "tulis Unit N+1"`; belum → `Unit N: x/y tag 🟢 (…)`; jangan
-   tulis unit otomatis) · tawarkan pembahasan lebih dalam bila user mau.
+   unit 🟢 **dan** ≥ 8 percobaan per jalur → `🎉 Unit N tuntas → minta "tulis Unit N+1"`; semua 🟢
+   tapi data kurang → `Unit N: semua tag 🟢, data belum cukup (…)`; belum → `Unit N: x/y tag 🟢 (…)`;
+   jangan tulis unit otomatis) · **cek kesalahan berulang** (aturan `/quiz` langkah 7: pola ≥ 3×
+   tanpa `⚠️ Koreksi` di unit → tawarkan catatan koreksi) · tawarkan pembahasan lebih dalam bila
+   user mau.

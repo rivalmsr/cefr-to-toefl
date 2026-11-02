@@ -180,6 +180,13 @@ mendekati 🟢 hint netral → 🟢 tanpa hint (gaya ujian). Kosakata bantu `/qu
 **Kenapa 2 jalur:** mengenali bentuk yang benar (klik opsi) lebih mudah daripada menyusunnya
 sendiri. Unit baru dianggap tuntas bila grammar-nya benar **di kedua cara**.
 
+**Syarat unit tuntas:** semua tag grammar unit 🟢 **dan** tiap tag punya **≥ 8 percobaan di
+masing-masing jalur**. Tanpa minimum ini, 3/3 benar saja sudah 🟢, padahal buktinya tipis. Ambang
+80% dan minimum ini berdasar riset *mastery learning* (`reference/official-sources.md` bagian 5).
+
+**Catatan koreksi:** pola kesalahan yang sama ≥ 3× → `/quiz`·`/quiz-t` menawarkan blok
+`⚠️ Koreksi` di unit, dengan penjelasan cara lain (format di `docs/konvensi-unit.md`).
+
 **Kenapa 10 terakhir:** akurasi sepanjang waktu ikut menghitung kesalahan lama yang sudah
 diperbaiki, jadi lambat mencerminkan kemampuan sekarang. Batas tetap 80% (maks 2 salah dari 10).
 
@@ -189,7 +196,7 @@ diperbaiki, jadi lambat mencerminkan kemampuan sekarang. Batas tetap 80% (maks 2
 |---|---|
 | Setiap hari | Anki → (`/sync-anki` bila ada review) → `/quiz` atau `/quiz-t` |
 | 1× seminggu | `/toefl` (harian, atau bergantian `writing` / `speaking`) |
-| Semua tag satu unit 🟢 | `/quiz`·`/quiz-t` memberi tahu di pesan akhir (`🎉 Unit N tuntas`) → minta Claude menulis unit berikutnya (roadmap di `README.md`) |
+| Semua tag satu unit 🟢 (≥ 8 percobaan/jalur) | `/quiz`·`/quiz-t` memberi tahu di pesan akhir (`🎉 Unit N tuntas`) → minta Claude menulis unit berikutnya (roadmap di `README.md`) |
 | Sesekali (mis. tiap 2–3 bulan) | ulang `/diagnostic` untuk cek kenaikan level |
 
 ## Status sekarang (per 2026-10-29)

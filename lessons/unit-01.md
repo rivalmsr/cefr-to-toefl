@@ -54,6 +54,30 @@ sesuatu terjadi. Unit ini memperbaiki dua poin grammar dari hasil placement test
   **kata kerja dasar** — *they **go***, jangan *~~they goes~~*. Akhiran *-s* hanya untuk
   **he/she/it**.
 
+**⚠️ Koreksi — *has* yang tidak perlu (muncul 4× di quiz)**
+Kesalahan nyata: *~~has always late~~*, *~~has usually cook~~*, *~~Rina has always happy~~*,
+*~~my brother hasn't never drink~~*. Di present simple, **he/she/it tidak butuh kata bantu**
+untuk kalimat positif. Tanda orang ketiganya cukup akhiran **-s** di kata kerja.
+
+*Cara cek: buang dulu adverb-nya.* Kalau kalimat tanpa adverb terdengar salah, berarti
+kata bantunya juga salah:
+- *~~Rina has happy~~* → ✅ *Rina **is** happy* → ✅ *Rina **is always** happy.*
+- *~~He has cook~~* → ✅ *He **cooks*** → ✅ *He **usually cooks**.*
+- *~~He hasn't drink~~* → ✅ *He **doesn't drink*** → ✅ *He **never drinks**.* (*never* sudah
+  berarti "tidak pernah", jadi jangan pakai *n't* lagi.)
+
+| Kalimatnya tentang… | Pola | Contoh |
+|---|---|---|
+| **keadaan** (happy, late, busy, crowded) | **is** + adverb + adjective | *She **is always** late.* |
+| **kebiasaan** (cook, drink, wear) | adverb + **kata kerja-s** | *She **always cooks** dinner.* |
+| kebiasaan, **negatif** | **doesn't** + kata kerja dasar | *She **doesn't cook**.* |
+| kebiasaan, **pertanyaan** | **Does** + subjek + kata kerja dasar | ***Does** it often **rain**?* (bukan *~~Is it often rain~~*) |
+| **punya** sesuatu | **has** + benda | *She **has** a bike.* |
+| present perfect (Point 2) | **has** + past participle | *She **has lived** here since 2020.* |
+
+Jadi *has* hanya muncul kalau artinya **punya**, atau kalau langsung diikuti **past
+participle** (Point 2).
+
 ### Point 2 — Present perfect with _for_ and _since_
 
 **Aturan**
@@ -92,6 +116,31 @@ sesuatu terjadi. Unit ini memperbaiki dua poin grammar dari hasil placement test
   for three years.* Kalau ada *for/since* sampai sekarang, kata kerjanya tetap **have/has +
   past participle**, termasuk *have* sendiri (*have → had*): **have had**.
 - **for** menjawab *berapa lama?* (durasi). **since** menjawab *sejak kapan?* (titik waktu).
+
+**⚠️ Koreksi — bentuk kata kerja setelah *have/has* (muncul 4× di quiz)**
+Kesalahan nyata: *~~I have this coat for 3 years~~*, *~~How long do you known~~*, *~~How long
+have you study~~*, *~~I haven't weared this coat~~*. Semuanya salah di **bentuk**, bukan di
+for/since.
+
+*Cara cek 2 langkah:*
+1. **Kata bantunya harus *have/has*** (bukan *do/does*, bukan *am/is/are*):
+   *~~How long do you known~~* → ✅ *How long **have** you known …?*
+2. **Kata kerja sesudahnya harus past participle** (bentuk ke-3 / V3), bukan bentuk dasar:
+   *~~have you study~~* → ✅ *have you **studied***.
+
+| Bentuk dasar | Past participle (V3) | Contoh |
+|---|---|---|
+| have | **had** | *I **have had** this coat for three years.* |
+| know | **known** | *How long **have** you **known** Andi?* |
+| study | **studied** | *How long **have** you **studied** English?* |
+| wear | **worn** (bukan *~~weared~~*) | *I **haven't worn** this coat for two weeks.* |
+| see | **seen** | *I **haven't seen** Andi since July.* |
+| be | **been** | *We **haven't been** to the cinema since March.* |
+
+Kata kerja **beraturan** cukup ditambah **-ed** (*work → worked, live → lived*). Kata kerja
+**tidak beraturan** (*have, know, wear, see, be*) harus dihafal V3-nya.
+Ingat juga: *two weeks* itu **durasi**, jadi pakai **for** (*for two weeks*), bukan
+*~~since two weeks~~*.
 
 ---
 

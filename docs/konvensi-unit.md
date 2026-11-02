@@ -52,6 +52,24 @@ judul + Focus + Quick summary tanpa memuat file utuh.
 - `reference/quiz-taxonomy.md` — tag grammar baru `<level>-<slug>` (**WAJIB sebelum skill memakainya**).
 - `reference/oxford-vocabulary.md` / `academic-vocabulary.md` — batch kata unit di tabel level yang benar.
 
+## Catatan koreksi untuk kesalahan berulang
+
+Dasarnya: Guskey (2010) dan Bloom (1968) di `reference/official-sources.md` bagian 5. Perbaikan
+**bukan sekadar mengulang penjelasan yang sama**, jadi siswa perlu cara penjelasan lain.
+
+- **Kapan:** pola kesalahan yang sama muncul **≥ 3 kali**, dihitung dari soal berbeda di sesi
+  mana pun (cek catatan tag di `progress/evaluation.md` dan `progress/history.md`), **dan**
+  unitnya belum punya catatan koreksi untuk pola itu.
+- **Bentuk:** blok **`**⚠️ Koreksi — <pola> (muncul N× di quiz)**`** di akhir **Catatan**
+  poin grammar terkait. Isinya:
+  1. daftar kesalahan nyata user (dicoret);
+  2. **cara cek** yang berbeda dari bagian Aturan (tes sederhana, langkah, atau kontras);
+  3. tabel kecil atau pasangan ❌ → ✅.
+- Catatan koreksi **tidak** menambah poin grammar baru, jadi Quick summary dan taxonomy tidak
+  perlu diubah.
+- Yang mendeteksi adalah `/quiz` dan `/quiz-t`. Mereka hanya **menawarkan** catatan koreksi di
+  pesan akhir, lalu Claude menulisnya kalau user setuju.
+
 ## Saat mengedit unit yang sudah ada
 
 - **Jangan buang materi** — pindahkan/perbarui, dan **laporkan tiap perubahan** ke user.

@@ -33,6 +33,30 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-11-02 — Catatan koreksi kesalahan berulang + minimum 8 percobaan untuk unit tuntas
+- **Kategori:** pembelajaran · skill
+- **Problem:** (1) Kesalahan yang sama terus berulang tanpa penjelasan baru di unit. Contoh: *has*
+  yang tidak perlu (*~~has always late~~*, *~~Rina has always happy~~*) muncul 4×, dan bentuk
+  setelah *have* (*~~do you known~~*, *~~have you study~~*, *~~weared~~*) muncul 4×. Unit 1 belum
+  punya catatan untuk dua pola ini. (2) Satu jalur bisa 🟢 hanya dengan 3/3, jadi unit bisa
+  dinyatakan tuntas dengan bukti tipis.
+- **Fix:** (1) Aturan baru di `konvensi-unit.md`: pola ≥ 3× → blok `⚠️ Koreksi` dengan cara
+  penjelasan lain (Guskey 2010). `/quiz` dan `/quiz-t` menawarkannya di pesan akhir. Dua blok
+  koreksi ditambahkan di Unit 1 (Point 1 & Point 2). (2) Syarat unit tuntas: semua tag 🟢 **dan**
+  ≥ 8 percobaan per jalur (Bloom 1968: kelulusan dibuktikan ulang). Ambang 80% tidak diubah.
+- **File:** `lessons/unit-01.md`, `docs/konvensi-unit.md`, `docs/cara-kerja.md`,
+  `.claude/skills/quiz/SKILL.md`, `.claude/skills/quiz-t/SKILL.md`, `docs/perbaikan-kb.md`
+
+### 2026-11-02 — Referensi riset untuk ambang 🟢 80% (unit tuntas)
+- **Kategori:** data
+- **Problem:** Ambang 🟢 ≥ 80% (syarat unit tuntas → tulis unit baru) tidak punya sumber tertulis.
+  CEFR, Oxford, dan ETS memang tidak mengatur kapan boleh lanjut materi.
+- **Fix:** Tambah bagian 5 di `official-sources.md` berisi sumber riset *mastery learning* yang
+  sudah dicek lewat web: Bloom 1968, Slavin 1987 (80–90%), Guskey 2010 (80%), Kulik dkk. 1990,
+  D'Albro (90% tidak lebih baik), dan Wilson dkk. 2019 (aturan 85%, dengan catatan batas cakupannya).
+  Ambang tidak diubah.
+- **File:** `reference/official-sources.md`, `docs/perbaikan-kb.md`
+
 ### 2026-11-02 — Status jalur tag grammar dari 10 percobaan terakhir
 - **Kategori:** data · skill
 - **Problem:** Akurasi per jalur dihitung dari semua riwayat. Kesalahan lama yang sudah diperbaiki

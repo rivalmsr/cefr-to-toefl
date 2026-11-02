@@ -173,11 +173,18 @@ makna tepat (salah kecil di luar target, mis. ejaan, tidak menggugurkan — cata
 - 1 baris: area terlemah sekarang + perubahan status (mis. `A2-present-simple ⚪ → 🟡`).
 - **1 baris cek kelulusan unit** (tiap unit yang diuji sesi ini). Tag grammar unit = tag di
   `reference/quiz-taxonomy.md` dengan kolom `Unit` = unit itu (bukan `SK-`/`ERR-`); status dari
-  `evaluation.md` yang **baru** direkam:
-  - Semua 🟢 → `🎉 Unit N tuntas (semua tag 🟢) → bila siap, minta "tulis Unit N+1"` + kandidat
+  `evaluation.md` yang **baru** direkam. **Syarat tuntas:** semua tag grammar unit 🟢 **dan**
+  tiap tag punya **≥ 8 percobaan di masing-masing jalur** (panjang urutan `✓✗` MCQ dan Prod,
+  maks 10). Dasarnya ada di `reference/official-sources.md` bagian 5.
+  - Tuntas → `🎉 Unit N tuntas (semua tag 🟢, ≥8 percobaan/jalur) → bila siap, minta "tulis Unit N+1"` + kandidat
     tema (baris "Berikutnya" di `docs/cara-kerja.md` / weak area tanpa unit / roadmap `README.md`).
+  - Semua 🟢 tapi data kurang → `Unit N: semua tag 🟢, data belum cukup (<tag> <jalur> n/8, …)`.
   - Belum → `Unit N: x/y tag 🟢 (<tag> <acc>%, …)` — tag yang belum 🟢 saja.
   - **Jangan** menulis unit baru otomatis — hanya bila user minta.
+- **Cek kesalahan berulang** (0–1 baris): kalau soal salah sesi ini punya pola yang sudah
+  **≥ 3 kali** (hitung dari catatan tag di `evaluation.md`, termasuk sesi ini) dan unitnya belum
+  punya blok `⚠️ Koreksi` untuk pola itu, tulis `💡 Pola "<pola>" sudah N× → tambah catatan
+  koreksi di Unit N?`. Tulis catatannya hanya bila user setuju (format di `docs/konvensi-unit.md`).
 - Penutup: tawarkan pembahasan lebih dalam bila user mau. **Jangan** cetak ulang seluruh tracker.
 
 ## Gaya

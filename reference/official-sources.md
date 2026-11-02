@@ -42,6 +42,24 @@ Kalau folder itu kosong (misalnya di komputer lain), unduh ulang dari link di ba
 > **1–6** (selama masa transisi sampai Januari 2028, skala lama 0–120 juga tetap dicantumkan).
 > Skill `/toefl` dan `toefl-templates.md` perlu dicek apakah masih memakai format lama.
 
+## 5. Ambang "tuntas" & lanjut ke materi baru (riset pendidikan, bukan standar resmi)
+CEFR, Oxford, dan ETS **tidak** mengatur kapan pelajar boleh lanjut ke materi baru. Ambang 🟢
+**≥ 80%** (dari 10 percobaan terakhir, kedua jalur) di `docs/cara-kerja.md` berdasar riset
+*mastery learning* di bawah ini.
+
+| Sumber | Isi yang relevan | Dipakai untuk | Status / link |
+|--------|------------------|---------------|---------------|
+| Bloom, B. S. (1968). *Learning for Mastery*. UCLA **Evaluation Comment**, 1(2) | dasar *mastery learning*: siswa lulus tes formatif unit dulu (kalau belum, dapat perbaikan), baru lanjut ke unit berikutnya | konsep "unit tuntas → baru tulis unit baru" | 🔗 [CRESST (UCLA)](https://cresst.org/?p=2412) |
+| Slavin, R. E. (1987). *Mastery Learning Reconsidered*. **Review of Educational Research**, 57(2) | ambang mastery yang dipakai *"usually in the range of 80–90% correct"* | rentang wajar ambang 🟢 | 🔗 [PDF (gwern.net)](https://www.gwern.net/doc/psychology/1987-slavin.pdf) |
+| Guskey, T. R. (2010). *Lessons of Mastery Learning*. **Educational Leadership**, 68(2), ASCD | target mastery **80% or better**; perbaikan ≠ sekadar mengulang materi yang sama | dasar angka **80%** | 🔗 [ascd.org](https://www.ascd.org/publications/educational-leadership/oct10/vol68/num02/Lessons-of-Mastery-Learning.aspx) |
+| Kulik, Kulik & Bangert-Drowns (1990). *Effectiveness of Mastery Learning Programs: A Meta-Analysis*. **Review of Educational Research**, 60(2), 265–299 | 108 studi terkontrol: mastery learning menaikkan nilai ujian; pelajar yang lebih lemah paling diuntungkan | bukti bahwa model "tuntas dulu" efektif | 🔗 [doi:10.3102/00346543060002265](https://doi.org/10.3102/00346543060002265) |
+| D'Albro (disertasi, Michigan State Univ.) | membandingkan ambang tetap 80%, tetap 90%, dan ambang naik bertahap: **90% tetap** membuat waktu belajar kurang efisien **tanpa** kenaikan hasil | alasan **tidak** menaikkan ambang ke 90% | 🔗 [d.lib.msu.edu](https://d.lib.msu.edu/etd/25195/FULL_TEXT/view) |
+| Wilson, Shenhav, Straccia & Cohen (2019). *The Eighty Five Percent Rule for optimal learning*. **Nature Communications**, 10:4646 | belajar paling cepat saat akurasi latihan ±**85%** (error ±15,87%) | soal latihan sebaiknya menantang, jangan terlalu mudah. ⚠️ Diuji pada model jaringan saraf & tugas persepsi sederhana, jadi penerapan ke kelas bahasa hanya ekstrapolasi | 🔗 [PMC6831579](https://pmc.ncbi.nlm.nih.gov/articles/PMC6831579) |
+
+> Ringkasnya: **80%** ada di batas bawah rentang mastery (80–90%). Angka ini cocok untuk proyek
+> sekunder yang ringan, apalagi syarat dua jalur (MCQ + Prod) sudah lebih ketat dari model
+> standar. Menaikkan ke 90% tidak terbukti menambah hasil (D'Albro).
+
 ## Cara pakai (aturan untuk Claude)
 - Saat menulis unit baru: cek grammar di **Core Inventory** (level yang sesuai) dan ambil vocab
   dari **Oxford 3000/5000 by CEFR**. Tag CEFR di `oxford-vocabulary.md` harus sama dengan PDF Oxford.
