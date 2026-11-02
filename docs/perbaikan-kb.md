@@ -33,6 +33,21 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-11-02 — Tag grammar dilacak dua jalur: pilihan ganda vs produksi
+- **Kategori:** data · skill
+- **Problem:** Hasil `/quiz` (pilihan ganda, 12 soal) dan `/quiz-t` (terjemahan, 4 soal) masuk ke
+  satu angka yang sama per tag. Pilihan ganda lebih mudah (mengenali, bukan menyusun) dan lebih
+  banyak soalnya, jadi status tag didominasi pilihan ganda. Contoh: `A2-present-perfect` tampil
+  🟢 83% padahal di produksi baru 5/7 (71%).
+- **Fix:** Tabel tag grammar di `evaluation.md` dipecah jadi kolom **MCQ** & **Prod** (data lama
+  direkonstruksi dari `history.md`: present simple Prod 16/21, present perfect Prod 5/7; sisanya
+  MCQ). Tag 🟢 hanya bila **kedua jalur 🟢**; jalur terburuk menentukan status. Hint fading
+  `/quiz` pakai status jalur MCQ; level kosakata bantu `/quiz-t` pakai status jalur Prod. Tag
+  skill/error/unit tetap satu jalur. Efek: `A2-present-perfect` 🟢 → 🟡, Unit 1 belum tuntas.
+- **File:** `progress/evaluation.md`, `.claude/skills/quiz/SKILL.md`,
+  `.claude/skills/quiz/ref/translate.md`, `.claude/skills/quiz-t/SKILL.md`,
+  `.claude/skills/diagnostic/SKILL.md`, `docs/cara-kerja.md`
+
 ### 2026-10-30 — `/quiz` merotasi tema teks reading ala *Minna no Nihongo*
 - **Kategori:** pembelajaran · skill
 - **Problem:** Tema teks reading dipilih bebas tiap sesi (mis. rutinitas perawat), jadi

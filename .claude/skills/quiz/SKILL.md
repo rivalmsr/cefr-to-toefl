@@ -123,7 +123,7 @@ Lalu panel **AskUserQuestion ≤4 soal/panel**: `header` = tipe + tag pendek (�
 `question` = kalimat soal, `options` = **4 opsi persis urutan di chat**, `label` = teks opsi,
 `description` = hint sesuai aturan di bawah.
 
-**Aturan `description` opsi (hint fading, per tag dari tracker):**
+**Aturan `description` opsi (hint fading, per tag dari tracker — pakai status jalur MCQ):**
 - 🔴/🟡/⚪ → **hint penuh**: arti Indonesia singkat / fungsi umum tiap opsi (mis. *"bentuk dasar"*
   tidak boleh — itu menamai bentuk yang diuji; pakai arti netral).
 - Mendekati 🟢 (75–79% atau baru naik) → **hint netral** (arti kata saja).
@@ -145,9 +145,14 @@ makna tepat (salah kecil di luar target, mis. ejaan, tidak menggugurkan — cata
 
 ### 6. Rekam (WAJIB, sebelum pesan hasil)
 **`progress/evaluation.md`** — hitung eksplisit, tunjukkan di kepala dulu (lama + sesi = baru):
-- **Per grammar/skill tag:** `Correct` += benar, `Total` += jumlah soal tag itu; Accuracy =
+- **Per grammar tag — DUA JALUR:** kolom **MCQ** (pilihan ganda `/quiz`, `/diagnostic`) dan
+  **Prod** (produksi: `/quiz-t`, `/quiz writing`/`translate`). Soal masuk **hanya** ke jalurnya:
+  `C/T` jalur += benar/soal; tiap jalur punya status sendiri (T < 3 ⚪ · < 60% 🔴 · 60–79% 🟡 ·
+  ≥ 80% 🟢). `Total` & `Accuracy` = gabungan (info). **Status tag** = 🟢 hanya bila **kedua
+  jalur 🟢**; selain itu jalur terburuk yang punya ≥3 data; satu jalur 🟢 + jalur lain ⚪ → 🟡;
+  kedua jalur < 3 → ⚪. Tag baru → tambah baris.
+- **Per skill tag** (`SK-*`): satu jalur — `Correct` += benar, `Total` += soal; Accuracy =
   Correct/Total (bulatkan %); Status: Total < 3 → ⚪ · < 60% 🔴 · 60–79% 🟡 · ≥ 80% 🟢.
-  Tag baru muncul pertama kali → tambah baris.
 - **Per error type:** tiap soal salah → +1 Total pada error-type-nya (Correct tak berubah); soal
   benar yang menguji error-type itu (mis. distraktornya *they goes*) → +1 Correct & +1 Total.
 - **Per unit:** agregat per unit (hapus baris placeholder _(none…)_ bila ada isi).

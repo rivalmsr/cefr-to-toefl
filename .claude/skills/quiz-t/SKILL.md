@@ -31,8 +31,8 @@ batasi unit; `N` → override jumlah soal sesi itu.
 
 1. **Satu** perintah muat state:
    `cat .claude/skills/quiz/ref/translate.md progress/evaluation.md; head -25 progress/anki-weak-items.md; ls lessons/`
-2. **Pilih tag sasaran:** tag grammar 🔴/🟡 dulu (Weak areas `evaluation.md`), lalu ⚪, lalu unit
-   terbaru. Tentukan **level bantuan** per tag (tabel di `translate.md`).
+2. **Pilih tag sasaran:** tag grammar dengan **jalur Prod** 🔴/🟡 dulu (Weak areas `evaluation.md`), lalu ⚪, lalu unit
+   terbaru. Tentukan **level bantuan** per tag dari status jalur Prod (tabel di `translate.md`).
 3. Bila perlu detail poin grammar / kosakata: **satu** perintah, mis.
    `head -25 lessons/unit-01.md; grep -n "<tag1>\|<tag2>" reference/quiz-taxonomy.md; grep -n -i "<kata1>\|<kata2>" reference/oxford-vocabulary.md`.
 4. Susun & sajikan soal persis `translate.md`: 1 soal/panel AskUserQuestion, input via Other, 2 opsi
@@ -40,8 +40,9 @@ batasi unit; `N` → override jumlah soal sesi itu.
    🎯 tujuan, kosakata bantu bentuk dasar, 1 titik uji/soal. Kumpulkan **semua** jawaban dulu.
 5. **Nilai** per titik uji (toleransi variasi sah, slip di luar titik uji = catatan) → **rekam**
    seperti `/quiz` langkah 6:
-   - `progress/evaluation.md`: per tag (atribusi: benar → semua tag sasaran; salah → hanya tag
-     yang gagal), per error type, per unit, `SK-writing`, Weak areas, baris "Updated".
+   - `progress/evaluation.md`: per tag grammar di **kolom Prod** (atribusi: benar → semua tag
+     sasaran; salah → hanya tag yang gagal; status tag = 🟢 hanya bila MCQ **dan** Prod 🟢), per
+     error type, per unit, `SK-writing`, Weak areas, baris "Updated".
    - `progress/history.md`: baris paling atas, Scope **`QUIZ [translate] (<cakupan>)`**.
 6. **Pesan akhir RINGKAS:** skor 1 baris · tabel soal SALAH saja (`# · tag · jawabanmu · kunci`) ·
    1 baris fix per soal salah + slip di luar titik uji sebagai catatan · 1 baris area terlemah /

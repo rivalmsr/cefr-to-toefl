@@ -62,13 +62,13 @@ Tujuannya membiasakan **menyusun kalimat sendiri**; bantuan dikurangi seiring ma
   kunci = ada di kosakata bantu **atau** memang kata titik uji. Contoh cacat: kunci *My parents
   drink coffee every morning* tapi bantu tanpa *every (setiap)*; kunci *Does your father work on
   Saturdays?* tanpa *on (pada)*.
-- **Level bantuan per tag sasaran** (dari status tag di `evaluation.md`):
+- **Level bantuan per tag sasaran** (dari status **jalur Prod** tag itu di `evaluation.md`):
 
   | Level | Status tag | Kosakata bantu | Label fungsi («durasi», «kebiasaan», «larangan»…) |
   |---|---|---|---|
   | `penuh` | ⚪ / 🔴 / 🟡 | semua kata di kunci **kecuali** kata titik uji (kata isi + kata fungsi non-uji) | ditampilkan |
   | `sebagian` | 🟢 | semua **kata isi** (benda, kerja, sifat, angka) di kunci; kata fungsi kecil (*my, this, every, on*) tugas user | tidak |
-  | `minimal` | 🟢 ≥ 90% & Total ≥ 10 | hanya nama & kata di atas level aktif | tidak |
+  | `minimal` | Prod 🟢 ≥ 90% & Prod T ≥ 10 | hanya nama & kata di atas level aktif | tidak |
 
   Konteks, waktu, & tujuan **selalu** ada di semua level. Baris **Kosakata bantu** juga selalu
   ditulis (bila kosong di level `minimal`: `Kosakata bantu: — (level minimal)`), supaya user tahu
@@ -102,7 +102,7 @@ Tujuannya membiasakan **menyusun kalimat sendiri**; bantuan dikurangi seiring ma
    (*have been living* untuk durasi) — **tidak** menggagalkan.
 3. **Pisahkan slip dari kelemahan:** typo, huruf besar, article/preposisi **di luar** titik uji →
    **dicatat & dikoreksi**, tapi **tak** membuat ❌. Slip yang ADA di titik uji → ❌.
-4. **Atribusi tag:** soal **benar** → +1 Correct & +1 Total untuk **semua** tag sasaran; soal
+4. **Atribusi tag (masuk kolom Prod untuk tag grammar):** soal **benar** → +1 Correct & +1 Total untuk **semua** tag sasaran; soal
    **salah** → +1 Total **hanya untuk tag yang gagal**, supaya sub-skill yang sudah benar tak
    ikut dihukum. Error-type (`ERR-tense`, `ERR-agreement`, …) mengikuti titik yang gagal.
    `SK-writing` +1 Total per soal, +1 Correct bila soal ✅.
