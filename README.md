@@ -37,6 +37,8 @@ docs/
   perbaikan-kb.md          fix log (Problem → Fix → File)
 scripts/
   sync-anki.sh             Anki desktop → progress/anki-weak-items.md
+  check-kb.py              checks score math in progress/evaluation.md (read-only)
+  test_check_kb.py         tests for check-kb.py (stdlib runner, no pytest)
 .claude/skills/
   diagnostic/              placement test (run first)
   quiz/  (+ ref/translate.md)   daily adaptive drills

@@ -33,6 +33,29 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-11-02 — Tes untuk `check-kb.py` (filosofi tes proyek Jepang)
+- **Kategori:** data · skill
+- **Problem:** `check-kb.py` sendiri belum dites. Kalau logikanya salah (mis. ambang atau aturan
+  dua jalur), tracker yang salah bisa lolos tanpa ketahuan.
+- **Fix:** Mengikuti pola `minna-no-nihongo-i`: logika dipisah jadi fungsi murni `check_text()`,
+  lalu ditambah `scripts/test_check_kb.py` (runner stdlib, 21 tes: ambang & batas, aturan dua
+  jalur, tiap jenis kesalahan terdeteksi, plus satu tes integrasi ke `evaluation.md` nyata).
+  Sudah diuji dengan 5 mutasi, semuanya membuat tes merah. Skill `writing-good-tests` diadaptasi
+  versi ringkas. `CLAUDE.md` aturan 9: jalankan cek setelah menulis `evaluation.md`.
+  `__pycache__/` masuk `.gitignore`.
+- **File:** `scripts/check-kb.py`, `scripts/test_check_kb.py`,
+  `.claude/skills/writing-good-tests/SKILL.md`, `CLAUDE.md`, `README.md`, `.gitignore`,
+  `docs/perbaikan-kb.md`
+
+### 2026-11-02 — Script cek hitungan `evaluation.md`
+- **Kategori:** data
+- **Problem:** Semua hitungan di `evaluation.md` (urutan 10 terakhir, n/m, persen, status jalur,
+  status tag dua jalur, Accuracy) dikerjakan Claude secara manual, tanpa ada yang memeriksa ulang.
+- **Fix:** Tambah `scripts/check-kb.py` (read-only). Script ini mengecek tabel grammar (dua jalur
+  + All-time + status tag) dan tabel skill/error/unit. Exit 1 kalau ada yang tidak cocok.
+  Pakai: `python3 scripts/check-kb.py`.
+- **File:** `scripts/check-kb.py`, `README.md`, `docs/perbaikan-kb.md`
+
 ### 2026-11-02 — Catatan koreksi kesalahan berulang + minimum 8 percobaan untuk unit tuntas
 - **Kategori:** pembelajaran · skill
 - **Problem:** (1) Kesalahan yang sama terus berulang tanpa penjelasan baru di unit. Contoh: *has*

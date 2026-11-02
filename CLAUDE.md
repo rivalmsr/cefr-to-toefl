@@ -52,3 +52,6 @@ official **TOEFL iBT** score for S2 admission at the **Institute of Science Toky
 7. **Preserve material:** never drop content when editing; **report every change**.
 8. **Fix log:** every rule/skill/reference fix (not new material or scores) → 1 entry at the top
    of `docs/perbaikan-kb.md`.
+9. **Checks:** after writing `progress/evaluation.md` → `python3 scripts/check-kb.py` (must be ✅).
+   After touching `scripts/check-kb.py` or its tests → `python3 scripts/test_check_kb.py`
+   (how to write tests: skill `writing-good-tests`).

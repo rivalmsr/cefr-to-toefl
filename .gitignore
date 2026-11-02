@@ -7,3 +7,6 @@
 
 # Official source PDFs (copyrighted, re-download via reference/official-sources.md)
 reference/sources/
+
+# Python bytecode
+__pycache__/
