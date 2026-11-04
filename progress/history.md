@@ -6,6 +6,7 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-11-05 | VERB (A1 harian: P2a, P2b, P2c, P4a, P4d, P5) | 8 | 5/8 (63%) | ✓ think, see, be, do, give; ✗ drink: drink, drunk → drank, drunk; tell: tell, tell → told, told; feel: feel, feel → felt, felt; pola baru: P2a, P2b, P4a |
 | 2026-11-05 | QUIZ [translate] (Unit 1) | 4 | 1/4 (25%) | ✓ *How long have you lived in this house?*; ✗ *~~I have know Budi~~* → have known; ✗ *~~My mother doesn't bought … since last year~~* → hasn't bought; ✗ *~~Does your father is usually read~~* → Does … usually read. A2-present-perfect Prod 7/10→6/10 (🟡), A2-present-simple Prod 9/10 (🟢 tetap), SK-writing 73%→68%, ERR-tense 79%→76%, Unit 1 85%→83%. Slip: *moning*, *the newspaper*, *every morning*. |
 | 2026-11-05 | QUIZ adaptive (Unit 1) | 12 | 12/12 (100%) | Semua benar: *Does … invite*, *are always fun*, *doesn't make*, *usually brings* (no extra *has*), present perfect 3/3, *appointment*, *do a favour*, paraphrase *has worked since*, reading 2/2. A2-present-simple MCQ 7/10→8/10 → tag 🟡→🟢, A2-present-perfect MCQ 9/10→10/10 (tag 🟡, Prod 7/10), ERR-tense 77%→79% 🟡, Unit 1 83%→85%. Tema: 14 Undangan & janji. |
 | 2026-11-03 | VERB (A1 harian: P2c, P3, P4c, P4d, P5) | 8 | 2/8 (25%) | ✓ wear, say; ✗ see: seen, seen → saw, seen; do: did, been → did, done; come: came, came → came, come; be: been, been → was/were, been; eat: eaten, ate → ate, eaten; take: take, took → took, taken; pola baru: P3, P4d |
