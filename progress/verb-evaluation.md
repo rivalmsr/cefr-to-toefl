@@ -14,49 +14,52 @@ An attempt is ✓ only if **both forms** are right (the item shows V1 + meaning;
 **and** V3), spelling included. Capital letters ignored. Both forms accepted where the
 reference lists two (*learned/learnt*). Hint (💡) used or skipped (⏭️) → ✗.
 
-_Created 2026-11-02. Updated 2026-11-05 after session 3 (8 items, 5/8); earlier: session 2 (2026-11-03, 2/8), session 1 (2026-11-02, 1/8)._
+_Created 2026-11-02. Updated 2026-11-05 after session 4 (8 items, 6/8); earlier: session 3 (2026-11-05, 5/8), session 2 (2026-11-03, 2/8), session 1 (2026-11-02, 1/8)._
 
 ---
 
 ## Per pattern
 | Pattern | Correct | Total | Accuracy | Status |
 |---------|---------|-------|----------|--------|
-| P2a | 1 | 1 | 100% | ⚪ |
-| P2b | 0 | 1 | 0% | ⚪ |
-| P2c | 1 | 5 | 20% | 🔴 |
+| P2a | 2 | 2 | 100% | ⚪ |
+| P2b | 1 | 3 | 33% | 🔴 |
+| P2c | 2 | 7 | 29% | 🔴 |
 | P3 | 0 | 1 | 0% | ⚪ |
-| P4a | 0 | 1 | 0% | ⚪ |
+| P4a | 1 | 2 | 50% | ⚪ |
 | P4b | 0 | 1 | 0% | ⚪ |
 | P4c | 1 | 2 | 50% | ⚪ |
 | P4d | 2 | 5 | 40% | 🔴 |
-| P5 | 3 | 7 | 43% | 🔴 |
+| P5 | 5 | 9 | 56% | 🔴 |
 
 ## Per verb (last 5)
 | Verb | V2 · V3 | Last 5 | All-time | Status |
 |------|---------|--------|----------|--------|
+| `buy` | bought · bought | `✓` 1/1 (100%) ⚪ | 1/1 | ⚪ |
 | `think` | thought · thought | `✓` 1/1 (100%) ⚪ | 1/1 | ⚪ |
-| `feel` | felt · felt | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*feel, feel* 2026-11-05) |
+| `feel` | felt · felt | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*felt, felt* ✅ 2026-11-05 s4; *feel, feel* 2026-11-05 s3) |
+| `sleep` | slept · slept | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*sleep, sleep* 2026-11-05) |
+| `find` | found · found | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*find, found* — V1 in V2 slot, 2026-11-05) |
 | `get` | got · got (US: gotten) | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*get, got* 2026-11-02) |
 | `have` | had · had | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*have, had* 2026-11-02) |
 | `make` | made · made | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*make, made* 2026-11-02) |
 | `say` | said · said | `✓` 1/1 (100%) ⚪ | 1/1 | ⚪ |
-| `tell` | told · told | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*tell, tell* 2026-11-05) |
+| `tell` | told · told | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*told, told* ✅ 2026-11-05 s4; *tell, tell* 2026-11-05 s3) |
 | `come` | came · come | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*came, came* 2026-11-03) |
-| `drink` | drank · drunk | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*drink, drunk* — V3 right, 2026-11-05) |
+| `drink` | drank · drunk | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*drank, drunk* ✅ 2026-11-05 s4; *drink, drunk* 2026-11-05 s3) |
 | `know` | knew · known | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*know, known* 2026-11-02) |
 | `wear` | wore · worn | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*wore, worn* ✅ 2026-11-03; *wern, worn* 2026-11-02) |
 | `eat` | ate · eaten | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*eaten, ate* — swapped, 2026-11-03) |
 | `give` | gave · given | `✓` 1/1 (100%) ⚪ | 1/1 | ⚪ |
 | `see` | saw · seen | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*saw, seen* ✅ 2026-11-05; *seen, seen* 2026-11-03) |
 | `take` | took · taken | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*take, took* — shifted one slot, 2026-11-03) |
-| `be` | was / were · been | `✗✗✓` 1/3 (33%) 🔴 | 1/3 | 🔴 (*was/were, been* ✅ 2026-11-05; *been, been* 2026-11-03; *be, been* 2026-11-02) |
-| `do` | did · done | `✗✗✓` 1/3 (33%) 🔴 | 1/3 | 🔴 (*did, done* ✅ 2026-11-05; *did, been* 2026-11-03; *do, do* 2026-11-02) |
+| `be` | was / were · been | `✗✗✓✓` 2/4 (50%) 🔴 | 2/4 | 🔴 (*was/were, been* ✅✅ 2026-11-05 s3+s4; *been, been* 2026-11-03; *be, been* 2026-11-02) |
+| `do` | did · done | `✗✗✓✓` 2/4 (50%) 🔴 | 2/4 | 🔴 (*did, done* ✅✅ 2026-11-05 s3+s4; *did, been* 2026-11-03; *do, do* 2026-11-02) |
 | `go` | went · gone | `✓` 1/1 (100%) ⚪ | 1/1 | ⚪ |
 
 ## Weak verbs (priority for next session)
-1. `be` 🔴 33% — wrong before: *been, been*, *be, been* → **was/were, been** (✅ fixed 2026-11-05)
-2. `do` 🔴 33% — wrong before: *did, been*, *do, do* → **did, done** (✅ fixed 2026-11-05)
+1. `be` 🔴 50% — wrong before: *been, been*, *be, been* → **was/were, been** (✅ 2× in a row 2026-11-05)
+2. `do` 🔴 50% — wrong before: *did, been*, *do, do* → **did, done** (✅ 2× in a row 2026-11-05)
 
-Redrill from session 3 (2026-11-05): V1 copied into the V2 slot (*drink, drunk*; *tell, tell*;
-*feel, feel*). `drink` (→ drank, drunk), `tell` (→ told, told), `feel` (→ felt, felt). Still
-pending from session 2: `come`, `eat`, `take`; from session 1: `have`, `get`, `make`, `know`.
+Redrill from session 4 (2026-11-05): V1 copied into the V2 slot again (*find, found*;
+*sleep, sleep*). `find` (→ found, found), `sleep` (→ slept, slept). Still pending from
+session 2: `come`, `eat`, `take`; from session 1: `have`, `get`, `make`, `know`.

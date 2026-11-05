@@ -6,6 +6,7 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-11-05 | VERB (A1 harian: P2a, P2b, P2c, P4a, P5) | 8 | 6/8 (75%) | ✓ be, drink, buy, tell, do, feel; ✗ find: find, found → found, found; sleep: sleep, sleep → slept, slept; pola baru: — |
 | 2026-11-05 | QUIZ [translate] (Unit 1) | 4 | 3/4 (75%) | PP ✗ *~~has wore … since March~~* → hasn't worn; ✅ *have known … for two years*, *How long has … studied*; PS ✅ *Does your cat … sleep*; slips *japanese*, *always*≠usually; PP Prod 6/10 → 5/10 🔴 |
 | 2026-11-05 | QUIZ adaptive (Unit 1) | 12 | 12/12 (100%) | Semua benar: present perfect 4/4 (*has had since*, *haven't used for*, *How long have you had*, error ID *since five years* → for), present simple 3/3 (*usually checks*, *Does … play*, *is always fun*), *habit*, *make a phone call*, paraphrase *has had … for*, reading 2/2. A2-present-perfect MCQ 10/10 (tag 🟡, Prod 6/10), A2-present-simple MCQ 8/10 🟢, ERR-tense 76%→78% 🟡, Unit 1 83%→84%. Tema: 15 Teknologi & internet. |
 | 2026-11-05 | VERB (A1 harian: P2a, P2b, P2c, P4a, P4d, P5) | 8 | 5/8 (63%) | ✓ think, see, be, do, give; ✗ drink: drink, drunk → drank, drunk; tell: tell, tell → told, told; feel: feel, feel → felt, felt; pola baru: P2a, P2b, P4a |
