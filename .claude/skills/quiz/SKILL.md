@@ -173,14 +173,21 @@ makna tepat (salah kecil di luar target, mis. ejaan, tidak menggugurkan — cata
 - 1 baris: area terlemah sekarang + perubahan status (mis. `A2-present-simple ⚪ → 🟡`).
 - **1 baris cek kelulusan unit** (tiap unit yang diuji sesi ini). Tag grammar unit = tag di
   `reference/quiz-taxonomy.md` dengan kolom `Unit` = unit itu (bukan `SK-`/`ERR-`); status dari
-  `evaluation.md` yang **baru** direkam. **Syarat tuntas:** semua tag grammar unit 🟢 **dan**
-  tiap tag punya **≥ 8 percobaan di masing-masing jalur** (panjang urutan `✓✗` MCQ dan Prod,
-  maks 10). Dasarnya ada di `reference/official-sources.md` bagian 5.
-  - Tuntas → `🎉 Unit N tuntas (semua tag 🟢, ≥8 percobaan/jalur) → bila siap, minta "tulis Unit N+1"` + kandidat
-    tema (baris "Berikutnya" di `docs/cara-kerja.md` / weak area tanpa unit / roadmap `README.md`).
-  - Semua 🟢 tapi data kurang → `Unit N: semua tag 🟢, data belum cukup (<tag> <jalur> n/8, …)`.
-  - Belum → `Unit N: x/y tag 🟢 (<tag> <acc>%, …)` — tag yang belum 🟢 saja.
+  `evaluation.md` yang **baru** direkam. Dua syarat (tabel "Tiga tingkat kelulusan" di
+  `docs/cara-kerja.md`; dasar di `reference/official-sources.md` bagian 5), keduanya butuh tiap
+  tag **≥ 8 percobaan di masing-masing jalur** (panjang urutan `✓✗` MCQ dan Prod, maks 10):
+  **boleh lanjut** = semua tag grammar unit **≥ 70%** di kedua jalur; **tuntas** = semua tag 🟢
+  (≥ 80%) di kedua jalur. Hitung % dari urutan 10 terakhir, jangan dari warna status.
+  - Tuntas → `🎉 Unit N tuntas (semua tag 🟢, ≥8 percobaan/jalur)` (+ bila Unit N+1 belum ada:
+    `→ bila siap, minta "tulis Unit N+1"` + kandidat tema).
+  - Boleh lanjut, belum tuntas → `✅ Unit N boleh lanjut (semua tag ≥70%) · belum 🟢: <tag> <jalur> <acc>% → tetap dilatih`
+    (+ bila Unit N+1 belum ada: `→ bila siap, minta "tulis Unit N+1"` + kandidat tema: baris
+    "Berikutnya" di `docs/cara-kerja.md` / weak area tanpa unit / roadmap `README.md`).
+  - ≥ 70% tapi data kurang → `Unit N: semua tag ≥70%, data belum cukup (<tag> <jalur> n/8, …)`.
+  - Belum → `Unit N: belum boleh lanjut (<tag> <jalur> <acc>% < 70%, …)` — tag di bawah 70% saja.
   - **Jangan** menulis unit baru otomatis — hanya bila user minta.
+  - Setelah unit baru ada, tag unit lama yang belum 🟢 **tetap ikut bobot adaptif** (🔴 ±3, 🟡 ±2
+    soal) di sesi tanpa argumen — jangan dibuang dari cakupan.
 - **Cek kesalahan berulang** (0–1 baris): kalau soal salah sesi ini punya pola yang sudah
   **≥ 3 kali** (hitung dari catatan tag di `evaluation.md`, termasuk sesi ini) dan unitnya belum
   punya blok `⚠️ Koreksi` untuk pola itu, tulis `💡 Pola "<pola>" sudah N× → tambah catatan

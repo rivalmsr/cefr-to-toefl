@@ -60,6 +60,24 @@ CEFR, Oxford, dan ETS **tidak** mengatur kapan pelajar boleh lanjut ke materi ba
 > sekunder yang ringan, apalagi syarat dua jalur (MCQ + Prod) sudah lebih ketat dari model
 > standar. Menaikkan ke 90% tidak terbukti menambah hasil (D'Albro).
 
+### 5b. Kerangka bahasa & kurikulum: "dikuasai" vs "boleh lanjut / naik level" (dicek 2026-11-07)
+Tidak ada sumber yang memberi satu angka resmi untuk "boleh lanjut ke materi berikutnya". Yang
+konsisten: menandai **dikuasai** umumnya ±80%, sedangkan **berada di / lanjut ke** suatu level
+lebih longgar (tidak harus menguasai semuanya). Dasar tingkat ✅ boleh lanjut (≥ 70%) · 🎉 tuntas
+(≥ 80%) · ⬆️ naik level (≥ 80% tag level tuntas) di `docs/cara-kerja.md`.
+
+| Sumber | Isi yang relevan | Dipakai untuk | Status / link |
+|--------|------------------|---------------|---------------|
+| Council of Europe, **CEFR** (2001, bab 2.2 & 9.3) + Companion Volume (2020) | penilaian berbasis kriteria *can do*; membedakan *achievement* (menguasai materi kursus) vs *proficiency* (level); ambang *mastery* diserahkan ke penyusun kursus — **tanpa angka persen** | alasan ambang ditentukan KB sendiri | 🔗 [CoE: Assessing CEFR level](https://rm.coe.int/assessing-cefr-level/1680a9178c) · [ECML worksheet](https://www.ecml.at/Portals/1/3MTP/ECEP/training-kit/PageEN/P/WORKSHEET_A_Assessment_traditions.pdf) |
+| Council of Europe, **European Language Portfolio** — checklist self-assessment | bisa ≥ **80%** butir *can do* suatu level → "kemungkinan sudah mencapai" level itu (disebut pedoman kasar) | ambang 🎉 tuntas & ⬆️ naik level | 🔗 [rm.coe.int/16804932bf](https://rm.coe.int/16804932bf) · [ELP Swiss, Appendix 2](https://www.readkong.com/page/appendix-2-self-assessment-checklists-from-the-swiss-9391014) — ⚠️ kalimat dibaca lewat versi Swiss/salinan, bukan teks CoE asli |
+| Pearson, **Global Scale of English** (GSE Learning Objectives; English Performance Standards) | "berada di" suatu level = ±**50%** peluang berhasil di tugas level itu; berada di level ≠ menguasai semua tujuannya | alasan "boleh lanjut" lebih longgar dari "tuntas" | 🔗 [GSE LO overview](https://www.pearsoncanadaschool.com/content/dam/websites/pearson-canada-school/assets/documents/literacy/gse/gse-learning-objectives-overview.pdf) · [Performance Standards](https://www.pearson.com/content/dam/global-store/global/resources/efficacy/evidence-about-learning/Pearson-Learning-Design-Principles-English-Performance-Standards-summary.pdf) |
+| **ACTFL** Proficiency Guidelines 2024 | rating suatu level butuh performa **konsisten** di semua kriteria FACT level itu | alasan syarat **kedua jalur** + minimum 8 percobaan | 🔗 [Guidelines 2024](https://www.isbe.net/Documents/ACTFL-Proficiency-Guidelines-2024.pdf) |
+| **Cambridge English** A2 Key | lulus = skor skala **120** (Cambridge English Scale), bukan persen mentah; angka "70%" yang beredar tidak ada di dokumen resmi | catatan: jangan mengutip "Cambridge = 70%" | 🔗 [A2 statement of results](https://www.cambridgeenglish.org/images/664442-a2-statement-of-results-factsheet.pdf) |
+| **Kurikulum Merdeka — KKTP** (pengganti KKM) | guru menetapkan kriteria per tujuan pembelajaran; contoh template sekolah: 66–85% = tuntas, < 66% = remedial | dasar angka **70%** (±66% dibulatkan) | 🔗 [modul PMIKM (arsip)](https://archive.org/download/rekap-final-pmikm-sd-22032023/REKAP%20FINAL%20PMIKM%20SD%2022032023.zip/REKAP%20FINAL%20PMIKM%20SD%2022032023%2F014%20Kriteria%20Ketercapaian%20Tujuan%20Pembelajaran%20SUDAH.pdf) · [mysch.id](https://mysch.id/blog/detail/332/kktp-adalah) — ⚠️ template sekolah, **bukan** ketentuan nasional Kemendikbud |
+
+> ⚠️ Angka **70%** adalah **pilihan desain** KB ini (disintesis dari sumber di atas, dipilih user
+> 2026-11-07), bukan angka yang tertulis persis di satu sumber.
+
 ## Cara pakai (aturan untuk Claude)
 - Saat menulis unit baru: cek grammar di **Core Inventory** (level yang sesuai) dan ambil vocab
   dari **Oxford 3000/5000 by CEFR**. Tag CEFR di `oxford-vocabulary.md` harus sama dengan PDF Oxford.

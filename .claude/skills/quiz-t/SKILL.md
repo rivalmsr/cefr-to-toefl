@@ -47,9 +47,10 @@ batasi unit; `N` → override jumlah soal sesi itu.
    - `progress/history.md`: baris paling atas, Scope **`QUIZ [translate] (<cakupan>)`**.
 6. **Pesan akhir RINGKAS:** skor 1 baris · tabel soal SALAH saja (`# · tag · jawabanmu · kunci`) ·
    1 baris fix per soal salah + slip di luar titik uji sebagai catatan · 1 baris area terlemah /
-   perubahan status · **1 baris cek kelulusan unit** (aturan `/quiz` langkah 7: semua tag grammar
-   unit 🟢 **dan** ≥ 8 percobaan per jalur → `🎉 Unit N tuntas → minta "tulis Unit N+1"`; semua 🟢
-   tapi data kurang → `Unit N: semua tag 🟢, data belum cukup (…)`; belum → `Unit N: x/y tag 🟢 (…)`;
-   jangan tulis unit otomatis) · **cek kesalahan berulang** (aturan `/quiz` langkah 7: pola ≥ 3×
+   perubahan status · **1 baris cek kelulusan unit** (aturan `/quiz` langkah 7, ≥ 8 percobaan per
+   jalur: semua tag 🟢 → `🎉 Unit N tuntas`; semua tag ≥ 70% di kedua jalur → `✅ Unit N boleh
+   lanjut · belum 🟢: …` (+ tawarkan "tulis Unit N+1" bila belum ada); data kurang → `Unit N: semua
+   tag ≥70%, data belum cukup (…)`; ada tag < 70% → `Unit N: belum boleh lanjut (…)`; jangan tulis
+   unit otomatis) · **cek kesalahan berulang** (aturan `/quiz` langkah 7: pola ≥ 3×
    tanpa `⚠️ Koreksi` di unit → tawarkan catatan koreksi) · tawarkan pembahasan lebih dalam bila
    user mau.

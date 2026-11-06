@@ -33,6 +33,20 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-11-07 — Pisah "boleh lanjut" (≥ 70%) dari "tuntas" (≥ 80%) + aturan naik level
+- **Kategori:** pembelajaran · skill
+- **Problem:** Satu-satunya syarat menulis unit baru adalah unit lama 🎉 tuntas (semua tag ≥ 80%
+  di kedua jalur). Akibatnya materi baru tertahan: Unit 1 akurasi 84% tapi tertahan oleh
+  `A2-present-perfect` Prod 5/10. Referensi (CEFR, ELP, GSE, ACTFL, Cambridge, KKTP) menunjukkan
+  80% wajar untuk "dikuasai", tapi "boleh lanjut / berada di level" umumnya lebih longgar.
+- **Fix:** Tiga tingkat: ✅ **boleh lanjut** = semua tag grammar unit ≥ 70% di kedua jalur
+  (≥ 8 percobaan/jalur) → unit berikutnya boleh ditulis, tag yang belum 🟢 tetap terbawa lewat
+  bobot adaptif; 🎉 **tuntas** = semua 🟢 (aturan lama); ⬆️ **naik level** = ≥ 80% tag level itu
+  tuntas. Warna status 🔴/🟡/🟢 tidak diubah. Angka 70% dipilih user. Referensi baru di
+  `official-sources.md` bagian 5b.
+- **File:** `docs/cara-kerja.md`, `.claude/skills/quiz/SKILL.md`, `.claude/skills/quiz-t/SKILL.md`,
+  `reference/official-sources.md`, `progress/evaluation.md` (catatan Unit 1)
+
 ### 2026-11-02 — `/quiz-v`: satu jenis soal (V1 + arti → V2, V3), kata harian dirotasi
 - **Kategori:** skill · pembelajaran
 - **Problem:** Sesi pertama mencampur dua jenis soal (recall *V1 → V2, V3* dan kalimat *I haven't

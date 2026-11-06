@@ -51,7 +51,7 @@ Below 3 attempts = ⚪ not enough data._
 ## Per unit
 | Unit | Correct | Total | Accuracy | Status |
 |------|---------|-------|----------|--------|
-| Unit 1 | 128 | 152 | 84% | 🟢 (accuracy only; unit NOT passed: `A2-present-perfect` 🔴 (Prod 5/10 after quiz-t #11); `A2-present-simple` 🟢 since 2026-11-05) |
+| Unit 1 | 128 | 152 | 84% | 🟢 (accuracy only; **belum boleh lanjut** (rule 2026-11-07: all tags ≥70% both lanes): `A2-present-perfect` Prod 5/10 (50%) < 70% → needs 7/10; MCQ 10/10 ✓; `A2-present-simple` 🟢 (MCQ 8/10, Prod 9/10) since 2026-11-05) |
 
 ---
 

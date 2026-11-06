@@ -181,9 +181,19 @@ mendekati 🟢 hint netral → 🟢 tanpa hint (gaya ujian). Kosakata bantu `/qu
 **Kenapa 2 jalur:** mengenali bentuk yang benar (klik opsi) lebih mudah daripada menyusunnya
 sendiri. Unit baru dianggap tuntas bila grammar-nya benar **di kedua cara**.
 
-**Syarat unit tuntas:** semua tag grammar unit 🟢 **dan** tiap tag punya **≥ 8 percobaan di
-masing-masing jalur**. Tanpa minimum ini, 3/3 benar saja sudah 🟢, padahal buktinya tipis. Ambang
-80% dan minimum ini berdasar riset *mastery learning* (`reference/official-sources.md` bagian 5).
+**Tiga tingkat kelulusan** (sejak 2026-11-07; dasar di `reference/official-sources.md` bagian 5):
+
+| Tingkat | Syarat | Akibat |
+|---|---|---|
+| ✅ **Boleh lanjut** | semua tag grammar unit **≥ 70%** di **kedua** jalur (10 terakhir) **dan** tiap tag **≥ 8 percobaan per jalur** | unit berikutnya boleh ditulis (bila user minta). Tag yang belum 🟢 **tetap terbawa**: bobot adaptif `/quiz`·`/quiz-t` (🔴/🟡 lebih banyak soal) terus melatihnya di sesi unit baru |
+| 🎉 **Tuntas** | semua tag grammar unit **🟢 (≥ 80%)** di kedua jalur **dan** ≥ 8 percobaan per jalur | unit dikuasai; tagnya hanya muncul sesekali (bobot 🟢) |
+| ⬆️ **Naik level** | **≥ 80%** tag grammar level itu (mis. semua tag `A2-…` yang punya unit) sudah 🎉 tuntas | tandai level aktif berikutnya di `diagnostic.md` (bila user setuju; boleh dikonfirmasi dengan `/diagnostic`). Sisa tag tetap dilatih |
+
+Minimum 8 percobaan: tanpa itu, 3/3 benar saja sudah lolos, padahal buktinya tipis. Ambang
+**70%** = batas "tuntas" ala KKTP (±66%) dibulatkan ke atas, sejalan dengan GSE (berada di suatu
+level ≠ menguasai semua tujuannya) → materi baru tidak tertahan. Ambang **80%** = *mastery
+learning* & checklist ELP. Warna status (🔴/🟡/🟢) **tidak berubah**; 70% hanya dipakai untuk
+cek "boleh lanjut" (praktisnya: maks 3 salah dari 10 di tiap jalur).
 
 **Catatan koreksi:** pola kesalahan yang sama ≥ 3× → `/quiz`·`/quiz-t` menawarkan blok
 `⚠️ Koreksi` di unit, dengan penjelasan cara lain (format di `docs/konvensi-unit.md`).
@@ -198,7 +208,8 @@ diperbaiki, jadi lambat mencerminkan kemampuan sekarang. Batas tetap 80% (maks 2
 | Setiap hari | Anki → (`/sync-anki` bila ada review) → `/quiz` atau `/quiz-t` |
 | 1× seminggu | `/toefl` (harian, atau bergantian `writing` / `speaking`) |
 | 1–2× seminggu | `/quiz-v` (V1 + arti → ketik V2 · V3, ±5 menit; bisa menggantikan satu sesi `/quiz`) |
-| Semua tag satu unit 🟢 (≥ 8 percobaan/jalur) | `/quiz`·`/quiz-t` memberi tahu di pesan akhir (`🎉 Unit N tuntas`) → minta Claude menulis unit berikutnya (roadmap di `README.md`) |
+| Semua tag satu unit ≥ 70% di kedua jalur (≥ 8 percobaan/jalur) | `/quiz`·`/quiz-t` memberi tahu di pesan akhir (`✅ Unit N boleh lanjut`) → bila mau, minta Claude menulis unit berikutnya (roadmap di `README.md`); tag yang belum 🟢 tetap dilatih |
+| Semua tag satu unit 🟢 (≥ 8 percobaan/jalur) | pesan akhir `🎉 Unit N tuntas` (unit dikuasai) |
 | Sesekali (mis. tiap 2–3 bulan) | ulang `/diagnostic` untuk cek kenaikan level |
 
 ## Status sekarang (per 2026-10-29)
