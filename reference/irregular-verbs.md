@@ -7,10 +7,11 @@ pola membantu mengingat: kalau tahu *drink–drank–drunk*, *sing–sang–sung
   kerja tidak beraturan di **A1**, 21 di **A2**. Kata kerja di atas A2 belum masuk.
 - **Bentuk V2/V3** = bentuk standar (British English). Kalau ada dua bentuk yang sah, keduanya
   ditulis dan **keduanya diterima** saat dinilai.
-- **V2** = past simple (*kemarin aku…*). **V3** = past participle, dipakai setelah *have/has*
-  (Unit 1, Point 2).
-- ⚠️ Past simple (V2 di dalam kalimat) **belum punya unit**. Jadi `/quiz-v` hanya menguji
-  **hafalan bentuk**: diberi V1 + arti → ketik V2, V3 (tanpa soal kalimat).
+- **V2** = past simple (*kemarin aku…*, Unit 2, Point 2). **V3** = past participle, dipakai
+  setelah *have/has* (Unit 1, Point 2).
+- `/quiz-v` hanya menguji **hafalan bentuk**: diberi V1 + arti → ketik V2, V3 (tanpa soal
+  kalimat). Pemakaian V2 di dalam kalimat (sejak 2026-11-08 ada di Unit 2) dilatih di `/quiz` ·
+  `/quiz-t`.
 
 ## Prioritas (dari kesalahan nyata di quiz)
 | Kata | Kesalahan | Sumber |

@@ -16,6 +16,8 @@ Tag format: `<level>-<slug>`, e.g. `A2-past-simple`. Added when the related unit
 |-----|------|---------------|
 | `A2-present-simple` | Unit 1 | Present simple: subject–verb agreement (base verb vs. -s), don't/doesn't, do/does, adverbs of frequency |
 | `A2-present-perfect` | Unit 1 | Present perfect with for/since (situation continuing to now); contrast with present continuous |
+| `A2-past-be` | Unit 2 | Past simple of *be*: was/were agreement, wasn't/weren't, Was/Were …?; *was/were* only for states, not with another verb (*~~I was go~~*) |
+| `A2-past-simple` | Unit 2 | Past simple of other verbs: regular -ed (+ spelling), irregular V2, same form for all subjects, didn't + base verb, Did + subject + base verb, time markers (yesterday, last …, … ago, in 2019); contrast with present perfect for/since (Unit 1) |
 
 ## Skill tags (cross-level)
 | Tag | Skill |

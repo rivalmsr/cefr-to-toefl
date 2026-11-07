@@ -15,8 +15,8 @@ dicampur dengan soal kalimat (permintaan user 2026-11-02).
   `progress/verb-evaluation.md` + baris `VERB` di `progress/history.md`. **Jangan** tulis
   `evaluation.md`.
 - **Sumber kata = `reference/irregular-verbs.md` saja.** Jangan pakai kata kerja di luar file itu.
-- **Hafalan bentuk saja, tanpa soal kalimat.** Past simple belum punya unit (aturan 1
-  `CLAUDE.md`); pemakaian V3 setelah *have/has* sudah dilatih di `/quiz` · `/quiz-t`.
+- **Hafalan bentuk saja, tanpa soal kalimat.** Pemakaian di kalimat dilatih di `/quiz` ·
+  `/quiz-t`: V2 = past simple (Unit 2), V3 setelah *have/has* (Unit 1).
 - **Jangan mengarang skor:** hitung eksplisit dari angka lama + hasil sesi.
 - Instruksi, pembahasan, dan hasil dalam **Bahasa Indonesia yang mudah dipahami**. Kata kerja
   dalam **English**.

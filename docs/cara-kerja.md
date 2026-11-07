@@ -217,11 +217,11 @@ diperbaiki, jadi lambat mencerminkan kemampuan sekarang. Batas tetap 80% (maks 2
 | Bagian | Kondisi |
 |---|---|
 | Level aktif | **A2** (diagnostic 2026-08-23; vocab & reading B1–B2) |
-| Unit | **1 unit** — Unit 1 (A2: present simple, present perfect for/since); tag CEFR & TOEFL link sudah disesuaikan referensi resmi |
+| Unit | **2 unit** — Unit 1 (A2: present simple, present perfect for/since) 🎉 tuntas 2026-11-07; Unit 2 (A2: past simple, was/were) ditulis 2026-11-08 |
 | Skill | `/diagnostic` ✅ dipakai · `/quiz`, `/quiz-t`, `/toefl` ✅ ditulis, **belum pernah dijalankan** · `/sync-anki` ✅ jalan · `/lesson` ✅ ditulis (baca unit di chat) |
 | Anki | deck `Oxford 3000 A1`: 525/929 kartu direview · 🔴1 🟡3 ⚪19 (exciting, describe, coat, fun, …) |
 | TOEFL | format **2026** (band 1–6); tracker masih kosong |
-| Berikutnya | tulis **Unit 2** (kandidat: past simple / first conditional — kelemahan 🔴 dari diagnostic) |
+| Berikutnya | latih Unit 2 lewat `/quiz` · `/quiz-t` sampai ✅ boleh lanjut; kandidat Unit 3 dari roadmap A2 (`README.md`) |
 
 Riwayat perubahan sistem lengkap: `docs/perbaikan-kb.md`.
 

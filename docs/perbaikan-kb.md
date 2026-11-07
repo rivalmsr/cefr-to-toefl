@@ -33,6 +33,20 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-11-08 — Unit 2 (past simple) ditulis: catatan "past simple belum punya unit" diperbarui
+- **Kategori:** data · skill
+- **Problem:** `reference/irregular-verbs.md` dan `/quiz-v` menyebut *past simple belum punya
+  unit* sebagai alasan `/quiz-v` hanya menguji hafalan bentuk. Setelah Unit 2 ditulis, alasan
+  itu tidak benar lagi. Unit 2 juga butuh tag grammar baru sebelum `/quiz` boleh memakainya.
+- **Fix:** tag `A2-past-be` dan `A2-past-simple` ditambahkan ke taxonomy. Catatan di
+  `irregular-verbs.md` dan `/quiz-v` diganti: `/quiz-v` **tetap** hafalan bentuk saja (perilaku
+  tidak berubah), sedangkan pemakaian V2 di kalimat dilatih lewat `/quiz` · `/quiz-t` (Unit 2).
+  Level dicek di PDF resmi: past simple & *was/were* = Core Inventory A1–A2; 11 kata Unit 2 =
+  Oxford 3000 A1–A2, *souvenir* tidak ada di Oxford (CEFR `—`).
+- **File:** `lessons/unit-02.md` (baru), `reference/quiz-taxonomy.md`,
+  `reference/irregular-verbs.md`, `.claude/skills/quiz-v/SKILL.md`,
+  `reference/oxford-vocabulary.md`, `README.md`, `docs/cara-kerja.md`
+
 ### 2026-11-07 — Pisah "boleh lanjut" (≥ 70%) dari "tuntas" (≥ 80%) + aturan naik level
 - **Kategori:** pembelajaran · skill
 - **Problem:** Satu-satunya syarat menulis unit baru adalah unit lama 🎉 tuntas (semua tag ≥ 80%
