@@ -6,6 +6,7 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-11-07 | QUIZ [translate] (Unit 1) | 4 | 4/4 (100%) | PP ✅ *I haven't eaten rice since yesterday*, *My father has known Mr. Budi for twenty years*, *How long have you had that black coat?*; PS ✅ *My brother doesn't like exciting films*; slip *~~the exciting films~~* → exciting films. PP Prod 6/10 → 9/10 🟢 → tag 🟢; 🎉 Unit 1 tuntas (semua tag 🟢 di kedua jalur). |
 | 2026-11-07 | QUIZ adaptive (Unit 1) | 12 | 10/12 (83%) | PP ✗ *~~has know her husband~~* → has known (V3); PS ✗ *~~Aiko and her brother studies~~* → study (plural subject); ✅ *haven't seen … since*, *How long have you lived*, *hasn't worn since 2022*, *Does*, *is always happy*, *describe*, *make friends*, paraphrase, reading 2/2. PP MCQ 8/10, Prod 6/10 🟡; PS MCQ 9/10 🟢; ERR-tense → 🟢. Tema: 1 Perkenalan & identitas. |
 | 2026-11-07 | VERB (A1 harian: P1, P2b, P2c, P4c, P5) | 8 | 5/8 (63%) | ✓ be, sleep, read, do, put; ✗ write: write, wrote → wrote, written; meet: meet, meet → met, met; find: find, found → found, found; pola baru: P1 |
 | 2026-11-07 | QUIZ [translate] (Unit 1) | 4 | 4/4 (100%) | PP ✅ *I haven't drunk coffee since Monday*, *My father has worn that coat for ten years*, *How long has your mother worked at that hospital?*; PS ✅ *Does your father often drink coffee …?*; slip *~~in evening~~* → in the evening. PP Prod 5/10 → 6/10 🟡 (Unit 1 belum boleh lanjut, butuh 7/10); ERR-tense 79.8% 🟡 (hampir 🟢). |
