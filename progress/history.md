@@ -6,6 +6,7 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-11-09 | QUIZ adaptive (Unit 1–2) | 12 | 11/12 (92%) | First Unit 2 session. Past-be ✗ *~~My grandparents was~~* → were (plural subject); ✅ *We went* (not *were go*), *Was your sister…?*, *didn't buy*, *studied*, *did your family go*, *went … ago* (not *has gone*), *abroad*, *missed the train*, paraphrase *has lived since 2020*, reading 2/2. Tema: 2 Keluarga. |
 | 2026-11-08 | TOEFL harian | 26 (10 kata + 13 MCQ + 3 build) | R 12/15 · L 8/8 · W 1/3 | Terlemah WR-build (frasa waktu disisipkan di tengah: *what time ~~tomorrow~~ the meeting starts*, *the one ~~last week~~ that…*); RD-words ✗ make→main, find→finds; RD-vocab ✗ significantly. Waktu: R 11,3/10 mnt (lewat) · L 9,8/9 mnt (lewat) · W 4,3/4 mnt. Tema: lebah, kolam renang, tidur & memori, perpustakaan, asrama, gua batu kapur. |
 | 2026-11-07 | VERB (A1 harian: P2b, P2c, P4c, P5) | 8 | 6/8 (75%) | ✓ write, do, find, pay, be, meet; ✗ leave: leave, leave → left, left; sit: sit, sit → sat, sat; be & do → 🟢; pola baru: — |
 | 2026-11-07 | QUIZ [translate] (Unit 1) | 4 | 4/4 (100%) | PP ✅ *I haven't eaten rice since yesterday*, *My father has known Mr. Budi for twenty years*, *How long have you had that black coat?*; PS ✅ *My brother doesn't like exciting films*; slip *~~the exciting films~~* → exciting films. PP Prod 6/10 → 9/10 🟢 → tag 🟢; 🎉 Unit 1 tuntas (semua tag 🟢 di kedua jalur). |
