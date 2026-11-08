@@ -78,6 +78,56 @@ lebih longgar (tidak harus menguasai semuanya). Dasar tingkat ✅ boleh lanjut (
 > ⚠️ Angka **70%** adalah **pilihan desain** KB ini (disintesis dari sumber di atas, dipilih user
 > 2026-11-07), bukan angka yang tertulis persis di satu sumber.
 
+### 5c. Minimum 8 percobaan per jalur: cek statistik "bukan kebetulan" (dihitung 2026-11-09)
+Tidak ada sumber resmi yang menyebut angka **8**. Dasar idenya: Bloom (1968) bilang kelulusan
+harus dibuktikan lewat tes (5), ACTFL bilang performa harus konsisten (5b). Angka 8 sendiri =
+**pilihan desain** KB. Tabel ini menunjukkan seberapa kuat angka itu menyaring hasil kebetulan.
+Rumus: distribusi binomial, MCQ 4 opsi → peluang tebak murni = 25%.
+
+| Kasus | Peluang lolos **hanya dari menebak** |
+|---|---|
+| 3/3 benar (aturan lama tanpa minimum) | 0,25³ ≈ **1,6%** |
+| ≥ 6/8 benar (= lolos ≥ 70% dengan 8 percobaan) | ≈ **0,4%** |
+| ≥ 7/10 benar (= lolos ≥ 70% dengan 10 percobaan) | ≈ **0,4%** |
+| Jalur Prod (`/quiz-t`, tulis-bebas) | ≈ **0%** (jawaban tidak bisa ditebak dari opsi) |
+
+**Rujukan psikometri (riset pengukuran tes, dicek via web 2026-11-09).** Tidak ada yang memberi
+angka minimum soal; yang ada = **cara menghitung** panjang tes & keandalan keputusan lulus/tidak.
+
+| Sumber | Isi yang relevan (sudah dicek) | Dipakai untuk | Status / link |
+|--------|--------------------------------|---------------|---------------|
+| Millman, J. (1973). *Passing Scores and Test Lengths for Domain-Referenced Measures*. **Review of Educational Research**, 43(2), 205–216 | sumber klasik; model **binomial**: tabel peluang lulus untuk kombinasi panjang tes, skor lulus, dan kemampuan asli. Millman sendiri mencatat asumsi binomial melemah bila tingkat kesulitan soal berbeda-beda | metode tabel di bawah | 🔗 [doi:10.3102/00346543043002205](https://doi.org/10.3102/00346543043002205) — ⚠️ tabel angka asli Millman **belum** dibaca (artikel berbayar); isi dicek lewat ringkasan & sitasi ([van der Linden 1982](https://ris.utwente.nl/ws/files/6485927/Linden82passing.pdf)) |
+| Wilcox, R. R. (1976). *A Note on the Length and Passing Score of a Mastery Test*. **Journal of Educational Statistics**, 1(4), 359–364 | lanjutan Millman: prosedur mencari panjang tes + skor lulus yang sesuai | bukti bahwa panjang tes = keputusan yang dihitung, bukan angka baku | 🔗 [doi:10.3102/10769986001004359](https://doi.org/10.3102/10769986001004359) |
+| Subkoviak, M. J. (1988). *A Practitioner's Guide to Computation and Interpretation of Reliability Indices for Mastery Tests*. **Journal of Educational Measurement**, 25(1), 47–55 | cara praktis menghitung konsistensi keputusan lulus/tidak (koefisien *agreement* & *kappa*) dan nilai yang bisa diterima | rujukan bila nanti mau mengukur konsistensi keputusan | 🔗 [scite.ai](https://scite.ai/authors/michael-j-subkoviak-ePZw50) — ⚠️ hanya ringkasan, teks penuh belum dibaca |
+| AERA, APA & NCME (2014). *Standards for Educational and Psychological Testing*, Standard 2.16 | tes yang dipakai untuk **keputusan klasifikasi** (lulus/tidak) wajib disertai perkiraan **konsistensi klasifikasi**; **tidak** ada angka minimum soal | dasar: keputusan "boleh lanjut" perlu bukti keandalan, bukan angka resmi | 🔗 [ringkasan 1999 vs 2014 (NISS)](https://www.niss.org/sites/default/files/news_attachments/New%20standards%20Jan%2012%202015%20final_0.pdf) — ⚠️ teks lengkap Standard 2.16 belum dibaca |
+
+**Tabel ala Millman untuk KB ini** (dihitung 2026-11-09, binomial, syarat lulus ≥ 70%): peluang
+**lolos** menurut kemampuan asli (% benar bila soalnya tak terbatas).
+
+| Kemampuan asli | 8 percobaan (≥ 6 benar) | 10 percobaan (≥ 7 benar) |
+|---|---|---|
+| 50% | 14,5% | 17,2% |
+| 60% | 31,5% | 38,2% |
+| 70% | 55,2% | 65,0% |
+| 80% | 79,7% | 87,9% |
+| 90% | 96,2% | 98,7% |
+
+Bacaannya: yang kemampuannya jelas di bawah batas (50%) jarang lolos; yang jelas di atas (90%)
+hampir pasti lolos. Di **dekat batas (60–80%)** keputusannya masih sering meleset. Ini sesuai
+temuan Millman: tes pendek paling sering salah menilai orang yang kemampuannya dekat skor lulus.
+
+**Batasan (jujur):**
+- Risiko yang lebih nyata bukan tebak murni, tapi **setengah paham** (tahu aturan, kadang lupa).
+  Itu tidak disaring oleh hitungan di atas.
+- 8 percobaan **tidak presisi** untuk mengukur tingkat penguasaan sebenarnya. Selang kepercayaan
+  95% (Clopper-Pearson): 6/8 → ±**35–97%**; 7/10 → ±**35–93%**. Untuk hasil presisi perlu puluhan
+  soal.
+- Jadi angka 8 = **kompromi** untuk proyek sekunder yang ringan: cukup menyaring hasil kebetulan,
+  tapi tidak menahan user terlalu lama di satu unit.
+- Pengaman tambahan untuk "setengah paham": syarat **dua jalur** (MCQ + Prod), hanya **10
+  percobaan terakhir** yang dihitung, dan tag yang belum 🟢 **tetap terbawa** ke latihan unit
+  berikutnya (`docs/cara-kerja.md`).
+
 ## Cara pakai (aturan untuk Claude)
 - Saat menulis unit baru: cek grammar di **Core Inventory** (level yang sesuai) dan ambil vocab
   dari **Oxford 3000/5000 by CEFR**. Tag CEFR di `oxford-vocabulary.md` harus sama dengan PDF Oxford.

@@ -33,6 +33,20 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-11-09 — Dasar statistik untuk minimum 8 percobaan per jalur
+- **Kategori:** data · docs
+- **Problem:** Aturan "≥ 8 percobaan per jalur" hanya bersandar pada Bloom/ACTFL (ide umum),
+  tanpa bukti angka bahwa 8 cukup untuk menyaring hasil kebetulan. User bertanya apakah ada
+  referensi agar bisa menilai jawaban benar bukan karena menebak.
+- **Fix:** Tambah bagian 5c: peluang lolos dari menebak (3/3 ≈ 1,6%; ≥ 6/8 ≈ 0,4%; ≥ 7/10 ≈ 0,4%;
+  Prod ≈ 0%), selang kepercayaan 95% (6/8 → 35–97%), batasan (setengah paham, tidak presisi), dan
+  penegasan bahwa angka 8 = pilihan desain/kompromi. Aturan kelulusan **tidak diubah**.
+  Lanjutan (hari yang sama): rujukan psikometri dicek via web lalu ditambahkan — Millman (1973),
+  Wilcox (1976), Subkoviak (1988), AERA/APA/NCME Standards (2014, Std 2.16) — plus tabel ala
+  Millman (peluang lolos per kemampuan asli, 8 vs 10 percobaan). Bagian yang belum dibaca penuh
+  diberi tanda ⚠️. Judul Subkoviak dikoreksi: *Computation* (bukan *Computing*).
+- **File:** `reference/official-sources.md`, `docs/perbaikan-kb.md`
+
 ### 2026-11-08 — `/toefl` dievaluasi setelah sesi pertama: 11 perbaikan
 - **Kategori:** skill · pembelajaran
 - **Problem:** Mock harian pertama memperlihatkan bug dan celah aturan: (1) paragraf Complete
