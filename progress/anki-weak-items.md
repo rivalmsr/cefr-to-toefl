@@ -14,24 +14,25 @@ Tingkat: **🔴** = `leech` atau `lapses ≥ 8` · **🟡** = `lapses 5–7` · 
 
 > Ringkasan cepat (anchor — baca ini saja saat quiz): PRIORITAS TINGGI
 >
-> **Oxford 3000:** exciting 🔴 🩸, his 🟡, coat 🟡, describe 🟡, fun 🟡, delicious ⚪, happy ⚪, clothes ⚪, down ⚪, everything ⚪
+> **Oxford 3000:** exciting 🔴 🩸, his 🟡, coat 🟡, describe 🟡, fun 🟡, delicious ⚪, excited ⚪, happy ⚪, clothes ⚪, down ⚪
 >
 > _🔴 masih < 5 (deck muda) → anchor sementara = 10 kata teratas (🟡/⚪ ikut); kembali ke 🔴 saja begitu 🔴 ≥ 5._
 
 Total ditandai: 🔴1 · 🟡4 · ⚪18
 
-Progres deck: **A1** 576/929 kartu sudah direview
+Progres deck: **A1** 582/929 kartu sudah direview
 
 ## Kosakata lemah — Oxford 3000
 
 | | Word | Arti | CEFR | lapses | 30h |
 |---|------|------|:----:|:------:|:---:|
-| 🔴 🩸 | exciting | menarik | A1 | 10 | 6 |
+| 🔴 🩸 | exciting | menarik | A1 | 10 | 4 |
 | 🟡 | his | miliknya (laki-laki) | A1 | 5 | 3 |
 | 🟡 | coat | mantel | A1 | 5 | 1 |
 | 🟡 | describe | menggambarkan | A1 | 5 | 1 |
 | 🟡 | fun | kesenangan | A1 | 5 | 0 |
 | ⚪ | delicious | lezat | A1 | 4 | 2 |
+| ⚪ | excited | bersemangat | A1 | 4 | 2 |
 | ⚪ | happy | bahagia | A1 | 4 | 1 |
 | ⚪ | clothes | pakaian | A1 | 4 | 0 |
 | ⚪ | down | ke bawah | A1 | 4 | 0 |
@@ -40,7 +41,6 @@ Progres deck: **A1** 576/929 kartu sudah direview
 | ⚪ | guess | menebak, tebakan | A1 | 3 | 2 |
 | ⚪ | each | masing-masing | A1 | 3 | 1 |
 | ⚪ | evening | malam | A1 | 3 | 1 |
-| ⚪ | excited | bersemangat | A1 | 3 | 1 |
 | ⚪ | ago | yang lalu | A1 | 3 | 0 |
 | ⚪ | capital | ibukota, modal | A1 | 3 | 0 |
 | ⚪ | create | menciptakan | A1 | 3 | 0 |
@@ -51,4 +51,4 @@ Progres deck: **A1** 576/929 kartu sudah direview
 | ⚪ | however | namun | A1 | 3 | 0 |
 
 ---
-_Auto-generated 2026-11-07 oleh `scripts/sync-anki.sh` dari `collection.anki2`._
+_Auto-generated 2026-11-08 oleh `scripts/sync-anki.sh` dari `collection.anki2`._
