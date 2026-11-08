@@ -12,14 +12,21 @@ For Email / Academic Discussion / Interview: track the **average rubric score** 
 rubric in `reference/toefl-templates.md`), status: avg <3 🔴 · 3–3.9 🟡 · ≥4 🟢 (min 3 attempts).
 Format = **TOEFL iBT 2026** (subtype tags in `reference/quiz-taxonomy.md`).
 
-_No data yet — run `/toefl`._
+_Updated 2026-11-08._
 
 ---
 
 ## Reading / Listening / Build a Sentence (correct/incorrect)
 | Subtype | Tag | Correct | Total | Accuracy | Status |
 |---------|-----|---------|-------|----------|--------|
-| _(empty)_ | | | | | |
+| RD-words | Complete the Words | 8 | 10 | 80% | 🟢 |
+| RD-daily | Read in Daily Life | 2 | 2 | 100% | ⚪ |
+| RD-academic | Read an Academic Passage | 2 | 3 | 67% | 🟡 |
+| LS-response | Listen and Choose a Response | 3 | 3 | 100% | 🟢 |
+| LS-conversation | Listen to a Conversation | 2 | 2 | 100% | ⚪ |
+| LS-announcement | Listen to an Announcement | 1 | 1 | 100% | ⚪ |
+| LS-talk | Listen to an Academic Talk | 2 | 2 | 100% | ⚪ |
+| WR-build | Build a Sentence | 1 | 3 | 33% | 🔴 |
 
 ## Writing / Speaking (rubric 0–5)
 | Subtype | Tag | Avg score | Attempts | Status |
@@ -29,4 +36,7 @@ _No data yet — run `/toefl`._
 ---
 
 ## Weak types (priority for `/toefl review`)
-_(empty)_
+1. 🔴 **WR-build** 33% (1/3) — embedded question & relative clause: time/adverb phrase inserted in the
+   middle (*~~what time tomorrow the meeting starts~~* → what time the meeting starts tomorrow;
+   *~~the one last week that our professor recommended~~* → the one that our professor recommended last week); spelling *~~meetting~~*.
+2. 🟡 **RD-academic** 67% (2/3) — `RD-vocab` miss: *significantly* ≈ noticeably (chose *quickly*).
