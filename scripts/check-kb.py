@@ -14,9 +14,14 @@ Yang dicek (aturan dari .claude/skills/quiz/SKILL.md langkah 6 & docs/cara-kerja
   progress/verb-evaluation.md (/quiz-v, .claude/skills/quiz-v/SKILL.md langkah 6):
   3. Tabel "Per verb": urutan ✓✗ maksimal 5, n/m, persen, status; All-time c/t masuk akal.
   4. Tabel "Per pattern" (satu jalur): sama seperti nomor 2.
+  progress/toefl-evaluation.md (/toefl, .claude/skills/toefl/SKILL.md langkah 5):
+  5. Tabel "Reading / Listening / Build a Sentence": Accuracy = Correct/Total dan statusnya.
+  6. Tabel "Writing / Speaking (rubric 0–5)": Avg 0–5 dan status (< 3 attempts ⚪ · < 3 🔴 ·
+     3–3.9 🟡 · ≥ 4 🟢).
+  7. Tabel "Section level": level hanya A2/B1/B2/C1.
 
 Tidak mengubah file apa pun. Exit 0 = semua cocok, exit 1 = ada yang tidak cocok.
-Pakai:  python3 scripts/check-kb.py            (cek kedua tracker)
+Pakai:  python3 scripts/check-kb.py            (cek ketiga tracker)
         python3 scripts/check-kb.py <file.md>  (jenis tracker dikenali dari isinya)
 """
 import re
@@ -24,7 +29,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULTS = (ROOT / "progress" / "evaluation.md", ROOT / "progress" / "verb-evaluation.md")
+DEFAULTS = (ROOT / "progress" / "evaluation.md", ROOT / "progress" / "verb-evaluation.md",
+            ROOT / "progress" / "toefl-evaluation.md")
 VERB_WINDOW = 5  # /quiz-v: 5 percobaan terakhir per kata
 
 STATUS = ("⚪", "🔴", "🟡", "🟢")
@@ -137,12 +143,14 @@ def check_grammar(rows, errs):
                 errs.append(f"{tag} Status: {got}, seharusnya {want} (MCQ {mcq} · Prod {prod})")
 
 
-def check_single(section, rows, errs):
+def check_single(section, rows, errs, skip=0):
+    """Tabel satu jalur: Tag | (kolom tambahan × skip) | Correct | Total | Accuracy | Status."""
     for line in rows:
         c = cells(line)
+        tag = c[0].strip("`")
+        c = c[:1] + c[1 + skip:]
         if len(c) < 5 or not c[1].isdigit() or not c[2].isdigit():
             continue  # baris placeholder
-        tag = c[0].strip("`")
         corr, tot = int(c[1]), int(c[2])
         if corr > tot:
             errs.append(f"[{section}] {tag}: Correct {corr} > Total {tot}")
@@ -217,9 +225,81 @@ def check_verb_text(text):
     return errs, n_rows
 
 
+def rubric_status(avg, attempts):
+    """/toefl rubrik 0–5: < 3 attempts ⚪ · avg < 3 🔴 · 3–3.9 🟡 · ≥ 4 🟢."""
+    if attempts < 3:
+        return "⚪"
+    if avg < 3:
+        return "🔴"
+    if avg < 4:
+        return "🟡"
+    return "🟢"
+
+
+TOEFL_SINGLE = "Reading / Listening / Build a Sentence"
+TOEFL_RUBRIC = "Writing / Speaking"
+TOEFL_LEVEL = "Section level"
+LEVELS = ("A2", "B1", "B2", "C1")
+
+
+def _find(secs, prefix):
+    return next((k for k in secs if k.startswith(prefix)), None)
+
+
+def check_toefl_text(text):
+    """Logika murni: isi toefl-evaluation.md → (daftar masalah, jumlah baris dicek)."""
+    secs = sections(text)
+    errs, n_rows = [], 0
+
+    k = _find(secs, TOEFL_SINGLE)
+    if k:
+        check_single(k, secs[k], errs, skip=1)
+        n_rows += sum(1 for line in secs[k] if not cells(line)[0].startswith("_"))
+    else:
+        errs.append(f"Bagian '## {TOEFL_SINGLE} …' tidak ditemukan")
+
+    k = _find(secs, TOEFL_RUBRIC)
+    if k:
+        for line in secs[k]:
+            c = cells(line)
+            if len(c) < 5 or c[0].startswith("_"):
+                continue  # baris placeholder _(empty)_
+            n_rows += 1
+            tag = c[0].strip("`")
+            try:
+                avg, att = float(c[2]), int(c[3])
+            except ValueError:
+                errs.append(f"[{k}] {tag}: Avg/Attempts tidak terbaca: {c[2]!r} / {c[3]!r}")
+                continue
+            if not 0 <= avg <= 5:
+                errs.append(f"[{k}] {tag}: Avg {avg} di luar 0–5")
+            want, got = rubric_status(avg, att), first_status(c[4])
+            if got != want:
+                errs.append(f"[{k}] {tag}: status {got}, seharusnya {want} (avg {avg}, {att}×)")
+    else:
+        errs.append(f"Bagian '## {TOEFL_RUBRIC} …' tidak ditemukan")
+
+    k = _find(secs, TOEFL_LEVEL)
+    if k:
+        for line in secs[k]:
+            c = cells(line)
+            if len(c) < 2:
+                continue
+            n_rows += 1
+            if c[1] not in LEVELS:
+                errs.append(f"[{k}] {c[0]}: level {c[1]!r} bukan salah satu {'/'.join(LEVELS)}")
+    else:
+        errs.append(f"Bagian '## {TOEFL_LEVEL}' tidak ditemukan")
+    return errs, n_rows
+
+
 def check_any(text):
     """Pilih pemeriksa dari isi file."""
-    return check_verb_text(text) if "## Per verb" in text else check_text(text)
+    if "## Per verb" in text:
+        return check_verb_text(text)
+    if "## " + TOEFL_SINGLE in text:
+        return check_toefl_text(text)
+    return check_text(text)
 
 
 def main():

@@ -9,19 +9,31 @@ Format = **TOEFL iBT 2026** (struktur resmi & skala band: `reference/toefl-2026-
 ## Task ketik — dinilai persis
 
 ### Complete the Words (`RD-words`)
-- **Bentuk:** paragraf akademik ±70–90 kata; kalimat pertama utuh; lalu 10 kata dipotong: separuh
-  huruf akhir hilang, ditulis `inform_ _ _ _ _` (1 garis bawah = 1 huruf).
+- **Bentuk:** paragraf akademik ±70–90 kata; kalimat pertama utuh; lalu 10 kata dipotong: sisakan
+  **⌈n/2⌉** huruf awal, hilangkan **⌊n/2⌋** huruf akhir, ditulis `inform_ _ _ _ _` (1 garis bawah
+  = 1 huruf). Contoh: `main` → `ma_ _`, `finds` → `fin_ _`, `direction` → `direc_ _ _ _`.
+- **Tampilan:** paragraf **wajib di dalam kotak kode** (```), nomor isian `(1)`–`(10)` di depan
+  kata. Di luar kotak kode, `_` dibaca markdown → paragraf rusak/tidak tampil.
 - **Nilai:** 1 poin per kata; benar hanya bila **ejaan lengkap persis** (huruf besar/kecil diabaikan).
 - **Pembuatan:** kata yang dipotong = kata umum (Oxford 3000 / AWL sublist 1–3), konteks harus
-  mengunci tepat satu kata (cek: tidak ada kata lain dengan awalan sama yang juga cocok).
+  mengunci tepat satu kata (cek: tidak ada kata lain dengan awalan sama **dan jumlah huruf sama**
+  yang juga cocok) **dan satu bentuk** (bila yang hilang termasuk akhiran `-s/-ed/-ing`, subjek /
+  tense di kalimat harus memaksanya, mis. *When a worker fin_ _ …* → *finds*).
 
 ### Build a Sentence (`WR-build`)
 - **Bentuk:** baris A (1 kalimat konteks, mis. pertanyaan teman) → baris B = rangka dengan
   sebagian kata tetap + 5–7 potongan kata acak `/ word / word /` → user mengetik kalimat B utuh.
 - **Nilai:** 1 poin bila **semua potongan terpakai tepat sekali** dan urutannya benar. Bila ada
   urutan alternatif yang juga gramatikal & bermakna sama → terima (catat di Notes).
+- **Tampilan:** semua soal build dalam **satu kotak kode** (```), tiap soal: baris `A:`, baris
+  `B:` dengan `______`, lalu potongan `/ word / word /`.
 - **Pembuatan:** uji word order nyata (pertanyaan tak langsung, posisi adverb, relative clause,
-  auxiliary). Hanya **satu** urutan yang benar; cek ulang sebelum tampil.
+  auxiliary, posisi keterangan waktu/tempat). Hanya **satu** urutan yang benar; cek ulang sebelum
+  tampil.
+- **Gerbang dialog logis (WAJIB):** B harus respons wajar untuk A — siapa yang tahu informasi,
+  siapa yang bertanya, waktu cocok. ❌ A: *"I forgot the schedule."* → B: *"Can you tell me what
+  time the meeting starts?"* (B bertanya ke orang yang baru bilang lupa). ✅ A: *"I'm not sure
+  when the meeting is."* → B: *"Let me check. Can you tell me which room it's in?"*
 
 ## Writing
 

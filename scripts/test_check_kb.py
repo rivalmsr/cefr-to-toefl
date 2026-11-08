@@ -221,6 +221,97 @@ def test_real_verb_evaluation_md_is_consistent():
     assert errs == [], "\n".join(errs)
 
 
+# --- toefl-evaluation.md (/toefl) ----------------------------------------------------
+
+TOEFL_HEADER = """## Section level (adaptive between sessions)
+| Section | Level | Sessions at this level | Note |
+|---------|-------|------------------------|------|
+| Reading | {level} | 80% | |
+
+## Reading / Listening / Build a Sentence (correct/incorrect)
+| Subtype | Tag | Correct | Total | Accuracy | Status |
+|---------|-----|---------|-------|----------|--------|
+{single}
+
+## Writing / Speaking (rubric 0–5)
+| Subtype | Tag | Avg score | Attempts | Status |
+|---------|-----|-----------|----------|--------|
+{rubric}
+"""
+
+GOOD_TOEFL_SINGLE = "| RD-academic | Read an Academic Passage | 2 | 3 | 67% | 🟡 |"
+GOOD_TOEFL_RUBRIC = "| WR-email | Write an Email | 3.5 | 4 | 🟡 |"
+
+
+def _toefl(level="B1", single=GOOD_TOEFL_SINGLE, rubric=GOOD_TOEFL_RUBRIC):
+    return TOEFL_HEADER.format(level=level, single=single, rubric=rubric)
+
+
+def _toefl_errors(**kw):
+    errs, _ = ck.check_toefl_text(_toefl(**kw))
+    return errs
+
+
+def test_toefl_consistent_tracker_has_no_errors():
+    errs, n_rows = ck.check_toefl_text(_toefl())
+    assert n_rows == 3           # prakondisi: level + 1 subtype + 1 rubrik terbaca
+    assert errs == []
+
+
+def test_toefl_placeholder_rows_are_skipped():
+    errs, n_rows = ck.check_toefl_text(
+        _toefl(single="| _(empty)_ | | | | | |", rubric="| _(empty)_ | | | | |"))
+    assert (errs, n_rows) == ([], 1)
+
+
+def test_toefl_detects_wrong_accuracy_with_task_name_column():
+    row = GOOD_TOEFL_SINGLE.replace("67%", "70%")
+    assert any("seharusnya 67%" in e for e in _toefl_errors(single=row))
+
+
+def test_toefl_detects_wrong_subtype_status():
+    row = GOOD_TOEFL_SINGLE.replace("🟡", "🟢")
+    assert any("status 🟢, seharusnya 🟡" in e for e in _toefl_errors(single=row))
+
+
+def test_toefl_rubric_status_boundaries():
+    assert ck.rubric_status(5.0, 2) == "⚪"   # < 3 attempts
+    assert ck.rubric_status(2.9, 3) == "🔴"
+    assert ck.rubric_status(3.0, 3) == "🟡"   # 3 = batas bawah 🟡
+    assert ck.rubric_status(4.0, 3) == "🟢"   # 4 = batas 🟢
+
+
+def test_toefl_detects_wrong_rubric_status():
+    row = GOOD_TOEFL_RUBRIC.replace("| 🟡 |", "| 🟢 |")
+    assert any("status 🟢, seharusnya 🟡" in e for e in _toefl_errors(rubric=row))
+
+
+def test_toefl_detects_rubric_avg_above_five():
+    row = GOOD_TOEFL_RUBRIC.replace("3.5", "5.5")
+    assert any("di luar 0–5" in e for e in _toefl_errors(rubric=row))
+
+
+def test_toefl_detects_unknown_level():
+    assert any("bukan salah satu" in e for e in _toefl_errors(level="B3"))
+
+
+def test_toefl_detects_missing_level_section():
+    errs, _ = ck.check_toefl_text(_toefl().replace("## Section level", "## Something"))
+    assert any("Section level" in e for e in errs)
+
+
+def test_check_any_routes_toefl_tracker_to_toefl_checker():
+    errs, n_rows = ck.check_any(_toefl())
+    assert (errs, n_rows) == ([], 3)
+
+
+def test_real_toefl_evaluation_md_is_consistent():
+    path = HERE.parent / "progress" / "toefl-evaluation.md"
+    errs, n_rows = ck.check_toefl_text(path.read_text(encoding="utf-8"))
+    assert n_rows > 0, "tidak ada baris yang terbaca"
+    assert errs == [], "\n".join(errs)
+
+
 # --- Runner ---------------------------------------------------------------------------
 
 def run():

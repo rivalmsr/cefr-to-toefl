@@ -12,9 +12,21 @@ For Email / Academic Discussion / Interview: track the **average rubric score** 
 rubric in `reference/toefl-templates.md`), status: avg <3 🔴 · 3–3.9 🟡 · ≥4 🟢 (min 3 attempts).
 Format = **TOEFL iBT 2026** (subtype tags in `reference/quiz-taxonomy.md`).
 
-_Updated 2026-11-08._
+_Updated 2026-11-08 · sessions: 1._
 
 ---
+
+## Section level (adaptive between sessions)
+Level of new material per section. Start B1 (Writing build may drop to A2). Rules in
+`.claude/skills/toefl/SKILL.md` step 5: **up** one step after **2 sessions in a row ≥ 80%** at
+this level · **down** one step after **1 session < 50%** (≥ 3 items) · range A2–C1. A level change
+resets the sequence.
+
+| Section | Level | Sessions at this level (%, newest right) | Note |
+|---------|-------|------------------------------------------|------|
+| Reading | B1 | 80% | 1 more session ≥ 80% → B2 |
+| Listening | B1 | 100% | 1 more session ≥ 80% → B2 |
+| Writing (build) | A2 | — | dropped B1 → A2 on 2026-11-08 (1/3 = 33%) |
 
 ## Reading / Listening / Build a Sentence (correct/incorrect)
 | Subtype | Tag | Correct | Total | Accuracy | Status |

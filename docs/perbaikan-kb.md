@@ -33,6 +33,32 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-11-08 — `/toefl` dievaluasi setelah sesi pertama: 11 perbaikan
+- **Kategori:** skill · pembelajaran
+- **Problem:** Mock harian pertama memperlihatkan bug dan celah aturan: (1) paragraf Complete
+  the Words (`col_ _ _`) tidak tampil karena `_` dibaca markdown; (2) gerbang `WR-build` hanya
+  mengecek urutan kata tunggal, sehingga dialog yang tidak logis lolos (A bilang lupa jadwal, B
+  bertanya jadwal ke A); (3) "level section di tracker" disebut, tapi tracker tidak punya tempat
+  untuk menyimpannya; (4) rotasi tema tidak bisa dicek karena tema tidak dicatat; (5) cara memotong
+  kata ganjil tidak jelas; (6) penomoran, hitungan item, dan nomor sesi tidak baku; (7) waktu ikut
+  menghitung jeda model; (8) hint arti di opsi `RD-vocab` mengubahnya jadi soal terjemahan;
+  (9) task panjang (Email/Discussion/Interview) bisa tidak pernah dites; (10) `check-kb.py` tidak
+  mengecek `toefl-evaluation.md`; (11) teks diulang di tiap panel (boros token, tapi perlu).
+- **Fix:** (1) paragraf `RD-words` dan task `WR-build` wajib ditampilkan dalam kotak kode;
+  (2) gerbang dialog logis + contoh ❌/✅; (3) tabel **Section level** di tracker dengan aturan
+  naik (2 sesi berturut ≥ 80%) / turun (1 sesi < 50%, ≥ 3 item), rentang A2–C1. Writing (build)
+  langsung turun B1 → A2 dari sesi 2026-11-08 (1/3); (4) `Tema:` wajib di baris history dan
+  langkah 1 memakai `grep`; (5) aturan potong sisakan ⌈n/2⌉ huruf, plus bentuk kata (`-s`) harus
+  terkunci konteks; (6) `RD-words` = 1 nomor dengan isian (1)–(10), `# items` = semua item yang
+  dinilai beserta rinciannya, `sessions: N` di tracker; (7) soal dibuat sebelum jam dimulai, waktu
+  ditulis `±`, dan "lewat" hanya bila > batas + 10%; (8) opsi `RD-vocab` tanpa arti;
+  (9) pengingat ⏰ di hasil bila task panjang belum dites ≥ 7 hari; (10) `check_toefl_text()`
+  (accuracy/status subtype, status rubrik, level valid) + 11 tes, dengan mutasi terbukti merah;
+  (11) tidak diubah, karena ini kompromi yang disengaja.
+- **File:** `.claude/skills/toefl/SKILL.md`, `reference/toefl-templates.md`,
+  `progress/toefl-evaluation.md`, `progress/history.md`, `scripts/check-kb.py`,
+  `scripts/test_check_kb.py`, `CLAUDE.md`, `README.md`, `docs/cara-kerja.md`
+
 ### 2026-11-08 — Unit 2 (past simple) ditulis: catatan "past simple belum punya unit" diperbarui
 - **Kategori:** data · skill
 - **Problem:** `reference/irregular-verbs.md` dan `/quiz-v` menyebut *past simple belum punya

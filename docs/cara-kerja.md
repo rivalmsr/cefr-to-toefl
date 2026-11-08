@@ -173,6 +173,7 @@ hasil sesi (tidak boleh mengarang angka).
 | `evaluation.md` skill / error / unit | Correct += benar, Total += soal; Accuracy = Correct/Total | Total < 3 ⚪ · < 60% 🔴 · 60–79% 🟡 · ≥ 80% 🟢 |
 | `toefl-evaluation.md` MCQ & build | sama seperti di atas, per task | sama |
 | `toefl-evaluation.md` rubrik | Avg baru = (avg lama × n lama + skor sesi) ÷ n baru | n < 3 ⚪ · < 3 🔴 · 3–3.9 🟡 · ≥ 4 🟢 |
+| `toefl-evaluation.md` Section level | % section per sesi (Reading, Listening, Writing build) dicatat per level | **naik** setelah 2 sesi berturut ≥ 80% · **turun** setelah 1 sesi < 50% (≥ 3 item) · A2–C1 |
 
 **Hint fading:** hint di opsi jawaban mengikuti status **jalur MCQ** tag — 🔴/🟡/⚪ hint penuh →
 mendekati 🟢 hint netral → 🟢 tanpa hint (gaya ujian). Kosakata bantu `/quiz-t` mengikuti status

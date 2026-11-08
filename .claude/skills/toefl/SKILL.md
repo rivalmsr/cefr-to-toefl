@@ -24,8 +24,9 @@ Jalankan **simulasi TOEFL iBT format 2026** (task resmi ETS), nilai jawaban, pel
 1. **Setara ujian asli = `reference/toefl-2026-spec.md`.** Jangan pakai format lama (Integrated
    Writing, Independent Speaking, skor 0–30) dari ingatan model.
 2. **Level materi = target ujian, bukan unit.** TOEFL tidak dibatasi `lessons/`: teks & soal
-   memakai English akademik/kampus yang wajar. Mulai dari level **B1** (atau level section di
-   tracker bila sudah ada), lalu adaptif (langkah 4). Kosakata akademik dari
+   memakai English akademik/kampus yang wajar. Level tiap section = tabel **Section level** di
+   `toefl-evaluation.md` (awal **B1**). Level berubah antar-sesi (langkah 5) dan antar-modul
+   (langkah 3, mode `full`/`reading`/`listening`). Kosakata akademik dari
    `reference/academic-vocabulary.md` / AWL; boleh di atas pool bila konteks menjelaskan.
 3. **Bias LUNAK:** kata lemah Anki (anchor `progress/anki-weak-items.md`) boleh muncul di teks;
    grammar lemah dari `evaluation.md` (**read-only**) boleh jadi target `WR-build` / koreksi
@@ -61,18 +62,26 @@ Jalankan **simulasi TOEFL iBT format 2026** (task resmi ETS), nilai jawaban, pel
 ## Langkah eksekusi
 
 ### 1. Muat state
-- Baca `progress/toefl-evaluation.md`, section TOEFL `quiz-taxonomy.md`, `toefl-2026-spec.md`.
+- Baca `progress/toefl-evaluation.md` (termasuk **Section level** = level materi tiap section),
+  section TOEFL `quiz-taxonomy.md`, `toefl-2026-spec.md`.
 - (Opsional) `Grep` Weak areas `progress/evaluation.md` + anchor `progress/anki-weak-items.md`.
-- Cek `progress/history.md` (baris `TOEFL` terakhir) → **rotasi tema**: jangan ulang topik teks
-  akademik/percakapan dari 3 sesi terakhir (variasikan bidang: biologi, sejarah, psikologi,
-  teknik, ekonomi, seni, geologi, …; dan situasi kampus: perpustakaan, asrama, registrasi, lab, …).
+- `grep "| TOEFL" progress/history.md | head -3` → **rotasi tema**: jangan ulang topik yang tercatat
+  di `Tema:` 3 sesi terakhir (variasikan bidang: biologi, sejarah, psikologi, teknik, ekonomi,
+  seni, geologi, …; dan situasi kampus: perpustakaan, asrama, registrasi, lab, …). Dari grep yang
+  sama, catat **tanggal terakhir** sesi berisi `WR-email`/`WR-discussion`/`SP-interview` (untuk
+  pengingat di langkah 6).
 
 ### 2. Buat soal (format per subtype: bagian "Ringkasan subtype" di bawah)
 Tiap soal: kunci, penjelasan singkat, `subtype` + (MCQ R/L) focus tag.
 - **GERBANG kunci tunggal (WAJIB):** cek **tiap opsi** terhadap teks/transkrip — hanya satu yang
   didukung teks; distraktor = salah detail / kebalikan / tidak disebut / terlalu luas-sempit.
   Jawaban kunci **tidak boleh** bisa ditebak tanpa membaca teks.
-- `RD-words` & `WR-build`: verifikasi satu jawaban tunggal (lihat `toefl-templates.md`).
+- **`RD-words`:** potong kata dengan aturan tetap **sisakan ⌈n/2⌉ huruf, hilangkan ⌊n/2⌋**
+  (`colony` → `col_ _ _`, `finds` → `fin_ _`). Cek: konteks + jumlah huruf hanya cocok untuk
+  **satu** kata dan **satu bentuk** (mis. `-s` orang ketiga ikut terkunci oleh subjek).
+- **`WR-build`:** (a) hanya **satu** urutan gramatikal yang memakai semua potongan; (b) **dialog
+  logis**: kalimat B adalah respons wajar untuk A (pembicara, informasi yang diketahui, waktu).
+  Contoh gagal: A *"I forgot the schedule"* → B bertanya jadwal ke A. Rinci: `toefl-templates.md`.
 - **Acak posisi kunci MCQ** — model tidak memilih letak kunci sendiri:
   `python3 -I -c "import random; print([random.randint(1,4) for _ in range(<jumlah MCQ>)])"`
 
@@ -80,8 +89,10 @@ Tiap soal: kunci, penjelasan singkat, `subtype` + (MCQ R/L) focus tag.
 - Urutan section seperti ujian asli: **Reading → Listening → Writing → Speaking**. Header tiap
   section + waktu: `## Section 1 · Reading · ⏱️ 10 menit`. Instruksi resmi singkat (English)
   sekali per task, mis. `> Fill in the missing letters in the paragraph.`
-- **Waktu:** jalankan `date +%s` tepat sebelum soal pertama dan setelah jawaban terakhir tiap
-  section → catat menit terpakai vs batas (catatan saja, tidak menghentikan ujian).
+- **Waktu:** semua soal section sudah dibuat (langkah 2) **sebelum** `date +%s` pertama; jalankan
+  `date +%s` tepat sebelum soal pertama dan setelah jawaban terakhir tiap section → catat menit
+  terpakai vs batas (catatan saja, tidak menghentikan ujian). Angka ini **perkiraan** (ikut
+  menghitung jeda model menampilkan panel) → tulis `±`, sebut "lewat" hanya bila > batas + 10%.
 - **Teks/transkrip** tampil sekali di chat (blockquote `>`; percakapan 1 pembicara per baris
   `**Woman:** …`). Transkrip Listening diberi label `🎧 Transcript`. Lalu soal-soalnya.
 - Tiap soal MCQ di chat:
@@ -104,13 +115,20 @@ Tiap soal: kunci, penjelasan singkat, `subtype` + (MCQ R/L) focus tag.
   pendek (Daily Life, Conversation, Announcement, Choose a Response) → teks/transkrip utuh. Teks
   panjang (Academic Passage, Academic Talk) → kutip **paragraf/bagian yang dibutuhkan soal itu**
   persis seperti aslinya (soal main idea → teks utuh). `options` = 4 opsi persis urutan di chat.
+- **Penomoran:** tiap set `RD-words` = 1 nomor soal dengan isian `(1)–(10)` (mis. **Soal 1**);
+  soal MCQ & `WR-build` melanjutkan nomor (Soal 2, 3, …).
+- **Kotak kode WAJIB** untuk paragraf `RD-words` dan semua task `WR-build` (blok ``` tanpa bahasa):
+  garis bawah `_` di luar kotak kode dibaca sebagai markdown miring → paragraf rusak/tak tampil
+  (bug sesi 2026-11-08). Di dalam kotak, kosong = `_ _ _` (1 garis = 1 huruf, dipisah spasi).
 - **Free-text** (`RD-words`, `WR-build`, `WR-email`, `WR-discussion`, `SP-interview`): tampilkan
   prompt sebagai `#` heading + instruksi format; minta user mengetik **semua jawaban task itu
   dalam satu pesan** (bernomor: `1. information 2. ...`). Untuk `SP-interview`: tampilkan
   pertanyaan **satu per satu** (seperti wawancara, tanpa persiapan), user menjawab tiap pertanyaan.
 - **Hint fading `description`** (per subtype dari tracker): 🔴/🟡/⚪ → hint netral singkat
   (arti kata sulit dalam opsi, bahasa Indonesia); menuju 🟢 → lebih tipis; 🟢 → kosong (gaya
-  ujian). Simetris di semua opsi; jangan bocorkan jawaban.
+  ujian). Simetris di semua opsi; jangan bocorkan jawaban. **Pengecualian `RD-vocab`:** opsi
+  **tanpa** arti (soalnya justru menguji arti) → `description` kosong atau hanya kelas kata
+  (*adverb*) yang sama untuk keempat opsi.
 - **Adaptif (Reading & Listening, mode `full`/`reading`/`listening`):** soal dibagi 2 modul.
   Modul 1 di level awal; Modul 2 naik satu langkah (B1→B2, B2→C1) bila Modul 1 ≥ 75% benar, turun
   satu langkah bila < 50%. Nilai Modul 1 diam-diam (jangan tampilkan kunci). Mock harian: tanpa modul.
@@ -129,10 +147,21 @@ Tiap soal: kunci, penjelasan singkat, `subtype` + (MCQ R/L) focus tag.
 - **Rubrik (email/discussion/interview):** `Avg score` = (avg lama × attempts lama + jumlah skor
   sesi) ÷ attempts baru (1 desimal). Status: attempts < 3 → ⚪ · avg < 3 🔴 · 3–3.9 🟡 · ≥ 4 🟢.
 - **Weak types:** urutkan 🔴 lalu 🟡 (terendah di atas) + 1 baris pola kesalahan nyata.
-- Ganti baris `_No data yet — run /toefl._` dengan `_Updated YYYY-MM-DD._`.
+- **Section level** (Reading, Listening, Writing (build); Speaking tidak): tambahkan % section sesi
+  ini (Reading = semua item Reading termasuk `RD-words`; Writing = hanya `WR-build`) ke kolom
+  urutan. **Naik** satu langkah (A2→B1→B2→C1) bila **2 sesi berturut ≥ 80%** di level itu;
+  **turun** satu langkah bila **1 sesi < 50%** dengan ≥ 3 item; batas A2–C1. Level berubah →
+  kosongkan urutan (`—`) + catat di kolom Note (`dropped B1 → A2 on YYYY-MM-DD (1/3 = 33%)`).
+  Hasil Modul 2 (mode adaptif) dihitung pada level Modul 2.
+- Baris tanggal: `_Updated YYYY-MM-DD · sessions: N._` (N = sesi lama + 1; dipakai juga untuk
+  `#N` di subject commit, mis. `chore(progress): log toefl daily mock #2 (R … · L … · W …)`).
+- Lalu jalankan **`python3 scripts/check-kb.py`** (harus ✅, aturan 9 `CLAUDE.md`). ❌ → perbaiki
+  tracker dulu sebelum pesan hasil.
 
 **`progress/history.md`** — tambah baris **paling atas** tabel:
-`| YYYY-MM-DD | TOEFL <mode> | <N> | R <a>/<b> · L <c>/<d> · W <…> · S <…> | <1 kalimat: subtype terlemah + catatan waktu> |`
+`| YYYY-MM-DD | TOEFL <mode> | <N item> (<rincian>) | R <a>/<b> · L <c>/<d> · W <…> · S <…> | <subtype terlemah + kesalahan inti>. Waktu: R ±x/y mnt · L … · W …. Tema: <topik tiap teks>. |`
+- `N item` = jumlah item yang dinilai (tiap kata `RD-words` = 1), mis. `26 (10 kata + 13 MCQ + 3 build)`.
+- **`Tema:` WAJIB** (dipakai rotasi tema langkah 1). Rubrik ditulis `Email 3/5`, `Interview 3.5/5`.
 
 **Jangan** menyentuh `progress/evaluation.md`.
 
@@ -146,12 +175,16 @@ Tiap soal: kunci, penjelasan singkat, `subtype` + (MCQ R/L) focus tag.
 - Task free-text: skor + alasan + 1–3 koreksi terpenting (+ model answer singkat bila skor ≤ 3).
 - 1 baris subtype terlemah · 1 baris saran: `→ /quiz <tag grammar>` bila kesalahan writing cocok
   dengan tag di taxonomy.
+- 1 baris **level**: section yang naik/turun level sesi ini (atau "level tetap").
+- **Pengingat task panjang** (mode harian/`reading`/`listening`): bila `WR-email`/`WR-discussion`
+  atau `SP-interview` **belum pernah** dites atau terakhir ≥ 7 hari lalu (langkah 1) →
+  `⏰ Writing panjang belum dites sejak … → /toefl writing` (dan/atau `/toefl speaking`).
 
 ## Ringkasan subtype
 
 **Reading**
 - **`RD-words`** — paragraf akademik ±70–90 kata, kalimat pertama utuh, 10 kata terpotong
-  separuh akhir (`inform_ _ _ _ _`). Kata umum (Oxford 3000/AWL 1–3), konteks mengunci 1 kata.
+  separuh akhir (`inform_ _ _ _ _`, tampil di kotak kode). Kata umum (Oxford 3000/AWL 1–3), konteks mengunci 1 kata.
 - **`RD-daily`** — teks sehari-hari 60–150 kata (email, pengumuman kampus, menu, jadwal, chat,
   iklan) → set 2–3 MCQ: tujuan teks, detail, inference ringan. Detail (jam, harga, tanggal)
   dihitung ulang; tiap distraktor salah karena satu detail jelas.
