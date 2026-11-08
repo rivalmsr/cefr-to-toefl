@@ -33,6 +33,23 @@ materi atau update skor), tambahkan satu blok di paling atas daftar di bawah, fo
 
 ---
 
+### 2026-11-09 — Rotasi tema /toefl ditetapkan script (LRU), bukan model
+- **Kategori:** skill · data
+- **Problem:** Rotasi tema `/toefl` hanya "jangan ulang tema 3 sesi terakhir" dan model yang
+  memilih, dengan label bebas (`Tema: lebah, kolam renang, …`). Di proyek Jepang (`/jlpt`) cara
+  ini terbukti ping-pong di 2–3 topik (70% jadwal-bus/menu dalam 39 mock) dan label bebas
+  ("menu"/"menu-kafe") menyamarkan pengulangan.
+- **Fix:** Pool tema kanonik per subtype berteks di `reference/toefl-themes.md`;
+  `scripts/toefl_themes.py <mode>` memilih tema LRU atas seluruh riwayat TOEFL (belum pernah
+  dulu, seri diacak dengan seed tanggal, tanpa ID ganda dalam satu sesi) + jumlah teks per mode.
+  Format history jadi `Tema: SUBTYPE=id (topik) · …`; `check-kb.py` kini juga mengecek label
+  tema di `history.md` (+14 tes). Baris TOEFL 2026-11-08 dikonversi ke format baru (subtype
+  dipetakan menurut urutan section: words, daily, academic, conversation, announcement, talk);
+  topik asli tetap di dalam kurung.
+- **File:** `reference/toefl-themes.md` (baru), `scripts/toefl_themes.py` (baru),
+  `scripts/check-kb.py`, `scripts/test_check_kb.py`, `.claude/skills/toefl/SKILL.md`,
+  `progress/history.md`, `README.md`
+
 ### 2026-11-09 — Dasar statistik untuk minimum 8 percobaan per jalur
 - **Kategori:** data · docs
 - **Problem:** Aturan "≥ 8 percobaan per jalur" hanya bersandar pada Bloom/ACTFL (ide umum),

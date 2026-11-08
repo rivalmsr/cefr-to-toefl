@@ -13,6 +13,7 @@ Jalankan **simulasi TOEFL iBT format 2026** (task resmi ETS), nilai jawaban, pel
 | File | Kapan dibaca |
 |---|---|
 | `reference/toefl-2026-spec.md` | **WAJIB, utuh** — struktur resmi, rincian task, tabel band ↔ CEFR |
+| `reference/toefl-themes.md` | hanya bila perlu menambah tema / label ditolak `check-kb.py` (pool tema kanonik; dibaca otomatis oleh `scripts/toefl_themes.py`) |
 | `reference/toefl-templates.md` | bila sesi memuat task free-text (`RD-words`, `WR-*`, `SP-interview`) — format, cara nilai, rubrik |
 
 **Section & subtype:** Reading = `RD-words` · `RD-daily` · `RD-academic` · Listening (transkrip) =
@@ -65,11 +66,13 @@ Jalankan **simulasi TOEFL iBT format 2026** (task resmi ETS), nilai jawaban, pel
 - Baca `progress/toefl-evaluation.md` (termasuk **Section level** = level materi tiap section),
   section TOEFL `quiz-taxonomy.md`, `toefl-2026-spec.md`.
 - (Opsional) `Grep` Weak areas `progress/evaluation.md` + anchor `progress/anki-weak-items.md`.
-- `grep "| TOEFL" progress/history.md | head -3` → **rotasi tema**: jangan ulang topik yang tercatat
-  di `Tema:` 3 sesi terakhir (variasikan bidang: biologi, sejarah, psikologi, teknik, ekonomi,
-  seni, geologi, …; dan situasi kampus: perpustakaan, asrama, registrasi, lab, …). Dari grep yang
-  sama, catat **tanggal terakhir** sesi berisi `WR-email`/`WR-discussion`/`SP-interview` (untuk
-  pengingat di langkah 6).
+- **Rotasi tema — DITETAPKAN SCRIPT, bukan model:** `python3 scripts/toefl_themes.py <mode>`
+  (`/toefl` → `harian`; `review` → `full`, ambil subtype yang dites saja). Output = ID tema per
+  teks, LRU atas **seluruh** riwayat TOEFL (belum pernah dulu, lalu paling lama; tanpa ID ganda
+  dalam satu sesi). **Pakai persis**; variasi di detail (topik spesifik, tokoh, tempat, angka).
+  Jumlah teks per subtype juga dari output ini. `LS-response`/`WR-build` tanpa tema (bebas, variasikan).
+- `grep "| TOEFL" progress/history.md | head -5` → catat **tanggal terakhir** sesi berisi
+  `WR-email`/`WR-discussion`/`SP-interview` (untuk pengingat di langkah 6).
 
 ### 2. Buat soal (format per subtype: bagian "Ringkasan subtype" di bawah)
 Tiap soal: kunci, penjelasan singkat, `subtype` + (MCQ R/L) focus tag.
@@ -155,13 +158,16 @@ Tiap soal: kunci, penjelasan singkat, `subtype` + (MCQ R/L) focus tag.
   Hasil Modul 2 (mode adaptif) dihitung pada level Modul 2.
 - Baris tanggal: `_Updated YYYY-MM-DD · sessions: N._` (N = sesi lama + 1; dipakai juga untuk
   `#N` di subject commit, mis. `chore(progress): log toefl daily mock #2 (R … · L … · W …)`).
-- Lalu jalankan **`python3 scripts/check-kb.py`** (harus ✅, aturan 9 `CLAUDE.md`). ❌ → perbaiki
-  tracker dulu sebelum pesan hasil.
+- Lalu (setelah baris history di bawah ditulis) jalankan **`python3 scripts/check-kb.py`** (harus ✅,
+  aturan 9 `CLAUDE.md`; ikut mengecek `Tema:` di history). ❌ → perbaiki dulu sebelum pesan hasil.
 
 **`progress/history.md`** — tambah baris **paling atas** tabel:
-`| YYYY-MM-DD | TOEFL <mode> | <N item> (<rincian>) | R <a>/<b> · L <c>/<d> · W <…> · S <…> | <subtype terlemah + kesalahan inti>. Waktu: R ±x/y mnt · L … · W …. Tema: <topik tiap teks>. |`
+`| YYYY-MM-DD | TOEFL <mode> | <N item> (<rincian>) | R <a>/<b> · L <c>/<d> · W <…> · S <…> | <subtype terlemah + kesalahan inti>. Waktu: R ±x/y mnt · L … · W …. Tema: <SUBTYPE>=<id> (<topik>) · …. |`
 - `N item` = jumlah item yang dinilai (tiap kata `RD-words` = 1), mis. `26 (10 kata + 13 MCQ + 3 build)`.
-- **`Tema:` WAJIB** (dipakai rotasi tema langkah 1). Rubrik ditulis `Email 3/5`, `Interview 3.5/5`.
+- **`Tema:` WAJIB**, format persis baris `Tulis di history:` dari `toefl_themes.py` (ganti
+  `<topik>` dengan topik spesifik, mis. `RD-academic=geologi (gua batu kapur)`; satu entri per
+  teks). Label bebas (`lebah, kolam renang`) atau ID di luar `reference/toefl-themes.md` →
+  `check-kb.py` ❌. Rubrik ditulis `Email 3/5`, `Interview 3.5/5`.
 
 **Jangan** menyentuh `progress/evaluation.md`.
 

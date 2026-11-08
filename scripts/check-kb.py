@@ -19,18 +19,24 @@ Yang dicek (aturan dari .claude/skills/quiz/SKILL.md langkah 6 & docs/cara-kerja
   6. Tabel "Writing / Speaking (rubric 0–5)": Avg 0–5 dan status (< 3 attempts ⚪ · < 3 🔴 ·
      3–3.9 🟡 · ≥ 4 🟢).
   7. Tabel "Section level": level hanya A2/B1/B2/C1.
+  progress/history.md (/toefl langkah 5, rotasi tema scripts/toefl_themes.py):
+  8. Tiap baris TOEFL punya `Tema:` berformat `SUBTYPE=id (topik) · …`, dan tiap id ada di pool
+     kanonik reference/toefl-themes.md untuk subtype itu.
 
 Tidak mengubah file apa pun. Exit 0 = semua cocok, exit 1 = ada yang tidak cocok.
-Pakai:  python3 scripts/check-kb.py            (cek ketiga tracker)
+Pakai:  python3 scripts/check-kb.py            (cek ketiga tracker + tema TOEFL di history)
         python3 scripts/check-kb.py <file.md>  (jenis tracker dikenali dari isinya)
 """
 import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import toefl_themes  # noqa: E402 — parser tema dipakai bersama dengan scripts/toefl_themes.py
+
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULTS = (ROOT / "progress" / "evaluation.md", ROOT / "progress" / "verb-evaluation.md",
-            ROOT / "progress" / "toefl-evaluation.md")
+            ROOT / "progress" / "toefl-evaluation.md", ROOT / "progress" / "history.md")
 VERB_WINDOW = 5  # /quiz-v: 5 percobaan terakhir per kata
 
 STATUS = ("⚪", "🔴", "🟡", "🟢")
@@ -293,8 +299,31 @@ def check_toefl_text(text):
     return errs, n_rows
 
 
+def check_history_text(text, pool=None):
+    """Logika murni: isi history.md → (masalah tema TOEFL, jumlah baris TOEFL dicek)."""
+    if pool is None:
+        pool = toefl_themes.parse_pool(toefl_themes.POOL_PATH.read_text(encoding="utf-8"))
+    errs, rows = [], toefl_themes.toefl_rows(text)
+    for d, notes in rows:
+        part = toefl_themes.tema_part(notes)
+        if not part:
+            errs.append(f"[history {d}] TOEFL tanpa 'Tema:'")
+            continue
+        entries, bad = toefl_themes.parse_tema(part)
+        for piece in bad:
+            errs.append(f"[history {d}] Tema tidak berformat SUBTYPE=id: {piece!r}")
+        for sub, tid in entries:
+            if sub not in pool:
+                errs.append(f"[history {d}] subtype {sub} tidak punya pool tema")
+            elif tid not in pool[sub]:
+                errs.append(f"[history {d}] tema {sub}={tid} tidak ada di reference/toefl-themes.md")
+    return errs, len(rows)
+
+
 def check_any(text):
     """Pilih pemeriksa dari isi file."""
+    if text.startswith("# Session History"):
+        return check_history_text(text)
     if "## Per verb" in text:
         return check_verb_text(text)
     if "## " + TOEFL_SINGLE in text:

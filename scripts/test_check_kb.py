@@ -312,6 +312,101 @@ def test_real_toefl_evaluation_md_is_consistent():
     assert errs == [], "\n".join(errs)
 
 
+# --- Tema TOEFL: history.md + scripts/toefl_themes.py ---------------------------------
+
+tt = ck.toefl_themes
+POOL = {"RD-daily": ["menu-kantin", "jam-buka", "chat-teman"],
+        "LS-talk": ["geologi", "sejarah"], "RD-academic": ["geologi", "sejarah", "kimia"]}
+HIST_HEAD = "# Session History\n\n| Date | Scope | # items | Score | Notes |\n|---|---|---|---|---|\n"
+
+
+def _hist(*rows):
+    """rows = (tanggal, notes) → teks history.md dengan baris TOEFL."""
+    return HIST_HEAD + "".join(f"| {d} | TOEFL harian | 10 | R 1/2 | {n} |\n" for d, n in rows)
+
+
+def _hist_errors(notes):
+    errs, _ = ck.check_history_text(_hist(("2026-11-01", notes)), POOL)
+    return errs
+
+
+def test_themes_valid_tema_has_no_errors():
+    errs, n_rows = ck.check_history_text(
+        _hist(("2026-11-01", "x. Tema: RD-daily=jam-buka (perpustakaan) · LS-talk=geologi.")), POOL)
+    assert n_rows == 1           # prakondisi: baris TOEFL terbaca
+    assert errs == []
+
+
+def test_themes_non_toefl_rows_are_ignored():
+    text = HIST_HEAD + "| 2026-11-01 | QUIZ adaptive | 12 | 9/12 | Tema: 2 Keluarga. |\n"
+    assert ck.check_history_text(text, POOL) == ([], 0)
+
+
+def test_themes_detects_missing_tema():
+    assert any("tanpa 'Tema:'" in e for e in _hist_errors("Terlemah RD-daily."))
+
+
+def test_themes_detects_free_label_without_subtype():
+    assert any("tidak berformat" in e for e in _hist_errors("Tema: lebah, kolam renang."))
+
+
+def test_themes_detects_id_outside_pool():
+    assert any("RD-daily=menu-kafe" in e for e in _hist_errors("Tema: RD-daily=menu-kafe."))
+
+
+def test_themes_detects_subtype_without_pool():
+    assert any("tidak punya pool" in e for e in _hist_errors("Tema: WR-build=apa-saja."))
+
+
+def test_themes_pool_parses_backticked_ids_per_subtype():
+    md = "| Subtype | Tema |\n|---|---|\n| `RD-daily` | `menu-kantin` · `jam-buka` |\n"
+    assert tt.parse_pool(md) == {"RD-daily": ["menu-kantin", "jam-buka"]}
+
+
+def test_themes_last_used_keeps_latest_date():
+    text = _hist(("2026-11-05", "Tema: LS-talk=geologi."), ("2026-11-01", "Tema: LS-talk=geologi."))
+    assert tt.last_used(text) == {("LS-talk", "geologi"): "2026-11-05"}
+
+
+def test_themes_pick_prefers_never_used_over_used():
+    used = {("RD-daily", "menu-kantin"): "2026-11-01", ("RD-daily", "jam-buka"): "2026-11-02"}
+    assert tt.pick(POOL, used, {"RD-daily": 1})["RD-daily"] == [("chat-teman", None)]
+
+
+def test_themes_pick_takes_oldest_when_all_used():
+    used = {("LS-talk", "geologi"): "2026-11-05", ("LS-talk", "sejarah"): "2026-11-01"}
+    assert tt.pick(POOL, used, {"LS-talk": 1})["LS-talk"] == [("sejarah", "2026-11-01")]
+
+
+def test_themes_pick_never_repeats_id_across_subtypes_in_one_session():
+    picks = tt.pick(POOL, {}, {"RD-academic": 1, "LS-talk": 1})
+    assert picks["RD-academic"] != picks["LS-talk"]
+
+
+def test_themes_pick_reuses_session_id_only_when_pool_exhausted():
+    picks = tt.pick(POOL, {}, {"RD-academic": 2, "LS-talk": 1})
+    assert len(picks["LS-talk"]) == 1     # tidak kosong walau geologi & sejarah sudah dipakai
+
+
+def test_themes_pick_shuffle_keeps_lru_order():
+    import random
+    used = {("RD-academic", "geologi"): "2026-11-01", ("RD-academic", "sejarah"): "2026-11-02"}
+    got = tt.pick(POOL, used, {"RD-academic": 3}, random.Random(1))["RD-academic"]
+    assert [t for t, _ in got] == ["kimia", "geologi", "sejarah"]
+
+
+def test_check_any_routes_history_to_theme_checker():
+    errs, n_rows = ck.check_any(_hist(("2026-11-01", "Tema: RD-daily=menu-kafe.")))
+    assert n_rows == 1 and any("menu-kafe" in e for e in errs)
+
+
+def test_real_history_md_themes_are_in_pool():
+    path = HERE.parent / "progress" / "history.md"
+    errs, n_rows = ck.check_history_text(path.read_text(encoding="utf-8"))
+    assert n_rows > 0, "tidak ada baris TOEFL yang terbaca"
+    assert errs == [], "\n".join(errs)
+
+
 # --- Runner ---------------------------------------------------------------------------
 
 def run():

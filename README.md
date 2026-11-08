@@ -23,6 +23,7 @@ reference/
   synonyms.md              synonym/paraphrase pairs
   toefl-2026-spec.md       official TOEFL iBT 2026 structure + band ↔ CEFR tables (ETS)
   irregular-verbs.md       85 irregular verbs (Oxford A1–A2) by sound pattern — /quiz-v source
+  toefl-themes.md          canonical theme pool per TOEFL subtype (rotation, read by toefl_themes.py)
   toefl-templates.md       TOEFL 2026 templates, model answers, rubrics (free-text tasks)
   official-sources.md      official A1–C1 references + links
   sources/                 downloaded official PDFs (gitignored)
@@ -39,7 +40,9 @@ docs/
   perbaikan-kb.md          fix log (Problem → Fix → File)
 scripts/
   sync-anki.sh             Anki desktop → progress/anki-weak-items.md
-  check-kb.py              checks score math in evaluation.md + verb-evaluation.md + toefl-evaluation.md (read-only)
+  check-kb.py              checks score math in evaluation.md + verb-evaluation.md + toefl-evaluation.md
+                           + TOEFL `Tema:` labels in history.md (read-only)
+  toefl_themes.py          picks /toefl themes (LRU over all TOEFL history) — read-only
   test_check_kb.py         tests for check-kb.py (stdlib runner, no pytest)
 .claude/skills/
   diagnostic/              placement test (run first)
