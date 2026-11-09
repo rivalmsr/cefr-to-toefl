@@ -6,6 +6,7 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-11-10 | VERB (A1 harian: P2b, P2c, P3, P4a, P4c) | 8 | 6/8 (75%) | ✓ hear, speak, lose, sit, find, begin; ✗ run: ran, ran → ran, run; understand: understand, understand → understood, understood; pola baru: — |
 | 2026-11-10 | QUIZ [translate] (Unit 2) | 4 | 3/4 (75%) | Past-be ✅ *You weren't in class yesterday morning*; ✗ *~~Is that film exciting?~~* → **Was that film exciting?** (film already watched → past *be*). Past simple ✅ *Where did you go last week?*, *Yesterday I met Budi at the station* → past-simple tag 🟢; past-be Prod 2/4 🔴. No slips. |
 | 2026-11-10 | QUIZ adaptive (Unit 1–2) | 12 | 9/12 (75%) | ✗ *~~Was you at home~~* → Were you (was/were 3×, *Was you* 2×); ✗ collocation *~~take my bed~~* → make my bed; ✗ paraphrase *last time … five years ago* → haven't visited … for five years. Mock TOEFL dibatalkan sebelum soal tampil (tidak direkam). Tema: 3 Rumah & tempat tinggal. |
 | 2026-11-09 | VERB (A1 harian: P2a, P2b, P2c, P4a, P4c) | 8 | 3/8 (38%) | ✓ find, leave, send; ✗ speak: spoke, spoke → spoke, spoken; sit: sit, sit → sat, sat; bring: bring, bring → brought, brought; begin: began, begin → began, begun; wake: woke, woke → woke, woken; pola baru: — |
