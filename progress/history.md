@@ -6,6 +6,7 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-11-10 | QUIZ adaptive (Unit 1–2) | 12 | 9/12 (75%) | ✗ *~~Was you at home~~* → Were you (was/were 3×, *Was you* 2×); ✗ collocation *~~take my bed~~* → make my bed; ✗ paraphrase *last time … five years ago* → haven't visited … for five years. Mock TOEFL dibatalkan sebelum soal tampil (tidak direkam). Tema: 3 Rumah & tempat tinggal. |
 | 2026-11-09 | VERB (A1 harian: P2a, P2b, P2c, P4a, P4c) | 8 | 3/8 (38%) | ✓ find, leave, send; ✗ speak: spoke, spoke → spoke, spoken; sit: sit, sit → sat, sat; bring: bring, bring → brought, brought; begin: began, begin → began, begun; wake: woke, woke → woke, woken; pola baru: — |
 | 2026-11-09 | QUIZ [translate] (Unit 2) | 4 | 3/4 (75%) | First Unit 2 production. Past-be ✅ *Yesterday my parents were very tired*; ✗ *~~Was you at house last night?~~* → **Were you at home last night?** (*you* → *were*; was/were slip 2×). Past simple ✅ *Two days ago I bought (a) new coat*, *Yesterday morning my father didn't drink coffee*. Slips: *at house* → at home, missing *a*. |
 | 2026-11-09 | QUIZ adaptive (Unit 1–2) | 12 | 11/12 (92%) | First Unit 2 session. Past-be ✗ *~~My grandparents was~~* → were (plural subject); ✅ *We went* (not *were go*), *Was your sister…?*, *didn't buy*, *studied*, *did your family go*, *went … ago* (not *has gone*), *abroad*, *missed the train*, paraphrase *has lived since 2020*, reading 2/2. Tema: 2 Keluarga. |
