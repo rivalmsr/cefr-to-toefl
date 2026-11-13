@@ -6,6 +6,7 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-11-14 | VERB (A1 harian: P2b, P2c, P3, P4c) | 8 | 3/8 (38%) | ✓ run, understand, find; ✗ keep: keep, keep → kept, kept; sit: sit, sit → sat, sat; spend: spend, spend → spent, spent; stand: stand, stand → stood, stood; forget: forgot, forgot → forgot, forgotten; pola baru: — |
 | 2026-11-14 | QUIZ [translate] (Unit 2 past be/simple) | 4 | 4/4 | `A2-past-be` Prod 3/3 (*Where were you*, *weren't at home*, *Was the food*) → Prod 5/7 🟡, tag 🔴 → 🟡; `A2-past-simple` Prod 1/1 (*got up*, no *was*); no slips |
 | 2026-11-14 | QUIZ adaptive (Unit 1–2) | 12 | 9/12 (75%) | ✗ *~~Was you at the gym~~* → Were you (*Was you* 3×, was/were 4×); ✗ *~~Rizky was get up~~* → got up (*was* + verb); ✗ collocation *~~take my bed~~* → make my bed (2×). Paraphrase *haven't eaten … for two weeks* ✅ (fixed). Tema: 4 Rutinitas harian. |
 | 2026-11-10 | VERB (A1 harian: P2b, P2c, P3, P4a, P4c) | 8 | 6/8 (75%) | ✓ hear, speak, lose, sit, find, begin; ✗ run: ran, ran → ran, run; understand: understand, understand → understood, understood; pola baru: — |
