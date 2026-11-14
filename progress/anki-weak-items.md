@@ -20,7 +20,7 @@ Tingkat: **🔴** = `leech` atau `lapses ≥ 8` · **🟡** = `lapses 5–7` · 
 
 Total ditandai: 🔴1 · 🟡4 · ⚪20
 
-Progres deck: **A1** 612/929 kartu sudah direview
+Progres deck: **A1** 618/929 kartu sudah direview
 
 ## Kosakata lemah — Oxford 3000
 
