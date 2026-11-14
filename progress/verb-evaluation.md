@@ -14,7 +14,7 @@ An attempt is ✓ only if **both forms** are right (the item shows V1 + meaning;
 **and** V3), spelling included. Capital letters ignored. Both forms accepted where the
 reference lists two (*learned/learnt*). Hint (💡) used or skipped (⏭️) → ✗.
 
-_Created 2026-11-02. Updated 2026-11-14 after session 9 (8 items, 3/8); earlier: session 8 (2026-11-10, 6/8), session 7 (2026-11-09, 3/8), session 6 (2026-11-07, 6/8), session 5 (2026-11-07, 5/8), session 4 (2026-11-05, 6/8), session 3 (2026-11-05, 5/8), session 2 (2026-11-03, 2/8), session 1 (2026-11-02, 1/8)._
+_Created 2026-11-02. Updated 2026-11-15 after session 10 (8 items, 3/8); earlier: session 9 (2026-11-14, 3/8), session 8 (2026-11-10, 6/8), session 7 (2026-11-09, 3/8), session 6 (2026-11-07, 6/8), session 5 (2026-11-07, 5/8), session 4 (2026-11-05, 6/8), session 3 (2026-11-05, 5/8), session 2 (2026-11-03, 2/8), session 1 (2026-11-02, 1/8)._
 
 ---
 
@@ -22,13 +22,13 @@ _Created 2026-11-02. Updated 2026-11-14 after session 9 (8 items, 3/8); earlier:
 | Pattern | Correct | Total | Accuracy | Status |
 |---------|---------|-------|----------|--------|
 | P1 | 2 | 2 | 100% | ⚪ |
-| P2a | 2 | 3 | 67% | 🟡 |
-| P2b | 6 | 12 | 50% | 🔴 |
-| P2c | 10 | 21 | 48% | 🔴 |
-| P3 | 1 | 3 | 33% | 🔴 |
-| P4a | 2 | 4 | 50% | 🔴 |
-| P4b | 0 | 1 | 0% | ⚪ |
-| P4c | 3 | 8 | 38% | 🔴 |
+| P2a | 2 | 4 | 50% | 🔴 |
+| P2b | 7 | 13 | 54% | 🔴 |
+| P2c | 11 | 23 | 48% | 🔴 |
+| P3 | 1 | 4 | 25% | 🔴 |
+| P4a | 2 | 5 | 40% | 🔴 |
+| P4b | 0 | 2 | 0% | ⚪ |
+| P4c | 4 | 9 | 44% | 🔴 |
 | P4d | 2 | 5 | 40% | 🔴 |
 | P5 | 9 | 13 | 69% | 🟡 |
 
@@ -39,9 +39,10 @@ _Created 2026-11-02. Updated 2026-11-14 after session 9 (8 items, 3/8); earlier:
 | `read` | read · read | `✓` 1/1 (100%) ⚪ | 1/1 | ⚪ |
 | `bring` | brought · brought | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*bring, bring* 2026-11-09 s7) |
 | `buy` | bought · bought | `✓` 1/1 (100%) ⚪ | 1/1 | ⚪ |
+| `teach` | taught · taught | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*teach, teach* — V1 copied, 2026-11-15 s10) |
 | `think` | thought · thought | `✓` 1/1 (100%) ⚪ | 1/1 | ⚪ |
 | `feel` | felt · felt | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*felt, felt* ✅ 2026-11-05 s4; *feel, feel* 2026-11-05 s3) |
-| `keep` | kept · kept | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*keep, keep* — V1 copied, 2026-11-14 s9) |
+| `keep` | kept · kept | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*kept, kept* ✅ 2026-11-15 s10; *keep, keep* — V1 copied, 2026-11-14 s9) |
 | `leave` | left · left | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*left, left* ✅ 2026-11-09 s7; *leave, leave* 2026-11-07 s6) |
 | `lose` | lost · lost | `✓` 1/1 (100%) ⚪ | 1/1 | ⚪ |
 | `meet` | met · met | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*met, met* ✅ 2026-11-07 s6; *meet, meet* 2026-11-07 s5) |
@@ -55,16 +56,19 @@ _Created 2026-11-02. Updated 2026-11-14 after session 9 (8 items, 3/8); earlier:
 | `make` | made · made | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*make, made* 2026-11-02) |
 | `pay` | paid · paid | `✓` 1/1 (100%) ⚪ | 1/1 | ⚪ |
 | `say` | said · said | `✓` 1/1 (100%) ⚪ | 1/1 | ⚪ |
-| `sit` | sat · sat | `✗✗✓✗` 1/4 (25%) 🔴 | 1/4 | 🔴 (*sat, sat* ✅ 2026-11-10 s8; *sit, sit* 2026-11-07 s6, 2026-11-09 s7 & 2026-11-14 s9) |
-| `stand` | stood · stood | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*stand, stand* — V1 copied, 2026-11-14 s9) |
+| `sit` | sat · sat | `✗✗✓✗✓` 2/5 (40%) 🔴 | 2/5 | 🔴 (*sat, sat* ✅ 2026-11-10 s8 & 2026-11-15 s10; *sit, sit* 2026-11-07 s6, 2026-11-09 s7 & 2026-11-14 s9) |
+| `stand` | stood · stood | `✗✗` 0/2 (0%) ⚪ | 0/2 | ⚪ (*stand, stand* — V1 copied, 2026-11-14 s9 & 2026-11-15 s10) |
 | `tell` | told · told | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*told, told* ✅ 2026-11-05 s4; *tell, tell* 2026-11-05 s3) |
 | `understand` | understood · understood | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*understood, understood* ✅ 2026-11-14 s9; *understand, understand* — V1 copied, 2026-11-10 s8) |
+| `become` | became · become | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*begin, began* — confused with begin, 2026-11-15 s10) |
 | `come` | came · come | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*came, came* 2026-11-03) |
 | `run` | ran · run | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*ran, run* ✅ 2026-11-14 s9; *ran, ran* — V2 copied to V3, 2026-11-10 s8) |
 | `begin` | began · begun | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*began, begun* ✅ 2026-11-10 s8; *began, begin* — V3 = V1, 2026-11-09 s7) |
 | `drink` | drank · drunk | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*drank, drunk* ✅ 2026-11-05 s4; *drink, drunk* 2026-11-05 s3) |
+| `sing` | sang · sung | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*song, song* — *song* = noun, 2026-11-15 s10) |
+| `fly` | flew · flown | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*fly, fly* — V1 copied, 2026-11-15 s10) |
 | `know` | knew · known | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*know, known* 2026-11-02) |
-| `forget` | forgot · forgotten | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*forgot, forgot* — V2 copied to V3, 2026-11-14 s9) |
+| `forget` | forgot · forgotten | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*forgot, forgotten* ✅ 2026-11-15 s10; *forgot, forgot* — V2 copied to V3, 2026-11-14 s9) |
 | `speak` | spoke · spoken | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*spoke, spoken* ✅ 2026-11-10 s8; *spoke, spoke* — V2 copied to V3, 2026-11-09 s7) |
 | `wake` | woke · woken | `✗` 0/1 (0%) ⚪ | 0/1 | ⚪ (*woke, woke* — V2 copied to V3, 2026-11-09 s7) |
 | `wear` | wore · worn | `✗✓` 1/2 (50%) ⚪ | 1/2 | ⚪ (*wore, worn* ✅ 2026-11-03; *wern, worn* 2026-11-02) |
@@ -78,10 +82,11 @@ _Created 2026-11-02. Updated 2026-11-14 after session 9 (8 items, 3/8); earlier:
 | `go` | went · gone | `✓` 1/1 (100%) ⚪ | 1/1 | ⚪ |
 
 ## Weak verbs (priority for next session)
-1. `sit` 🔴 25% — wrong: *sit, sit* (3×, V1 copied; ✅ only 2026-11-10 s8) → **sat, sat**
+1. `sit` 🔴 40% — wrong: *sit, sit* (3×, V1 copied; ✅ 2026-11-10 s8 & 2026-11-15 s10) → **sat, sat**
 
-Redrill from session 9 (2026-11-14): *keep, keep* → **kept, kept**; *spend, spend* → **spent, spent**;
-*stand, stand* → **stood, stood**; *forgot, forgot* → **forgot, forgotten**. Fixed in s9: run,
-understand, find (🟢).
-Still pending from session 7: `bring` (*bring, bring*), `wake` (*woke, woke*); from session 3–2:
-`come`, `eat`, `take`; from session 1: `have`, `get`, `make`, `know`.
+Redrill from session 10 (2026-11-15): *stand, stand* → **stood, stood** (2× in a row);
+*teach, teach* → **taught, taught**; *fly, fly* → **flew, flown**; *song, song* → **sang, sung**;
+*begin, began* → **became, become**. Fixed in s10: sit, keep, forget.
+Still pending from session 9: `spend` (*spend, spend*); session 7: `bring` (*bring, bring*),
+`wake` (*woke, woke*); from session 3–2: `come`, `eat`, `take`; from session 1: `have`, `get`,
+`make`, `know`.
