@@ -6,6 +6,7 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-11-15 | QUIZ adaptive (Unit 1–2) | 12 | 10/12 (83%) | Past be MCQ 4/4 (*soup was*, *Were the noodles*, *We weren't hungry*) ✅; ✗ *~~have had dinner last night~~* → had (finished time → past simple), ✗ *~~I was exciting~~* → disappointed (feeling word). Tema: 6 Makanan & restoran. |
 | 2026-11-15 | VERB (A1: P2a, P2b, P2c, P3, P4a, P4b, P4c) | 8 | 3/8 (38%) | ✓ sit, forget, keep; ✗ teach: teach, teach → taught, taught; fly: fly, fly → flew, flown; sing: song, song → sang, sung; stand: stand, stand → stood, stood; become: begin, began → became, become; pola baru: — |
 | 2026-11-15 | QUIZ [translate] (Unit 2 past be/simple) | 4 | 3/4 (75%) | `A2-past-be` Prod 2/3 (*Were you and your brother…?*, *was … wasn't*) ✅; ✗ *~~we sick~~* → we were sick (missing *be* before adjective) → Prod 7/10 70% 🟡; `A2-past-simple` Prod 1/1 (*Did you write*); slips: *Rina and me* → I, *at class* → in class, *write email* → an email |
 | 2026-11-15 | QUIZ adaptive (Unit 1–2) | 12 | 12/12 (100%) | Semua benar: *Were you…?* (no *Was you*), *strawberries were*, *wasn't happy*, *bought* (no *was buy*), *make a shopping list* (no *take*); past-be MCQ → 🟢, Prod 5/7 masih blocker. Tema: 5 Belanja & harga. |
