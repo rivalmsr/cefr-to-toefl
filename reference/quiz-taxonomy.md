@@ -18,6 +18,8 @@ Tag format: `<level>-<slug>`, e.g. `A2-past-simple`. Added when the related unit
 | `A2-present-perfect` | Unit 1 | Present perfect with for/since (situation continuing to now); contrast with present continuous |
 | `A2-past-be` | Unit 2 | Past simple of *be*: was/were agreement, wasn't/weren't, Was/Were …?; *was/were* only for states, not with another verb (*~~I was go~~*) |
 | `A2-past-simple` | Unit 2 | Past simple of other verbs: regular -ed (+ spelling), irregular V2, same form for all subjects, didn't + base verb, Did + subject + base verb, time markers (yesterday, last …, … ago, in 2019); contrast with present perfect for/since (Unit 1) |
+| `A2-going-to` | Unit 3 | *be going to* + base verb for intentions/plans and predictions from present evidence; *be* required (*~~I going to~~*), base verb after *to* (*~~going to visits/went~~*), isn't/aren't going to, Are you going to …? / What are you going to …? |
+| `A2-present-continuous-future` | Unit 3 | Present continuous (*am/is/are* + V-ing) + future time for fixed arrangements; -ing spelling (making, stopping, lying); negative/question; future time markers (tomorrow, tonight, this/next …, in two days); *be* required (*~~I meeting~~*, *~~I am meet~~*); not present simple for personal plans; contrast with *going to* (intention vs arrangement) |
 
 ## Skill tags (cross-level)
 | Tag | Skill |

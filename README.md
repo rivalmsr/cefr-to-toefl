@@ -75,6 +75,7 @@ scripts/
 |------|-------|------|-----------------------|--------|
 | `lessons/unit-01.md` | Daily Life: Present Simple & Present Perfect | A2 | consolidation from A1-03 (present simple) + A2-05 (present perfect for/since) — diagnostic-driven | ✅ |
 | `lessons/unit-02.md` | Past Experiences: Past Simple | A2 | A2-01 (past simple regular/irregular, time markers) + was/were; contrast with Unit 1 present perfect | ✅ |
+| `lessons/unit-03.md` | Future Plans: be going to & Present Continuous | A2 | A2-02 (be going to for plans/predictions, present continuous for future arrangements, future time markers); contrast with Units 1–2 time markers | ✅ |
 
 _Active starting level (from `/diagnostic`, 2026-08-23): **A2**. Vocab/reading are strong (B1–B2);
 grammar is the focus._
