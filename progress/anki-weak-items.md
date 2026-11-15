@@ -14,23 +14,23 @@ Tingkat: **🔴** = `leech` atau `lapses ≥ 8` · **🟡** = `lapses 5–7` · 
 
 > Ringkasan cepat (anchor — baca ini saja saat quiz): PRIORITAS TINGGI
 >
-> **Oxford 3000:** exciting 🔴 🩸, his 🟡, describe 🟡, coat 🟡, fun 🟡, each ⚪, interest ⚪, delicious ⚪, excited ⚪, however ⚪
+> **Oxford 3000:** exciting 🔴 🩸, fun 🟡, his 🟡, describe 🟡, coat 🟡, each ⚪, interest ⚪, delicious ⚪, excited ⚪, however ⚪
 >
 > _🔴 masih < 5 (deck muda) → anchor sementara = 10 kata teratas (🟡/⚪ ikut); kembali ke 🔴 saja begitu 🔴 ≥ 5._
 
 Total ditandai: 🔴1 · 🟡4 · ⚪20
 
-Progres deck: **A1** 618/929 kartu sudah direview
+Progres deck: **A1** 624/929 kartu sudah direview
 
 ## Kosakata lemah — Oxford 3000
 
 | | Word | Arti | CEFR | lapses | 30h |
 |---|------|------|:----:|:------:|:---:|
 | 🔴 🩸 | exciting | menarik | A1 | 11 | 5 |
+| 🟡 | fun | kesenangan | A1 | 6 | 1 |
 | 🟡 | his | miliknya (laki-laki) | A1 | 5 | 2 |
 | 🟡 | describe | menggambarkan | A1 | 5 | 1 |
 | 🟡 | coat | mantel | A1 | 5 | 0 |
-| 🟡 | fun | kesenangan | A1 | 5 | 0 |
 | ⚪ | each | masing-masing | A1 | 4 | 2 |
 | ⚪ | interest | minat, menarik minat | A1 | 4 | 2 |
 | ⚪ | delicious | lezat | A1 | 4 | 1 |
@@ -42,7 +42,7 @@ Progres deck: **A1** 618/929 kartu sudah direview
 | ⚪ | happy | bahagia | A1 | 4 | 0 |
 | ⚪ | lie | berbaring | A1 | 3 | 3 |
 | ⚪ | most | paling | A1 | 3 | 3 |
-| ⚪ | guess | menebak, tebakan | A1 | 3 | 2 |
+| ⚪ | guess | menebak, tebakan | A1 | 3 | 1 |
 | ⚪ | ago | yang lalu | A1 | 3 | 0 |
 | ⚪ | capital | ibukota, modal | A1 | 3 | 0 |
 | ⚪ | create | menciptakan | A1 | 3 | 0 |
@@ -53,4 +53,4 @@ Progres deck: **A1** 618/929 kartu sudah direview
 | ⚪ | fantastic | fantastis | A1 | 3 | 0 |
 
 ---
-_Auto-generated 2026-11-14 oleh `scripts/sync-anki.sh` dari `collection.anki2`._
+_Auto-generated 2026-11-15 oleh `scripts/sync-anki.sh` dari `collection.anki2`._
