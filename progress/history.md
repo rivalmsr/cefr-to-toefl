@@ -6,6 +6,7 @@ The prefix label distinguishes the skill: `DIAG` (/diagnostic), `QUIZ` (/quiz),
 
 | Date | Scope | # items | Score | Notes |
 |------|-------|---------|-------|-------|
+| 2026-11-15 | VERB (A1: P2a, P2c, P4a, P4b, P4c, P4d) | 8 | 4/8 (50%) | ✓ break, stand, sell, sit; ✗ fly: fly, fly → flew, flown; swim: swim, swim → swam, swum; teach: teach, teach → taught, taught; fall: fall, fall → fell, fallen; pola baru: — |
 | 2026-11-15 | QUIZ [translate] (Unit 2 past be/simple) | 4 | 4/4 (100%) | `A2-past-be` Prod 2/2 (*we were very excited … concert was exciting*, *wasn't sick … was very tired*) → Prod 8/10 🟢, tag 🟢; `A2-past-simple` Prod 2/2 (*didn't wear*, *Did you describe*) → Prod 8/8; 🎉 Unit 2 tuntas; slip: *Did you yesterday describe* → time word at end |
 | 2026-11-15 | QUIZ adaptive (Unit 1–2) | 12 | 10/12 (83%) | Past be MCQ 4/4 (*soup was*, *Were the noodles*, *We weren't hungry*) ✅; ✗ *~~have had dinner last night~~* → had (finished time → past simple), ✗ *~~I was exciting~~* → disappointed (feeling word). Tema: 6 Makanan & restoran. |
 | 2026-11-15 | VERB (A1: P2a, P2b, P2c, P3, P4a, P4b, P4c) | 8 | 3/8 (38%) | ✓ sit, forget, keep; ✗ teach: teach, teach → taught, taught; fly: fly, fly → flew, flown; sing: song, song → sang, sung; stand: stand, stand → stood, stood; become: begin, began → became, become; pola baru: — |
